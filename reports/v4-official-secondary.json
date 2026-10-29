@@ -1,0 +1,43 @@
+{
+  "scope": "200 project-held-out public-training contexts; one arithmetic question each",
+  "purpose": "Secondary official arithmetic-subset EM/F1; no model selection",
+  "dataset_revision": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+  "data_sha256": "2df6e722cdbaaa37efcbfb280f5c9a15be29a6ec18f618ef936fe63cc6d07c69",
+  "policy_freeze_sha256": "702d0b0d5935b6e9cbf741e679a0d56a0138105bb803adf30b06852f3e517aa0",
+  "adapter_sha256": "643a088dbd549fc69b7e0895b3005bbcad97cf37b1fcfeafd693a1d79a3d048a",
+  "evaluator_sources_sha256": {
+    "tatqa_utils.py": "a84bb2f960737cf0a53733637a674cc4b20ef030a2be6a4b21dc2c4356f415ec",
+    "tatqa_metric.py": "2aeeac479f89f8c76300af1cc0e8d098eb86af84bc386b38b6ab4af484a6dea8"
+  },
+  "methods": [
+    {
+      "backend": "program-v3-model",
+      "prediction_report": "v4-heldout-baseline.json",
+      "prediction_report_sha256": "c03c9a3e9da0b72a1fd1803018d657675a1a9aa942bfe48d69df4c6ee02730ed",
+      "questions": 200,
+      "answered": 178,
+      "coverage": 0.89,
+      "official_em": 0.62,
+      "official_f1": 0.62,
+      "official_scale_accuracy": 0.825,
+      "official_em_among_answered": 0.6966292134831461,
+      "official_f1_among_answered": 0.6966292134831461,
+      "primary_local_accuracy": 0.62
+    },
+    {
+      "backend": "layout-program-v4",
+      "prediction_report": "v4-heldout-layout.json",
+      "prediction_report_sha256": "eacae018ed6abe94e1ad1d3eccc64bb4e3cbf9d74b6b8a332801aa9fb5f74708",
+      "questions": 200,
+      "answered": 182,
+      "coverage": 0.91,
+      "official_em": 0.655,
+      "official_f1": 0.655,
+      "official_scale_accuracy": 0.82,
+      "official_em_among_answered": 0.7197802197802198,
+      "official_f1_among_answered": 0.7197802197802198,
+      "primary_local_accuracy": 0.655
+    }
+  ],
+  "limitations": "Project-held-out public-training arithmetic study; not a hidden-test leaderboard"
+}

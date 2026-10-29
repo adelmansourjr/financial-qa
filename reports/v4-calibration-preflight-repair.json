@@ -1,0 +1,9 @@
+{
+  "reason": "Before first calibration request, allow full300-row metadata checkpoints up to256KiB rather than the100KB raw-response budget",
+  "calibration_requests_or_outcomes_before_repair": 0,
+  "acceptance_policy_and_membership_unchanged": true,
+  "initial_freeze_sha256": "e41ff3870d5869834b378bb7887820b2b6d7b690372f220702260fb37fd89869",
+  "final_freeze_sha256": "3fcee1ad4cc5279adb5b37ef165532a589a40c7df2f3566b49a99b488a930c97",
+  "initial_runner_sha256": "42dd9b2130120515c233754e9fbdfa4216b2d08025bb86e835a51c0adcf15493",
+  "final_runner_sha256": "e2507624e247413962165e6e693d4cf51acbf1fdb1f52eb1d5bae9d63f376eba"
+}

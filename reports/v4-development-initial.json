@@ -1,0 +1,118 @@
+{
+  "scope": "Training-development pilot only; not independent evidence",
+  "identity": {
+    "model": "qwen3-4b-q4-nonthinking",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "temperature": 0.2,
+    "seed": 42,
+    "max_tokens": 640,
+    "top_p": 0.8,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "prompt_sha256": "321629e0db6ffd7d1d55926ae1c2875f1d10933a68690120198abf6bf913cc9e",
+    "prediction_code_sha256": {
+      "reasoning_v3.py": "81f353320eb8e05951d81186cbda561f47aa0749a343f562c46234cc849bbbfc",
+      "selective.py": "f49769a83ce7de2f9bca7cd47714925cc7640b63854af6fdb7fbd06ff61e69d3",
+      "structured.py": "68a904b8137cf068a859b7e94acf152e7e2638a5a07810102f4f9a78a0d82742",
+      "context.py": "442b13c870df179a94a0fdc39611cfa13e58ff446760e7389ea414baabada60e",
+      "data.py": "37821bf1affc033a8e8b09181d5b45d4c42687dea7e83d68424f7ac6cdbf12db",
+      "retrieval.py": "15623d9efe7e262a56c7d0890b2e7bddc9bdacc26fb6d64aed945636ac3f34b6",
+      "executor.py": "c71674c53221c6ae29c2f9b76a85e7dd6e42072f23a3cecdaebdced466b0689f",
+      "service.py": "7901b8a4d46cc8f4d8a2b06e4e487eb53608c28f303e7fd1774a1936fae83f54",
+      "calibration.py": "d67a1defad81c548986833900c8f34b2ddaed1cff3bfcf0b94e441cf31252d9d",
+      "model_client.py": "a84985080d12ca5b78e379fdf98fdda88271923f2a2e0b3b1e85d4e94ed8f018"
+    },
+    "runtime": {
+      "build_info": "b11669-620d2225c",
+      "n_ctx": 8192,
+      "chat_template_sha256": "57f1fd00f0013a2be96aa79b857391f27e23df5b5f847072b524c897e24d0361",
+      "default_generation_sha256": "9583c90036128b4269707099118a48dc628f9941c7d07069163bee10fcfaceac",
+      "reasoning_format": "none"
+    },
+    "version": 4,
+    "reasoning_v4_sha256": "9aee9fea8c16637f2e98629bfcec44e498f5dbc1872547b4301f10895fa5dc01"
+  },
+  "evaluated": 4,
+  "correct": 1,
+  "answered": 2,
+  "predictions": [
+    {
+      "id": "98970e41-4060-4294-9b5c-70f4c667d207",
+      "document_id": "7750cc2b-7e35-4dab-a908-acbfd5e0e11e",
+      "question": "What is the percentage constitution of brand names among the total goodwill and indefinite lived intangible assets in 2019?",
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 28.85,
+      "gold_scale": "percent",
+      "correct": false,
+      "abstained": true,
+      "reason": "Layout program rejected: Program operation has invalid operand count",
+      "plan": null,
+      "latency_ms": 11252.609
+    },
+    {
+      "id": "67845bd9-fb4e-44ed-8d34-d75d8d8bef1f",
+      "document_id": "ace6176d-b08f-47b8-8001-18ab36984dff",
+      "question": "What is the percentage of Total long-term debt, less current portion to Total debt as of December 31, 2019?",
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 96.97,
+      "gold_scale": "percent",
+      "correct": false,
+      "abstained": true,
+      "reason": "Layout program rejected: Program operation has invalid operand count",
+      "plan": null,
+      "latency_ms": 29466.802
+    },
+    {
+      "id": "7b0ac9c0-5dfa-4644-a71f-cb5abcbf967d",
+      "document_id": "3b492c8b-a227-4e7b-87fe-62e35d93a60a",
+      "question": "What is the change in the amount of Other in 2019 from 2018?",
+      "predicted": "2.9",
+      "predicted_scale": "million",
+      "gold": 2.9,
+      "gold_scale": "million",
+      "correct": true,
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r6c1))-((r6c2))",
+        "citations": [
+          "R6"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 3 source-grounded program step(s)"
+      },
+      "latency_ms": 8038.583
+    },
+    {
+      "id": "bc9d18cd-d2af-4621-bcdf-b2526038dad9",
+      "document_id": "dbab1cfc-1d39-4c86-beb9-8d19440439c9",
+      "question": "What is the average total target value for all Named Executive Officers?",
+      "predicted": "1527916.666666666666666666667",
+      "predicted_scale": "",
+      "gold": 1833500,
+      "gold_scale": "",
+      "correct": false,
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r1c4)+(r2c4)+(r3c4)+(r4c4)+(r5c4))/(p1n2)",
+        "citations": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5",
+          "P1"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 2 source-grounded program step(s)"
+      },
+      "latency_ms": 10416.509
+    }
+  ]
+}

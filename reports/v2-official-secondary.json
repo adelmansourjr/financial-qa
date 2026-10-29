@@ -1,0 +1,103 @@
+{
+  "purpose": "Secondary metric diagnostic after policy freezing; no model selection",
+  "scope": "Frozen arithmetic-only development subset, not the full benchmark leaderboard",
+  "dataset_revision": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+  "data_sha256": "8da095a819af6db3c14877c6df2d4d29960e41d1a63dd1fa853507bd2a616af5",
+  "manifest_sha256": "9a851fbe65d59b6ecf736a265ccb25fbab4da81bb96ffd81d0e908d4f08c96fe",
+  "evaluator_sources": {
+    "tatqa_utils.py": {
+      "url": "https://raw.githubusercontent.com/NExTplusplus/TAT-QA/870accc41953dcde885aabeb963d94aabdc0fbc3/tatqa_utils.py",
+      "sha256": "a84bb2f960737cf0a53733637a674cc4b20ef030a2be6a4b21dc2c4356f415ec"
+    },
+    "tatqa_metric.py": {
+      "url": "https://raw.githubusercontent.com/NExTplusplus/TAT-QA/870accc41953dcde885aabeb963d94aabdc0fbc3/tatqa_metric.py",
+      "sha256": "2aeeac479f89f8c76300af1cc0e8d098eb86af84bc386b38b6ab4af484a6dea8"
+    }
+  },
+  "methods": [
+    {
+      "backend": "baseline",
+      "prediction_report": "v2-final-baseline.json",
+      "prediction_report_sha256": "599a8666a86979934bf8b203380af80f17eee4ebe786bba08bf39a299665beab",
+      "questions": 100,
+      "answered": 18,
+      "coverage": 0.18,
+      "official_em": 0.07,
+      "official_f1": 0.07,
+      "official_scale_accuracy": 0.1,
+      "official_em_among_answered": 0.3888888888888889,
+      "official_f1_among_answered": 0.3888888888888889,
+      "primary_local_accuracy": 0.07
+    },
+    {
+      "backend": "header",
+      "prediction_report": "v2-final-header.json",
+      "prediction_report_sha256": "731508c60c4c9e2401add7c40f25516630dcc57bbb12fc319c721a5f0721aa6c",
+      "questions": 100,
+      "answered": 45,
+      "coverage": 0.45,
+      "official_em": 0.26,
+      "official_f1": 0.26,
+      "official_scale_accuracy": 0.37,
+      "official_em_among_answered": 0.5777777777777777,
+      "official_f1_among_answered": 0.5777777777777777,
+      "primary_local_accuracy": 0.26
+    },
+    {
+      "backend": "semantic",
+      "prediction_report": "v2-final-semantic.json",
+      "prediction_report_sha256": "0a3be74f16084875ae5d9557c89b56746dabca0cb2aff2de9e466ecc9fbda5ba",
+      "questions": 100,
+      "answered": 59,
+      "coverage": 0.59,
+      "official_em": 0.51,
+      "official_f1": 0.51,
+      "official_scale_accuracy": 0.57,
+      "official_em_among_answered": 0.864406779661017,
+      "official_f1_among_answered": 0.864406779661017,
+      "primary_local_accuracy": 0.51
+    },
+    {
+      "backend": "selective",
+      "prediction_report": "v2-final-selective.json",
+      "prediction_report_sha256": "d4435045c8f8570c35f4711b2a680a9ccf8ebd246ef13e4da508a022aa6905a3",
+      "questions": 100,
+      "answered": 63,
+      "coverage": 0.63,
+      "official_em": 0.42,
+      "official_f1": 0.42,
+      "official_scale_accuracy": 0.57,
+      "official_em_among_answered": 0.6666666666666666,
+      "official_f1_among_answered": 0.6666666666666666,
+      "primary_local_accuracy": 0.42
+    },
+    {
+      "backend": "hybrid",
+      "prediction_report": "v2-final-hybrid.json",
+      "prediction_report_sha256": "e145909532afdb662aa2181fabea71e0c830e5f351ba39d2daabb364a78fd1f7",
+      "questions": 100,
+      "answered": 83,
+      "coverage": 0.83,
+      "official_em": 0.59,
+      "official_f1": 0.59,
+      "official_scale_accuracy": 0.76,
+      "official_em_among_answered": 0.7108433734939759,
+      "official_f1_among_answered": 0.7108433734939759,
+      "primary_local_accuracy": 0.59
+    },
+    {
+      "backend": "agreement",
+      "prediction_report": "v2-final-agreement.json",
+      "prediction_report_sha256": "174905ced957e0f0dcc22cf16dc73902df3252bacfeaa4a0882077d2f57cba2b",
+      "questions": 100,
+      "answered": 34,
+      "coverage": 0.34,
+      "official_em": 0.33,
+      "official_f1": 0.33,
+      "official_scale_accuracy": 0.33,
+      "official_em_among_answered": 0.9705882352941176,
+      "official_f1_among_answered": 0.9705882352941176,
+      "primary_local_accuracy": 0.33
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "scope": "150 prospectively reserved source-group-disjoint public-training contexts",
+  "purpose": "Secondary official arithmetic-subset EM/F1; no model selection",
+  "dataset_revision": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+  "data_sha256": "2df6e722cdbaaa37efcbfb280f5c9a15be29a6ec18f618ef936fe63cc6d07c69",
+  "policy_sha256": "cabba45666b512586dcdd6c0cc065fb32a6c2cebb49a32941055798b4c563fa4",
+  "primary_summary_sha256": "629adbcd1b9d507355c95184d0e449a4c3a136247fc49eb7f164e38e4c7fb9e5",
+  "scoring_source_sha256": "034b70f3930d9e879a531d492ea66180cd94abe9fd973cddb5e9596229a0eb1a",
+  "evaluator_adapter_sha256": "643a088dbd549fc69b7e0895b3005bbcad97cf37b1fcfeafd693a1d79a3d048a",
+  "evaluator_sources_sha256": {
+    "tatqa_utils.py": "a84bb2f960737cf0a53733637a674cc4b20ef030a2be6a4b21dc2c4356f415ec",
+    "tatqa_metric.py": "2aeeac479f89f8c76300af1cc0e8d098eb86af84bc386b38b6ab4af484a6dea8"
+  },
+  "methods": {
+    "baseline": {
+      "prediction_report_sha256": "34666ae28a71eb196998f08e2796e608cbfe3ca253976bd7bf61817e58fd2ec2",
+      "questions": 150,
+      "answered": 140,
+      "coverage": 0.9333333333333333,
+      "official_em": 0.64,
+      "official_f1": 0.64,
+      "official_scale_accuracy": 0.8266666666666667,
+      "official_em_among_answered": 0.6857142857142857,
+      "official_f1_among_answered": 0.6857142857142857,
+      "primary_local_accuracy": 0.6466666666666666
+    },
+    "candidate": {
+      "prediction_report_sha256": "c19d29df28bd02d3d2919dd0d226f2169f07a6575478064c600eb1163f2f29d0",
+      "questions": 150,
+      "answered": 133,
+      "coverage": 0.8866666666666667,
+      "official_em": 0.6533333333333333,
+      "official_f1": 0.6533333333333333,
+      "official_scale_accuracy": 0.7933333333333333,
+      "official_em_among_answered": 0.7368421052631579,
+      "official_f1_among_answered": 0.7368421052631579,
+      "primary_local_accuracy": 0.66
+    }
+  },
+  "limitations": "Project source-group comparison on public training data; not a hidden-test leaderboard"
+}

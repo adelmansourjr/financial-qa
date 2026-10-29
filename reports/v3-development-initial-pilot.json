@@ -1,0 +1,550 @@
+{
+  "identity": {
+    "model": "qwen3-4b-q4-nonthinking",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "temperature": 0.7,
+    "seed": 42,
+    "max_tokens": 240,
+    "top_p": 0.8,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "prompt_sha256": "3778afe2d1476a8d9e8fccd9d9b3fe370afc7320d0b687d47a5e919158f3a65a",
+    "prediction_code_sha256": {
+      "reasoning_v3.py": "bfc57b0c7e178df41cabd0d87ed77cf5b03dc627c5ff6651c00aa14b7828cb8b",
+      "selective.py": "f49769a83ce7de2f9bca7cd47714925cc7640b63854af6fdb7fbd06ff61e69d3",
+      "structured.py": "68a904b8137cf068a859b7e94acf152e7e2638a5a07810102f4f9a78a0d82742",
+      "context.py": "442b13c870df179a94a0fdc39611cfa13e58ff446760e7389ea414baabada60e",
+      "data.py": "37821bf1affc033a8e8b09181d5b45d4c42687dea7e83d68424f7ac6cdbf12db",
+      "retrieval.py": "15623d9efe7e262a56c7d0890b2e7bddc9bdacc26fb6d64aed945636ac3f34b6",
+      "executor.py": "c71674c53221c6ae29c2f9b76a85e7dd6e42072f23a3cecdaebdced466b0689f",
+      "service.py": "7901b8a4d46cc8f4d8a2b06e4e487eb53608c28f303e7fd1774a1936fae83f54",
+      "calibration.py": "716501fbc7463eb6c20353e3a649b929cf04cbb48b0176cc896df62268196c5d",
+      "model_client.py": "2135eeb8e7fb2cd4632b6a01c529b383eead0124fa4293a820384ff45ab95431"
+    },
+    "calibration_manifest_sha256": "fe87b6ed9c49517da70a2a0041145c368e0d10931ff1280a521ae40c73452956",
+    "calibration_data_sha256": "2df6e722cdbaaa37efcbfb280f5c9a15be29a6ec18f618ef936fe63cc6d07c69",
+    "policy": "model",
+    "stage": "development",
+    "manifest_sha256": "fe87b6ed9c49517da70a2a0041145c368e0d10931ff1280a521ae40c73452956"
+  },
+  "predictions": [
+    {
+      "id": "98970e41-4060-4294-9b5c-70f4c667d207",
+      "document_id": "7750cc2b-7e35-4dab-a908-acbfd5e0e11e",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 28.85,
+      "gold_scale": "percent",
+      "abstained": true,
+      "reason": "Program proposal rejected: Repeated program operands are ambiguous",
+      "plan": null,
+      "latency_ms": 6186.558
+    },
+    {
+      "id": "67845bd9-fb4e-44ed-8d34-d75d8d8bef1f",
+      "document_id": "ace6176d-b08f-47b8-8001-18ab36984dff",
+      "correct": true,
+      "predicted": "0.9696922028210371768653977243",
+      "predicted_scale": "",
+      "gold": 96.97,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r16c1)/(r17c1)",
+        "citations": [
+          "R16",
+          "R17"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 8018.342
+    },
+    {
+      "id": "7b0ac9c0-5dfa-4644-a71f-cb5abcbf967d",
+      "document_id": "3b492c8b-a227-4e7b-87fe-62e35d93a60a",
+      "correct": true,
+      "predicted": "2.9",
+      "predicted_scale": "million",
+      "gold": 2.9,
+      "gold_scale": "million",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r6c1)-(r6c2)",
+        "citations": [
+          "R6"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 3058.225
+    },
+    {
+      "id": "bc9d18cd-d2af-4621-bcdf-b2526038dad9",
+      "document_id": "dbab1cfc-1d39-4c86-beb9-8d19440439c9",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 1833500,
+      "gold_scale": "",
+      "abstained": true,
+      "reason": "Program proposal rejected: Repeated program operands are ambiguous",
+      "plan": null,
+      "latency_ms": 5789.034
+    },
+    {
+      "id": "348497f7-9c69-4a83-975e-bb28becd24c5",
+      "document_id": "8f49def6-7c9b-4919-be12-b3a461fe3f71",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 159998.5,
+      "gold_scale": "",
+      "abstained": true,
+      "reason": "Program proposal rejected: Program operation has invalid operand count",
+      "plan": null,
+      "latency_ms": 9271.922
+    },
+    {
+      "id": "30b8158d-3352-4dfa-b6a1-7215222eec98",
+      "document_id": "2602c5b3-8ecd-47af-a3b4-56ecd4870928",
+      "correct": true,
+      "predicted": "200",
+      "predicted_scale": "",
+      "gold": 200,
+      "gold_scale": "",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r4c1)-(r4c2)",
+        "citations": [
+          "R4"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 5025.296
+    },
+    {
+      "id": "4f909e22-119f-4c0c-9133-cf68304ac779",
+      "document_id": "70f30a1c-62d5-4191-842d-bc6297444fac",
+      "correct": true,
+      "predicted": "2170064",
+      "predicted_scale": "",
+      "gold": 2170064,
+      "gold_scale": "",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r2c2)-(r2c3)",
+        "citations": [
+          "R2"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 4973.569
+    },
+    {
+      "id": "83609f56-d841-443b-834f-a0b553583187",
+      "document_id": "7005a9d6-50d9-43b0-9137-d5c1e25eef5d",
+      "correct": true,
+      "predicted": "796",
+      "predicted_scale": "million",
+      "gold": 796,
+      "gold_scale": "million",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r5c1)-(r5c2)",
+        "citations": [
+          "R5"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 2453.199
+    },
+    {
+      "id": "e160b778-fea1-47d6-b862-a9372a8ca225",
+      "document_id": "82b0ddc4-ab9d-447e-9477-d659a1c11fc8",
+      "correct": true,
+      "predicted": "5479",
+      "predicted_scale": "thousand",
+      "gold": 5479,
+      "gold_scale": "thousand",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r5c1)-(r5c2)",
+        "citations": [
+          "R5"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 2465.203
+    },
+    {
+      "id": "94eaf52d-0a96-4437-8ed1-215f3580b0cf",
+      "document_id": "2ce000a7-0ec5-4557-9b3c-25feaac4bce6",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 198,
+      "gold_scale": "",
+      "abstained": true,
+      "reason": "Program proposal rejected: An abstaining program cannot also contain steps",
+      "plan": null,
+      "latency_ms": 4468.866
+    },
+    {
+      "id": "c0cacb4f-60b0-4322-8438-d82449f957b6",
+      "document_id": "09ea040c-e548-48f9-ba67-bae8cafa8e83",
+      "correct": false,
+      "predicted": "28226.5",
+      "predicted_scale": "thousand",
+      "gold": 28317.33,
+      "gold_scale": "thousand",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r1c1)+(r1c3))/(1+1)",
+        "citations": [
+          "R1"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 3284.597
+    },
+    {
+      "id": "df1cce24-6ff2-42f2-8c50-a62ce8a5d6ed",
+      "document_id": "c4caeb7e-af4a-471a-b032-547d0d1ea520",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 1,
+      "gold_scale": "million",
+      "abstained": true,
+      "reason": "Program proposal rejected: Program operands have incompatible or unresolved dimensions/units",
+      "plan": null,
+      "latency_ms": 3709.527
+    },
+    {
+      "id": "fe840462-8387-4566-b234-3cd200c99868",
+      "document_id": "58cceb3f-15e2-4f33-80b7-6797c57875d8",
+      "correct": false,
+      "predicted": "49.8",
+      "predicted_scale": "million",
+      "gold": 41.1,
+      "gold_scale": "million",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r9c3)-(r8c3)",
+        "citations": [
+          "R9",
+          "R8"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 6440.643
+    },
+    {
+      "id": "86ccea3e-8234-4ade-859d-0a217cf78011",
+      "document_id": "749e0b5b-951b-4136-9e73-ecef2d01b2e0",
+      "correct": false,
+      "predicted": "27.52245113576333861595351294",
+      "predicted_scale": "percent",
+      "gold": 52.1,
+      "gold_scale": "million",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r3c1)-(r3c2))/(r3c2)*100",
+        "citations": [
+          "R3"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 2 source-grounded program step(s)"
+      },
+      "latency_ms": 10214.826
+    },
+    {
+      "id": "3daf69dd-76df-402a-afa9-8554100b0441",
+      "document_id": "394df4cf-0cf5-4645-bb7a-c7a0366c0283",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 1581118,
+      "gold_scale": "",
+      "abstained": true,
+      "reason": "Program proposal rejected: Aggregation needs at least two distinct observations",
+      "plan": null,
+      "latency_ms": 3343.438
+    },
+    {
+      "id": "3aa09b0a-1b65-47ab-9179-b161fce280d6",
+      "document_id": "66aba6fe-545f-4198-abda-9bfa98a53151",
+      "correct": false,
+      "predicted": "9.761135004781993886088798399",
+      "predicted_scale": "percent",
+      "gold": -8.89,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r4c2)-(r4c1))/(r4c1)*100",
+        "citations": [
+          "R4"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 3264.807
+    },
+    {
+      "id": "c57f3dd2-6f9c-46f6-b033-10a295231363",
+      "document_id": "0d05de3f-81ee-4bb8-b5f5-cd2d2bb67cab",
+      "correct": false,
+      "predicted": "-103.3333333333333333333333333",
+      "predicted_scale": "percent",
+      "gold": 16.67,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r3c2)-(r4c4))/(r4c4)*100",
+        "citations": [
+          "R3",
+          "R4"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 4063.481
+    },
+    {
+      "id": "adff0160-e8dd-4fd5-a5c4-cef342c5904d",
+      "document_id": "c22c3348-6040-43de-8728-2f746a0ca485",
+      "correct": false,
+      "predicted": "-40.75902499228633137920394940",
+      "predicted_scale": "percent",
+      "gold": 13.21,
+      "gold_scale": "",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r4c3)-(r4c2))/(r4c2)*100",
+        "citations": [
+          "R4"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 2 source-grounded program step(s)"
+      },
+      "latency_ms": 5438.355
+    },
+    {
+      "id": "06ef962a-2863-4d6e-acd4-95037ed6dec4",
+      "document_id": "d3d654c9-8ea8-4c2d-90b4-1ecae599d471",
+      "correct": false,
+      "predicted": "3",
+      "predicted_scale": "million",
+      "gold": -3,
+      "gold_scale": "million",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r1c1)-(r2c1)",
+        "citations": [
+          "R1",
+          "R2"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 3533.406
+    },
+    {
+      "id": "0a789647-0d43-4d7c-80ce-bc958586e445",
+      "document_id": "43bd6848-bcab-4fba-ba90-c64dd1524046",
+      "correct": false,
+      "predicted": "-0.8",
+      "predicted_scale": "",
+      "gold": -0.8,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r3c2)-(r3c3)",
+        "citations": [
+          "R3"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 4469.597
+    },
+    {
+      "id": "760137be-d844-4ad8-8b8f-6fc72bdeba75",
+      "document_id": "fdbe9fbf-ede7-495c-85b4-ebe5071b55b9",
+      "correct": true,
+      "predicted": "-64.04358353510895883777239709",
+      "predicted_scale": "percent",
+      "gold": -64.04,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r3c1)-(r3c2))/(r3c2)*100",
+        "citations": [
+          "R3"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 7557.229
+    },
+    {
+      "id": "2af8fdba-3c86-4c4e-9b83-89234f95feb3",
+      "document_id": "ff5ce6d5-85fe-4470-b7a4-ce56e04bb384",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 3066731.34,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "reason": "Program proposal rejected: Program operands have incompatible or unresolved dimensions/units",
+      "plan": null,
+      "latency_ms": 3611.745
+    },
+    {
+      "id": "44c74814-4eb9-49e9-8dfb-ca0a640b1591",
+      "document_id": "b33b880b-c7ef-4f74-90f9-5cdbdac40170",
+      "correct": true,
+      "predicted": "38.24751465514116065250252593",
+      "predicted_scale": "percent",
+      "gold": 38.25,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r7c2)-(r7c1))/(r7c1)*100",
+        "citations": [
+          "R7"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 2 source-grounded program step(s)"
+      },
+      "latency_ms": 5249.349
+    },
+    {
+      "id": "d2215e01-f3d2-4bd3-ade7-227ea08a83c1",
+      "document_id": "254c5f8d-d4cd-4454-b267-57678810f075",
+      "correct": true,
+      "predicted": "54580",
+      "predicted_scale": "",
+      "gold": 54580,
+      "gold_scale": "",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r2c2)+(r2c1))/(1+1)",
+        "citations": [
+          "R2"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 5768.234
+    },
+    {
+      "id": "0ac1901c-ec91-423a-965a-d10c4f63c751",
+      "document_id": "7f675606-2b0b-4ddf-9d0a-a46b3fb542c5",
+      "correct": true,
+      "predicted": "113.1340935902477388910735352",
+      "predicted_scale": "percent",
+      "gold": 113.13,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r2c1)-(r2c2))/(r2c2)*100",
+        "citations": [
+          "R2"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 2 source-grounded program step(s)"
+      },
+      "latency_ms": 4907.554
+    },
+    {
+      "id": "ee2170bf-192c-40d6-89bb-91cffe756006",
+      "document_id": "48097d3f-2545-49f3-8c2f-5a660d1450dd",
+      "correct": false,
+      "predicted": "-26.27118644067796610169491525",
+      "predicted_scale": "percent",
+      "gold": -31,
+      "gold_scale": "million",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r5c1)-(r5c2))/(r5c2)*100",
+        "citations": [
+          "R5"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 2 source-grounded program step(s)"
+      },
+      "latency_ms": 3815.257
+    },
+    {
+      "id": "2f3dd8d7-e3bc-4423-b600-ca125a2b0521",
+      "document_id": "988b4303-d440-4b20-97d9-40f6bb22c0ed",
+      "correct": true,
+      "predicted": "0.1731429846085210796341735445",
+      "predicted_scale": "",
+      "gold": 0.17,
+      "gold_scale": "",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r1c1)/(r2c1)",
+        "citations": [
+          "R1",
+          "R2"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 7497.057
+    }
+  ],
+  "note": "Interrupted training-only diagnostic pilot. The request omitted min_p, so the server default of 0.05 applied despite the nominal profile recording 0.0. This pilot is excluded from calibration and final claims."
+}

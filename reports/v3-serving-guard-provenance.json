@@ -1,0 +1,7 @@
+{
+  "serving_guard_sha256": "d03cc55e1607747d949f082144e1a95159ca16ef2701c09395bacd9bf12ea8ef",
+  "outside_frozen_prediction_components": true,
+  "frozen_prediction_fingerprints_match": true,
+  "behavior": "Serving-only wrapper rechecks the model alias and resolved model path before delegating to the frozen risk planner. It permanently fails closed when either changes.",
+  "limits": "Metadata catches ordinary server restarts. It cannot attest outputs from a malicious server or detect weights replaced behind an unchanged path. Calibration and final predictions are unchanged."
+}

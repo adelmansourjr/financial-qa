@@ -1,0 +1,55 @@
+{
+  "scope": "150 prospectively reserved source-group-disjoint public-training contexts",
+  "policy_sha256": "cabba45666b512586dcdd6c0cc065fb32a6c2cebb49a32941055798b4c563fa4",
+  "methods": {
+    "baseline": {
+      "method": "baseline",
+      "stage": "comparison",
+      "scope": "150 prospectively reserved source-group-disjoint public-training contexts",
+      "policy_sha256": "cabba45666b512586dcdd6c0cc065fb32a6c2cebb49a32941055798b4c563fa4",
+      "evaluated": 150,
+      "correct": 97,
+      "answered": 140,
+      "accuracy": 0.6466666666666666,
+      "coverage": 0.9333333333333333,
+      "answered_accuracy": 0.6928571428571428,
+      "p95_latency_ms": 12208.885349999988,
+      "cached_responses_before": 0,
+      "cached_responses_after": 150,
+      "latency_scope": "Includes cache replay after resume; new requests counted separately"
+    },
+    "candidate": {
+      "method": "candidate",
+      "stage": "comparison",
+      "scope": "150 prospectively reserved source-group-disjoint public-training contexts",
+      "policy_sha256": "cabba45666b512586dcdd6c0cc065fb32a6c2cebb49a32941055798b4c563fa4",
+      "evaluated": 150,
+      "correct": 99,
+      "answered": 133,
+      "accuracy": 0.66,
+      "coverage": 0.8866666666666667,
+      "answered_accuracy": 0.7443609022556391,
+      "p95_latency_ms": 34857.09499999998,
+      "cached_responses_before": 150,
+      "cached_responses_after": 269,
+      "latency_scope": "Includes cache replay after resume; new requests counted separately"
+    }
+  },
+  "paired_accuracy_gain": {
+    "mean": 0.013333333333333334,
+    "ci95": [
+      -0.04666666666666667,
+      0.06666666666666667
+    ],
+    "bootstrap_unit": "document",
+    "replicates": 1000
+  },
+  "accuracy_target": 0.8,
+  "accuracy_target_met": false,
+  "improvement_target_met": false,
+  "limitations": [
+    "Exact source groups are conservative proxies, not verified independent filings",
+    "Public data may be in model pretraining",
+    "No new accepted-error certificate"
+  ]
+}

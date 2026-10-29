@@ -1,0 +1,9 @@
+{
+  "evaluation_py_sha256": "e0ea23422df2e7a44053719e1aba81384bd01e8d45a79290286ea6621ce81371",
+  "prior_snapshot_evaluation_py_sha256": "e0ea23422df2e7a44053719e1aba81384bd01e8d45a79290286ea6621ce81371",
+  "matches_prior_source_snapshot": true,
+  "prior_snapshot_captured_at_utc": "2026-10-22T00:40:35.531410+00:00",
+  "prior_snapshot_file_sha256": "e22916791f5cebccc39456d76bfabf300a8567d8e471a220ab627f54e37a3124",
+  "criterion": "Parse finite numeric answers, convert the predicted amount by its declared scale into the gold unit, and accept an absolute difference of at most 0.005 in that unit. This is the local numeric criterion, not human financial truth or full official TAT-QA scoring.",
+  "purpose": "Companion audit only; does not alter frozen inference identity or calibration decisions."
+}

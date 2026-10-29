@@ -1,0 +1,574 @@
+{
+  "scope": "Reused original 100 training-development contexts; descriptive engineering diagnosis, not an independent accuracy estimate",
+  "access_boundary": "Inspected only the two named development reports, source records for their 100 IDs, frozen implementation, and matching request hashes in v4-development-cache. No held-out or calibration errors or reserve contexts were inspected.",
+  "development_report_sha256": "bb81d8d831cad1208d15dc33f4a13a51a230c4920558d667af657cec9713ca34",
+  "evaluated": 100,
+  "correct": 72,
+  "answered": 88,
+  "errors": 28,
+  "answered_errors": 16,
+  "abstentions": 12,
+  "v3_same_development_correct": 66,
+  "v4_wins_over_v3": 15,
+  "v4_regressions_vs_v3": 9,
+  "primary_category_counts": {
+    "operator_or_schema": 3,
+    "annotation_or_question_ambiguity": 5,
+    "source_parsing_and_missingness": 1,
+    "inferred_total_reasoning": 1,
+    "model_operand_selection": 12,
+    "period_validation": 2,
+    "unit_grounding": 3,
+    "typed_arithmetic_coverage": 1
+  },
+  "diagnoses": [
+    {
+      "id": "94eaf52d-0a96-4437-8ed1-215f3580b0cf",
+      "document_id": "2ce000a7-0ec5-4557-9b3c-25feaac4bce6",
+      "question": "What is the sum of acquisitions and other for Bell Wireless and Bell Wireline in 2018? ",
+      "primary_category": "operator_or_schema",
+      "gold": 198,
+      "gold_scale": "",
+      "predicted": "-166",
+      "predicted_scale": "",
+      "abstained": false,
+      "reason": "",
+      "program": {
+        "expression": "(r2c1)-(r2c2)",
+        "citations": [
+          "R2"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 2 source-grounded program step(s)"
+      },
+      "diagnosis": "Explicit sum is unconstrained: the model selected the correct values 16 and 182 but subtracted. Constrain explicit sum requests while retaining compound ratio-of-sums support."
+    },
+    {
+      "id": "df1cce24-6ff2-42f2-8c50-a62ce8a5d6ed",
+      "document_id": "c4caeb7e-af4a-471a-b032-547d0d1ea520",
+      "question": "What was the difference between the transitional and other employee related costs in 2019 and 2018?",
+      "primary_category": "operator_or_schema",
+      "gold": 1,
+      "gold_scale": "million",
+      "predicted": "-1",
+      "predicted_scale": "million",
+      "abstained": false,
+      "reason": "",
+      "program": {
+        "expression": "(r3c4)-(r3c1)",
+        "citations": [
+          "R3"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "diagnosis": "The model selected the correct values 49 and 48 but reversed the difference. Temporal differences need a documented order convention; an unqualified category difference can remain ambiguous."
+    },
+    {
+      "id": "fe840462-8387-4566-b234-3cd200c99868",
+      "document_id": "58cceb3f-15e2-4f33-80b7-6797c57875d8",
+      "question": "What was the difference between current and non-current deferred revenues after adjustment in 2018?",
+      "primary_category": "annotation_or_question_ambiguity",
+      "gold": 41.1,
+      "gold_scale": "million",
+      "predicted": "49.8",
+      "predicted_scale": "million",
+      "abstained": false,
+      "reason": "",
+      "program": {
+        "expression": "(r9c3)-(r8c3)",
+        "citations": [
+          "R9",
+          "R8"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "diagnosis": "The question says after adjustment: adjusted values 107.5 minus 57.7 equal 49.8, matching the prediction. The reference uses unadjusted values 100.7 minus 59.6. Do not change grounded logic to reproduce this label."
+    },
+    {
+      "id": "3daf69dd-76df-402a-afa9-8554100b0441",
+      "document_id": "394df4cf-0cf5-4645-bb7a-c7a0366c0283",
+      "question": "What is the average total number of shares purchased?",
+      "primary_category": "source_parsing_and_missingness",
+      "gold": 1581118,
+      "gold_scale": "",
+      "predicted": null,
+      "predicted_scale": "",
+      "abstained": true,
+      "reason": "Layout program rejected: Repeated program operands are ambiguous",
+      "program": null,
+      "diagnosis": "Footnoted numeric cells such as 3,646,581 (i) are absent from numeric Evidence variables; a dash is missing rather than explicit zero. The cached model repeated a total variable, correctly rejected by the compiler. Do not silently treat every dash as zero."
+    },
+    {
+      "id": "0a789647-0d43-4d7c-80ce-bc958586e445",
+      "document_id": "43bd6848-bcab-4fba-ba90-c64dd1524046",
+      "question": "What was the increase / (decrease) in the Average term: long-term debt (in years) from 2018 to 2019?",
+      "primary_category": "annotation_or_question_ambiguity",
+      "gold": -0.8,
+      "gold_scale": "percent",
+      "predicted": "-0.8",
+      "predicted_scale": "",
+      "abstained": false,
+      "reason": "",
+      "program": {
+        "expression": "(r3c2)-(r3c3)",
+        "citations": [
+          "R3"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "diagnosis": "The numerical difference -0.8 is correct for a duration in years; reference scale percent contradicts the source row. Do not infer percent from a reference annotation."
+    },
+    {
+      "id": "2af8fdba-3c86-4c4e-9b83-89234f95feb3",
+      "document_id": "ff5ce6d5-85fe-4470-b7a4-ce56e04bb384",
+      "question": "What is the amount of net sales in 2019?",
+      "primary_category": "inferred_total_reasoning",
+      "gold": 3066731.34,
+      "gold_scale": "thousand",
+      "predicted": null,
+      "predicted_scale": "",
+      "abstained": true,
+      "reason": "Model declined to identify a supported calculation",
+      "program": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Model declined to identify a supported calculation"
+      },
+      "diagnosis": "Net sales are indirectly recoverable from SG&A of 205471 and a 6.7 percent share. This requires amount divided by a percentage fraction, rather than ordinary division of incompatible dimensions."
+    },
+    {
+      "id": "2300b901-0c13-4fce-beca-927f3ea9ab1c",
+      "document_id": "24ff90f9-79ee-4e0e-a1ec-1d94abe7bc8b",
+      "question": "What is the percentage change in game operations and distribution costs between 2018 and 2019?",
+      "primary_category": "model_operand_selection",
+      "gold": -6.13,
+      "gold_scale": "percent",
+      "predicted": "-1731.746031746031746031746032",
+      "predicted_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "program": {
+        "expression": "((r5c3)-(r5c5))/(r5c5)*100",
+        "citations": [
+          "R5"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "diagnosis": "The model selected the 2018 amount 1028 and change -63 instead of the 2019 amount 965 and 2018 amount 1028. Explicit operand metadata can distinguish neighboring amount, percentage and change columns."
+    },
+    {
+      "id": "33c585f0-5818-477b-85bd-944714b595ea",
+      "document_id": "800a15a8-7660-4c3c-b680-07484e0fbd4a",
+      "question": "What was the average effective rate over the 3 year period from 2017 to 2019? ",
+      "primary_category": "period_validation",
+      "gold": 26.53,
+      "gold_scale": "percent",
+      "predicted": null,
+      "predicted_scale": "",
+      "abstained": true,
+      "reason": "Layout program rejected: Program observations do not match explicitly requested years",
+      "program": null,
+      "diagnosis": "The cached model correctly selected 10.2, 54.6 and 14.8. The compiler interprets from 2017 to 2019 as endpoints only and rejects 2018. Expand bounded inclusive ranges for aggregation; do not add intermediate years to a two-point change."
+    },
+    {
+      "id": "5e07dca0-5ed3-4863-bbee-182cc5de4f6c",
+      "document_id": "0514a8e0-e5fe-412e-a43c-5576b4352935",
+      "question": "How many percent of organic change in Europe adjusted operating profit is the organic change in Italy EBITDA?",
+      "primary_category": "model_operand_selection",
+      "gold": 5.33,
+      "gold_scale": "percent",
+      "predicted": "35.38461538461538461538461538",
+      "predicted_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "program": {
+        "expression": "(r12c4)/(r16c4)*100",
+        "citations": [
+          "R12",
+          "R16"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "diagnosis": "The requested ratio is Italy EBITDA 4.6 divided by Europe adjusted operating profit 86.3. The model instead selected Europe EBITDA 13.0 as denominator. Preserve the full metric and section label for every operand."
+    },
+    {
+      "id": "ca2b90ed-7468-4fbb-958e-1c287cb97e46",
+      "document_id": "74e08028-f3b1-4668-8406-1b615ef51629",
+      "question": "What is the difference between the FVTPL of the other current and long-term financial assets?",
+      "primary_category": "model_operand_selection",
+      "gold": 15164,
+      "gold_scale": "thousand",
+      "predicted": "21812",
+      "predicted_scale": "",
+      "abstained": false,
+      "reason": "",
+      "program": {
+        "expression": "(r4c2)-(r3c2)",
+        "citations": [
+          "R4",
+          "R3"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "diagnosis": "The question requests FVTPL values 33796 and 18632; the model selected neighboring amortised-cost values 21959 and 147. Bind the exact column heading to every operand."
+    },
+    {
+      "id": "09a8a7fb-da3c-43b5-8fdc-248809808951",
+      "document_id": "86305122-ffc6-487e-934d-7e103abb0041",
+      "question": "What is the ratio of income  from discontinued operations (net of tax) to income for the performance of services (classified within SG&A expenses) during fiscal 2017?",
+      "primary_category": "model_operand_selection",
+      "gold": 0.15,
+      "gold_scale": "",
+      "predicted": "-0.1363636363636363636363636364",
+      "predicted_scale": "",
+      "abstained": false,
+      "reason": "",
+      "program": {
+        "expression": "(r4c3)/(p3n0)",
+        "citations": [
+          "R4",
+          "P3"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "diagnosis": "The question requests net-of-tax discontinued income 2.6 divided by services income 16.9; the model selected a tax benefit of -0.3 and services income of 2.2. Match both metric and period across table and paragraph sources."
+    },
+    {
+      "id": "8483aa56-4f9a-402a-9ebe-9879079df5d3",
+      "document_id": "610d99f0-250a-474a-b1bc-d791058d006c",
+      "question": "What was the change in the amount Expiring after the following year in 2019 from 2018?",
+      "primary_category": "annotation_or_question_ambiguity",
+      "gold": -1,
+      "gold_scale": "million",
+      "predicted": "-103",
+      "predicted_scale": "million",
+      "abstained": false,
+      "reason": "",
+      "program": {
+        "expression": "(r4c1)-(r4c2)",
+        "citations": [
+          "R4"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "diagnosis": "Identical Expiring after the following year labels occur in unused tax losses and tax credits sections. The question names neither section. The model answers 373-476; the reference uses 17-18. Clarify or abstain when repeated row labels remain tied."
+    },
+    {
+      "id": "b57b4869-5ae9-4899-b4fa-0729378311f2",
+      "document_id": "54a5509c-94b7-44d3-b7fd-ff399100fd50",
+      "question": "What is the increase/ (decrease) Primary service units of Net additions (losses) from 2018 to 2019?",
+      "primary_category": "model_operand_selection",
+      "gold": 32972,
+      "gold_scale": "",
+      "predicted": "1846184",
+      "predicted_scale": "",
+      "abstained": false,
+      "reason": "",
+      "program": {
+        "expression": "(r3c1)-(r3c3)",
+        "citations": [
+          "R3"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "diagnosis": "The model selected the current service-unit balance 1810366 instead of net additions -2846; the older comparator -35818 is correct. Both the Net additions (losses) column group and period must match."
+    },
+    {
+      "id": "98d1243f-7450-47d6-91ba-1204b35d48f6",
+      "document_id": "0e0248d4-3e81-44e3-bb6b-827b43c6ef16",
+      "question": "What is the change in the backlog for Cubic Mission Solutions in 2019?",
+      "primary_category": "period_validation",
+      "gold": 26.7,
+      "gold_scale": "million",
+      "predicted": null,
+      "predicted_scale": "",
+      "abstained": true,
+      "reason": "Layout program rejected: Program observations do not match explicitly requested years",
+      "program": null,
+      "diagnosis": "The cached model correctly proposes 103.7-77.0 for change in 2019. Exact equality with the requested set {2019} rejects the necessary prior-year comparator. Permit a constrained adjacent comparator only for a clear temporal change with the same metric and granularity."
+    },
+    {
+      "id": "7abea844-a63e-4e8b-9181-446f9c66da92",
+      "document_id": "565ae074-9900-40b9-9949-67e20710ee70",
+      "question": "What is the change in the number of unvested RSUs between 2018 and 2019?",
+      "primary_category": "unit_grounding",
+      "gold": -1295,
+      "gold_scale": "thousand",
+      "predicted": "-1295",
+      "predicted_scale": "",
+      "abstained": false,
+      "reason": "",
+      "program": {
+        "expression": "(r5c1)-(r1c1)",
+        "citations": [
+          "R5",
+          "R1"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "diagnosis": "The share-count difference 9328-10623 is correct, but its multiplier is lost. The explicit amounts in thousands except per-share declaration should scope the count column while excluding the price column. An unrelated dollar price must not erase the count multiplier."
+    },
+    {
+      "id": "26d56b99-69c3-48d8-80e6-4697d74dd5f7",
+      "document_id": "daa500d9-6d0a-4bb4-a90a-3b813306b51e",
+      "question": "What is the average cost of revenue for 2018 and 2019 as a percentage of total revenues?",
+      "primary_category": "operator_or_schema",
+      "gold": 10.8,
+      "gold_scale": "percent",
+      "predicted": null,
+      "predicted_scale": "",
+      "abstained": true,
+      "reason": "Layout program rejected: Program operands have incompatible or unresolved dimensions/units",
+      "program": null,
+      "diagnosis": "The question asks for the average of common-size percentages 10.6 and 11.0. Grammar forces percent_ratio because of as a percentage, and the common-size declaration remains untyped. Resolve the main average operation before a percentage-of-total metric qualifier."
+    },
+    {
+      "id": "f7f0edf0-5b6e-417a-b017-e47182453588",
+      "document_id": "55ecddc5-f42c-4218-b738-e403d3f8443b",
+      "question": "What is the difference in total assets classified as held for sale between 2018 and 2019?",
+      "primary_category": "annotation_or_question_ambiguity",
+      "gold": 596,
+      "gold_scale": "million",
+      "predicted": "-596",
+      "predicted_scale": "million",
+      "abstained": false,
+      "reason": "",
+      "program": {
+        "expression": "(r4c1)-(r4c2)",
+        "citations": [
+          "R4"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "diagnosis": "Temporal newer-minus-older gives -596, consistent with the source values. The reference uses older-minus-newer 596 for an unqualified difference. Keep a documented convention rather than taking the absolute value of every difference."
+    },
+    {
+      "id": "0ccc56dd-4b11-4c82-88c6-672df70228a2",
+      "document_id": "2b6e0806-1e98-4ba6-8c8f-314caf51b06b",
+      "question": "What is the total price of stock options exercised or canceled and expired during the period between December 31, 2018, and 2019?",
+      "primary_category": "typed_arithmetic_coverage",
+      "gold": 18408588.96,
+      "gold_scale": "",
+      "predicted": null,
+      "predicted_scale": "",
+      "abstained": true,
+      "reason": "Layout program rejected: Multiplication requires exactly one explicit percentage",
+      "program": null,
+      "diagnosis": "Count times price per share is economically valid but unsupported. The cached model also selected the wrong rollforward rows, so adding typed multiplication alone will not repair the case. Preserve source signs and distinguish transaction magnitude explicitly."
+    },
+    {
+      "id": "c3937d00-21f3-445e-84bc-372ef138ebf0",
+      "document_id": "5a27adb8-08d5-4a2c-b51a-21ad380048f0",
+      "question": "What is the total amortization expense for intangible assets for 2017, 2018 and 2019?",
+      "primary_category": "model_operand_selection",
+      "gold": 4.7,
+      "gold_scale": "billion",
+      "predicted": null,
+      "predicted_scale": "",
+      "abstained": true,
+      "reason": "Layout program rejected: Aggregation double-counts a source observation",
+      "program": null,
+      "diagnosis": "The correct amortization expenses 1.7, 1.8 and 1.2 billion are paragraph values. The model instead selects goodwill table values and repeats one source. The duplicate-source guard is correct. Flat paragraph records with units and periods may improve selection."
+    },
+    {
+      "id": "93b7dc03-aee1-48e4-b926-dbe54a180c58",
+      "document_id": "d163dd86-2f99-48e6-a14b-5f5035477f81",
+      "question": "What is the total foreign component of loss before income tax in 2017 and 2018?",
+      "primary_category": "annotation_or_question_ambiguity",
+      "gold": 789,
+      "gold_scale": "thousand",
+      "predicted": "-789",
+      "predicted_scale": "thousand",
+      "abstained": false,
+      "reason": "",
+      "program": {
+        "expression": "((r4c2))+((r4c3))",
+        "citations": [
+          "R4"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 3 source-grounded program step(s)"
+      },
+      "diagnosis": "The source foreign-loss entries are -320 and -469; signed total -789 matches the prediction while the reference reports loss magnitude 789. This is a sign interpretation issue; do not globally strip negative signs."
+    },
+    {
+      "id": "673d6c1d-9e3b-4310-bbb9-e16dd8ff4910",
+      "document_id": "abecff2b-f651-483f-88a4-5f9f11e1348d",
+      "question": "What is the change in the Aa2/AA and above from 2018 to 2019?",
+      "primary_category": "unit_grounding",
+      "gold": -53,
+      "gold_scale": "million",
+      "predicted": "-53",
+      "predicted_scale": "",
+      "abstained": false,
+      "reason": "",
+      "program": {
+        "expression": "(r2c1)-(r2c2)",
+        "citations": [
+          "R2"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "diagnosis": "The numerical difference -53 is correct, but the header shorthand \u00a3m is not recognized as million. Parse unambiguous currency-adjacent multipliers without reinterpreting arbitrary single-letter metric labels."
+    },
+    {
+      "id": "4930bf0c-863b-4258-bb6f-02abbb36236f",
+      "document_id": "91599989-67be-4676-92b2-621a8f4514f0",
+      "question": "What is the ratio of dividends that the company received from equity method investments to total earning after income taxes in fiscal 2019?",
+      "primary_category": "model_operand_selection",
+      "gold": 0.32,
+      "gold_scale": "",
+      "predicted": null,
+      "predicted_scale": "",
+      "abstained": true,
+      "reason": "Layout program rejected: Program observations do not match explicitly requested years",
+      "program": null,
+      "diagnosis": "The cached model identifies dividend 55.0 correctly but labels r12c2=207.1 as 2019 despite its actual 2018 heading. The required denominator is r12c1=170.0. The period guard correctly rejects the proposal."
+    },
+    {
+      "id": "79faca5c-720f-4eb7-bc7f-5e3e77444645",
+      "document_id": "5bcaaafd-ada3-496c-839f-00dbe61ef590",
+      "question": "What is the percentage change in revenue between 2018 and 2019?",
+      "primary_category": "model_operand_selection",
+      "gold": -18.36,
+      "gold_scale": "percent",
+      "predicted": null,
+      "predicted_scale": "",
+      "abstained": true,
+      "reason": "Layout program rejected: Program observations do not match explicitly requested years",
+      "program": null,
+      "diagnosis": "The cached model labels 12629 and 12149 as 2019 and 2018 despite their actual 2018 and 2017 headings. Explicit year-value records may reduce this column selection error; do not weaken the correct year guard."
+    },
+    {
+      "id": "af7747f0-ba4b-4a9c-bb2c-c03e2b227868",
+      "document_id": "0a29c46f-0baf-49c8-a30c-f7061c461670",
+      "question": "How much was the total amount of foreign currency losses, net and interest income across 2018 and 2019?",
+      "primary_category": "model_operand_selection",
+      "gold": 2110,
+      "gold_scale": "million",
+      "predicted": null,
+      "predicted_scale": "",
+      "abstained": true,
+      "reason": "Layout program rejected: Program operands have incompatible or unresolved dimensions/units",
+      "program": null,
+      "diagnosis": "The cached program selects constant-currency percentage columns and subtracts losses although the question requests combined signed amounts. Unit rejection is correct. Exact metric and column-kind selection are needed."
+    },
+    {
+      "id": "d97be352-26c2-4c4b-a8ce-459f5a24f124",
+      "document_id": "855088d1-ed3e-4161-8897-46832fcd3e55",
+      "question": "What is the change in Aggregate purchase price from year ended December 31, 2018 to 2019?",
+      "primary_category": "model_operand_selection",
+      "gold": -176.1,
+      "gold_scale": "million",
+      "predicted": "-176.3",
+      "predicted_scale": "million",
+      "abstained": false,
+      "reason": "",
+      "program": {
+        "expression": "(r5c1)-(r5c2)",
+        "citations": [
+          "R5"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "diagnosis": "The model selects total cash used, 139.0-315.3, instead of aggregate purchase price, 138.9-315.0. Similar adjacent financial metrics require exact label grounding."
+    },
+    {
+      "id": "fe33bc0a-1d6f-41fc-be93-51ee98523ec7",
+      "document_id": "2f625435-909f-4b54-ae8f-53b76b5f99b7",
+      "question": "What is the percentage change in the number of opened or refitted unites in the centres from 2018 to 2019?",
+      "primary_category": "unit_grounding",
+      "gold": -2.29,
+      "gold_scale": "percent",
+      "predicted": null,
+      "predicted_scale": "",
+      "abstained": true,
+      "reason": "Layout program rejected: Program operands have incompatible or unresolved dimensions/units",
+      "program": null,
+      "diagnosis": "The cached model correctly selects 256 units and 262 stores. The count lexicon misses stores; sentence-year propagation assigns the current 256 to parenthetical 2018. Local comparison periods must remain unresolved unless the source states the actual year."
+    },
+    {
+      "id": "e8f43fba-733a-49ed-9937-cf11d72f3641",
+      "document_id": "00cbb66d-b637-4e5a-ad19-b552bfb03d1c",
+      "question": "What is the percentage change in the income before income taxes from United States from 2017 to 2018?",
+      "primary_category": "model_operand_selection",
+      "gold": 1597.21,
+      "gold_scale": "percent",
+      "predicted": null,
+      "predicted_scale": "",
+      "abstained": true,
+      "reason": "Layout program rejected: Program observations do not match explicitly requested years",
+      "program": null,
+      "diagnosis": "The model selects the 2019 loss -59876 and 2018 income 128190 for a 2017-to-2018 request, even inventing a negative sign in its explanation. The period guard correctly rejects the proposal. Explicit operand records should bind both value and period."
+    },
+    {
+      "id": "84457adf-9f2a-45fb-bbc4-07381e92fe85",
+      "document_id": "66f1a3d5-1e76-4131-abfe-8e99f12e8f31",
+      "question": "What is the average age of the company's Senior Vice Presidents?",
+      "primary_category": "model_operand_selection",
+      "gold": 57.57,
+      "gold_scale": "",
+      "predicted": "56",
+      "predicted_scale": "",
+      "abstained": false,
+      "reason": "",
+      "program": {
+        "expression": "((r4c1)+(r5c1)+(r9c1))/(1+1+1)",
+        "citations": [
+          "R4",
+          "R5",
+          "R9"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "diagnosis": "The average requires all seven rows whose current Position contains Senior Vice President. The model selects only three. Select the complete matching population using current table positions, excluding historical biographical positions."
+    }
+  ],
+  "recommendations": [
+    "Include explicit operand records with ID, value, row, column, section, years, dimension, scale and currency alongside the original table.",
+    "Fix bounded aggregation year ranges and constrained prior-period comparison for a single-year temporal change while preserving wrong-period rejection.",
+    "Resolve the main requested operation before metric qualifiers; support explicit sums and common-size averages without forcing every total or percentage phrase into one operator.",
+    "Recognize explicit currency shorthand and count multipliers. Type count synonyms and common-size percentage declarations conservatively.",
+    "Extend typed arithmetic only where units justify it: count times price and amount divided by a percentage fraction. Preserve currency and dimension compatibility.",
+    "Keep duplicate-source, wrong-year and unit rejection: these catch actual model errors. Clarify ambiguous repeated row labels.",
+    "Freeze the new policy using development only, then conduct a predeclared source-group-disjoint evaluation. Preserve historical reports, scoring, confidence intervals and coverage."
+  ],
+  "limitations": [
+    "The 100 training-development contexts have already been inspected; these results do not estimate generalization.",
+    "Primary categories are engineering judgments; some examples have multiple causes.",
+    "Alternative source-grounded interpretations are documented without altering historical scoring.",
+    "No prediction code, weights, protocols, source data, or existing reports were modified."
+  ]
+}

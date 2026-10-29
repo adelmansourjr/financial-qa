@@ -1,0 +1,62 @@
+{
+  "identity": {
+    "base_inference": {
+      "model": "qwen3-4b-q4-nonthinking",
+      "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+      "temperature": 0.2,
+      "seed": 42,
+      "max_tokens": 640,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0.0,
+      "presence_penalty": 0.0,
+      "prompt_sha256": "be780981d107be8da4dc8467e93802ae3f6de2ed1a8213001a6f516fe37151ac",
+      "prediction_code_sha256": {
+        "reasoning_v3.py": "81f353320eb8e05951d81186cbda561f47aa0749a343f562c46234cc849bbbfc",
+        "selective.py": "f49769a83ce7de2f9bca7cd47714925cc7640b63854af6fdb7fbd06ff61e69d3",
+        "structured.py": "68a904b8137cf068a859b7e94acf152e7e2638a5a07810102f4f9a78a0d82742",
+        "context.py": "442b13c870df179a94a0fdc39611cfa13e58ff446760e7389ea414baabada60e",
+        "data.py": "37821bf1affc033a8e8b09181d5b45d4c42687dea7e83d68424f7ac6cdbf12db",
+        "retrieval.py": "15623d9efe7e262a56c7d0890b2e7bddc9bdacc26fb6d64aed945636ac3f34b6",
+        "executor.py": "c71674c53221c6ae29c2f9b76a85e7dd6e42072f23a3cecdaebdced466b0689f",
+        "service.py": "7901b8a4d46cc8f4d8a2b06e4e487eb53608c28f303e7fd1774a1936fae83f54",
+        "calibration.py": "d67a1defad81c548986833900c8f34b2ddaed1cff3bfcf0b94e441cf31252d9d",
+        "model_client.py": "a84985080d12ca5b78e379fdf98fdda88271923f2a2e0b3b1e85d4e94ed8f018"
+      },
+      "runtime": {
+        "build_info": "b11669-620d2225c",
+        "n_ctx": 8192,
+        "chat_template_sha256": "57f1fd00f0013a2be96aa79b857391f27e23df5b5f847072b524c897e24d0361",
+        "default_generation_sha256": "9583c90036128b4269707099118a48dc628f9941c7d07069163bee10fcfaceac",
+        "reasoning_format": "none"
+      },
+      "version": 4,
+      "reasoning_v4_sha256": "5f950fb9ca7c7858271294498a2b4955f814b63daa87162ba00843e80b842b13",
+      "grounding_v4_sha256": "68e0c4312e6e845ef87488e7fa5faeba252900c7143518a98911b619d4bc772f",
+      "program_cache_v4_sha256": "8958e0a02f2ac8c94e232b55184a2bd322c00b94712d8ebb2d40149e2f8ad2d3"
+    },
+    "policy": "same_row_temporal_agreement",
+    "acceptance_code_sha256": "2f5a95a62ec96d8134c02fbe13279e4ac516fdb75809fc30edfd5f2bc6c75d7d",
+    "environment": {
+      "python": "3.12.8",
+      "numpy": "2.2.6",
+      "pydantic": "2.13.4"
+    },
+    "manifest_sha256": "85f20654ae89f680276bb60b63558b94687540537f0e30bdffb0bebb243e1562",
+    "data_sha256": "2df6e722cdbaaa37efcbfb280f5c9a15be29a6ec18f618ef936fe63cc6d07c69"
+  },
+  "runner_sha256": "42dd9b2130120515c233754e9fbdfa4216b2d08025bb86e835a51c0adcf15493",
+  "scorer_sha256": "e0ea23422df2e7a44053719e1aba81384bd01e8d45a79290286ea6621ce81371",
+  "comparison_runner_sha256": "90e2943119698b1e1a766590bfb44d8d5fe8b89567e7920e49b776b620777283",
+  "policy_count": 1,
+  "target_error": 0.1,
+  "alpha": 0.05,
+  "minimum_accepted": 20,
+  "selection": "Single training-developed temporal-agreement gate; no retuning after calibration",
+  "development_only_feasibility": {
+    "evaluated": 100,
+    "accepted": 30,
+    "correct": 29
+  },
+  "assumptions": "IID reference contexts and matching future distribution; context IDs do not establish independent source filings; public training data may occur in pretraining"
+}

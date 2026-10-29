@@ -1,0 +1,842 @@
+{
+  "backend": "hybrid",
+  "evaluated": 40,
+  "accuracy": 0.75,
+  "coverage": 0.9,
+  "answered_accuracy": 0.8333333333333334,
+  "reasons": {
+    "Selective proposal rejected: Operation conflicts with the explicit question operator": 1,
+    "Selective proposal rejected: Selected observations do not match the explicitly requested years": 3
+  },
+  "accuracy_interval": {
+    "mean": 0.75,
+    "ci95": [
+      0.625,
+      0.875
+    ],
+    "bootstrap_unit": "document",
+    "replicates": 1000
+  },
+  "predictions": [
+    {
+      "id": "f32bffaa-2a42-49db-b9a8-5fedea8447b8",
+      "document_id": "4641a881-604b-4a96-8900-a058abdac0ac",
+      "correct": false,
+      "abstained": true,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 32.53,
+      "gold_scale": "percent",
+      "reason": "Selective proposal rejected: Operation conflicts with the explicit question operator",
+      "plan": null,
+      "latency_ms": 2.629
+    },
+    {
+      "id": "bea6f7fc-91f7-4c8f-9226-b55a92886c24",
+      "document_id": "32ea7c73-137e-42b6-aa80-9cd5332a84d9",
+      "correct": true,
+      "abstained": false,
+      "predicted": "-3548",
+      "predicted_scale": "thousand",
+      "gold": -3548,
+      "gold_scale": "thousand",
+      "reason": "",
+      "plan": {
+        "expression": "r3c1-r3c2",
+        "citations": [
+          "R3"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled difference over 2 source variables"
+      },
+      "latency_ms": 0.831
+    },
+    {
+      "id": "2b4f03a4-5d44-40ab-8f9a-cb4e5f0f2c31",
+      "document_id": "9815cbcf-34d0-4019-9ec8-64c4f85be2af",
+      "correct": false,
+      "abstained": false,
+      "predicted": "18781",
+      "predicted_scale": "",
+      "gold": 22258,
+      "gold_scale": "",
+      "reason": "",
+      "plan": {
+        "expression": "r6c2-r6c1",
+        "citations": [
+          "R6"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled difference over 2 source variables"
+      },
+      "latency_ms": 0.939
+    },
+    {
+      "id": "25a2c62d-6505-4e40-85df-fe1a715f6dd7",
+      "document_id": "43cc5b29-5222-4341-91c9-b9cb21cf2e7e",
+      "correct": true,
+      "abstained": false,
+      "predicted": "-3401",
+      "predicted_scale": "million",
+      "gold": -3401,
+      "gold_scale": "million",
+      "reason": "",
+      "plan": {
+        "expression": "r8c1-r8c2",
+        "citations": [
+          "R8"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled difference over 2 source variables"
+      },
+      "latency_ms": 0.941
+    },
+    {
+      "id": "9e095ba7-abf2-4244-991a-5ceb116f05bd",
+      "document_id": "57b4399c-dcd8-4578-b252-dcbba528ad19",
+      "correct": true,
+      "abstained": false,
+      "predicted": "450",
+      "predicted_scale": "million",
+      "gold": 450,
+      "gold_scale": "million",
+      "reason": "",
+      "plan": {
+        "expression": "r4c1-r3c1",
+        "citations": [
+          "R4",
+          "R3"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled difference over 2 source variables"
+      },
+      "latency_ms": 0.489
+    },
+    {
+      "id": "e261447f-ea3e-4ec2-807e-ca8a85abe70b",
+      "document_id": "570ad053-6e0d-4988-84a9-bf74e8a176e3",
+      "correct": true,
+      "abstained": false,
+      "predicted": "-272",
+      "predicted_scale": "thousand",
+      "gold": -272,
+      "gold_scale": "thousand",
+      "reason": "",
+      "plan": {
+        "expression": "r5c1-r5c2",
+        "citations": [
+          "R5"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled difference over 2 source variables"
+      },
+      "latency_ms": 1.726
+    },
+    {
+      "id": "cc78bf40-ec64-4427-a56c-6396f58098ef",
+      "document_id": "88df4eda-48ab-465b-834e-d79b8c14b65c",
+      "correct": true,
+      "abstained": false,
+      "predicted": "85.88181360258536281673241382",
+      "predicted_scale": "percent",
+      "gold": 85.88,
+      "gold_scale": "percent",
+      "reason": "",
+      "plan": {
+        "expression": "r5c1/r5c3*100",
+        "citations": [
+          "R5"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled percent_ratio over 2 source variables"
+      },
+      "latency_ms": 0.911
+    },
+    {
+      "id": "e3c6afa9-f8f6-48eb-bb2e-c920a78003bb",
+      "document_id": "d9121294-acad-49af-bddb-d5a16ee286a4",
+      "correct": true,
+      "abstained": false,
+      "predicted": "30",
+      "predicted_scale": "million",
+      "gold": 30,
+      "gold_scale": "million",
+      "reason": "",
+      "plan": {
+        "expression": "r1c2-r1c3",
+        "citations": [
+          "R1"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled difference over 2 source variables"
+      },
+      "latency_ms": 0.501
+    },
+    {
+      "id": "ec9b953f-7dbf-4b47-a830-4eb5bef42272",
+      "document_id": "eeb976ce-9f69-4e0e-af1f-667bc6fe395f",
+      "correct": true,
+      "abstained": false,
+      "predicted": "-41.71348314606741573033707865",
+      "predicted_scale": "percent",
+      "gold": -41.71,
+      "gold_scale": "percent",
+      "reason": "",
+      "plan": {
+        "expression": "(r2c1-r2c2)/r2c2*100",
+        "citations": [
+          "R2"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 1.325
+    },
+    {
+      "id": "74e6e596-151a-42ac-8cb9-c4195132ccc7",
+      "document_id": "f440390f-d988-4765-b573-273d5e351be2",
+      "correct": true,
+      "abstained": false,
+      "predicted": "3396",
+      "predicted_scale": "thousand",
+      "gold": 3396,
+      "gold_scale": "thousand",
+      "reason": "",
+      "plan": {
+        "expression": "r3c1-r3c2",
+        "citations": [
+          "R3"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled difference over 2 source variables"
+      },
+      "latency_ms": 0.942
+    },
+    {
+      "id": "f67bbe8b-2f94-463e-bc7d-bcae723e366b",
+      "document_id": "4ec7c4bf-4d9e-4827-9ff7-9e6f0acfa0a6",
+      "correct": true,
+      "abstained": false,
+      "predicted": "-12.36562539521942582521816112",
+      "predicted_scale": "percent",
+      "gold": -12.37,
+      "gold_scale": "percent",
+      "reason": "",
+      "plan": {
+        "expression": "(r3c1-r3c2)/r3c2*100",
+        "citations": [
+          "R3"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 0.636
+    },
+    {
+      "id": "87156756-82bf-4a9f-af16-53e0e3296e92",
+      "document_id": "da915ccc-defe-40e3-9ade-04d76be09807",
+      "correct": true,
+      "abstained": false,
+      "predicted": "-13",
+      "predicted_scale": "million",
+      "gold": -13,
+      "gold_scale": "million",
+      "reason": "",
+      "plan": {
+        "expression": "r6c2-r6c1",
+        "citations": [
+          "R6"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled difference over 2 source variables"
+      },
+      "latency_ms": 1.188
+    },
+    {
+      "id": "cc27f7b7-532b-491e-9c6c-981dbaca11c7",
+      "document_id": "ace25e12-5764-4c00-8b6e-60abb62f283a",
+      "correct": false,
+      "abstained": false,
+      "predicted": "13605",
+      "predicted_scale": "million",
+      "gold": 9499.5,
+      "gold_scale": "million",
+      "reason": "",
+      "plan": {
+        "expression": "(r8c1)/(1)",
+        "citations": [
+          "R8"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled average over 1 source variables"
+      },
+      "latency_ms": 1.189
+    },
+    {
+      "id": "e8a759be-71fb-4cd3-8c09-8a47cbf1bf56",
+      "document_id": "b3b0041d-6b7b-4997-b106-d0c5672771e6",
+      "correct": false,
+      "abstained": false,
+      "predicted": "21000",
+      "predicted_scale": "thousand",
+      "gold": 7000,
+      "gold_scale": "thousand",
+      "reason": "",
+      "plan": {
+        "expression": "(r4c1)/(1)",
+        "citations": [
+          "R4"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled average over 1 source variables"
+      },
+      "latency_ms": 0.915
+    },
+    {
+      "id": "e41dd4a1-fbd1-4c49-89de-141a25520376",
+      "document_id": "dd0d0547-e6d6-45e5-9da4-adb49d32c5b2",
+      "correct": true,
+      "abstained": false,
+      "predicted": "0.29",
+      "predicted_scale": "",
+      "gold": 0.29,
+      "gold_scale": "",
+      "reason": "",
+      "plan": {
+        "expression": "r7c1-r7c2",
+        "citations": [
+          "R7"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled difference over 2 source variables"
+      },
+      "latency_ms": 0.64
+    },
+    {
+      "id": "56630a63-27dc-4037-92ed-7a38ca9fdbc3",
+      "document_id": "6b6a7f4f-fef1-4bc1-8dce-029bf55aea90",
+      "correct": true,
+      "abstained": false,
+      "predicted": "63000",
+      "predicted_scale": "",
+      "gold": 63000,
+      "gold_scale": "",
+      "reason": "",
+      "plan": {
+        "expression": "r4c1-r5c1",
+        "citations": [
+          "R4",
+          "R5"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled difference over 2 source variables"
+      },
+      "latency_ms": 1.351
+    },
+    {
+      "id": "8adf24db-5d4a-4289-9204-79afcf63689a",
+      "document_id": "2431b3ca-2b5a-4019-b336-28d049fa698b",
+      "correct": true,
+      "abstained": false,
+      "predicted": "27969",
+      "predicted_scale": "thousand",
+      "gold": 27969,
+      "gold_scale": "thousand",
+      "reason": "",
+      "plan": {
+        "expression": "r1c1-r1c2",
+        "citations": [
+          "R1"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled difference over 2 source variables"
+      },
+      "latency_ms": 0.352
+    },
+    {
+      "id": "3989fe81-bd8d-4f6f-869f-eb2361a3ee06",
+      "document_id": "a8c360d4-1ba4-4136-8921-299071a255e3",
+      "correct": false,
+      "abstained": true,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 154886,
+      "gold_scale": "thousand",
+      "reason": "Selective proposal rejected: Selected observations do not match the explicitly requested years",
+      "plan": null,
+      "latency_ms": 3.881
+    },
+    {
+      "id": "71afe4a6-0c63-4bee-9f8c-cb09f37480c5",
+      "document_id": "ddcffea9-d096-4178-8830-fc4574d9f20e",
+      "correct": true,
+      "abstained": false,
+      "predicted": "232490",
+      "predicted_scale": "",
+      "gold": 232490,
+      "gold_scale": "",
+      "reason": "",
+      "plan": {
+        "expression": "r3c4-r6c3",
+        "citations": [
+          "R3",
+          "R6"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled difference over 2 source variables"
+      },
+      "latency_ms": 1.134
+    },
+    {
+      "id": "fb1830a0-da68-490b-8d4c-dcaffc9edbc7",
+      "document_id": "0fca9b08-2f12-4404-a5b6-888539a1184a",
+      "correct": true,
+      "abstained": false,
+      "predicted": "-1.5",
+      "predicted_scale": "percent",
+      "gold": -1.5,
+      "gold_scale": "percent",
+      "reason": "",
+      "plan": {
+        "expression": "r19c1-r19c2",
+        "citations": [
+          "R19"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled difference over 2 source variables"
+      },
+      "latency_ms": 1.387
+    },
+    {
+      "id": "f00b237c-6680-45db-8fc9-be8d3d3eb0c0",
+      "document_id": "f5366211-1d53-4492-a8b8-23e2d6228153",
+      "correct": true,
+      "abstained": false,
+      "predicted": "93.81436100228594109475262589",
+      "predicted_scale": "percent",
+      "gold": 93.81,
+      "gold_scale": "percent",
+      "reason": "",
+      "plan": {
+        "expression": "r9c2/r11c2*100",
+        "citations": [
+          "R9",
+          "R11"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled percent_ratio over 2 source variables"
+      },
+      "latency_ms": 1.149
+    },
+    {
+      "id": "675a3afe-7e80-41e4-9594-0289f45a23ff",
+      "document_id": "3b5912e7-22bc-4bfa-9fe2-a283693001f2",
+      "correct": false,
+      "abstained": true,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 63.1,
+      "gold_scale": "",
+      "reason": "Selective proposal rejected: Selected observations do not match the explicitly requested years",
+      "plan": null,
+      "latency_ms": 0.595
+    },
+    {
+      "id": "383be6b2-252b-4567-becd-82f9bbd3ce3b",
+      "document_id": "6673c994-b2af-446e-b454-6c2f70508669",
+      "correct": true,
+      "abstained": false,
+      "predicted": "-79.25347222222222222222222222",
+      "predicted_scale": "percent",
+      "gold": -79.25,
+      "gold_scale": "percent",
+      "reason": "",
+      "plan": {
+        "expression": "(r14c2-r14c3)/r14c3*100",
+        "citations": [
+          "R14"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 0.718
+    },
+    {
+      "id": "c22aae5b-2b1a-4739-883c-a004fb3aef30",
+      "document_id": "2c8c081a-01c0-432e-8779-410d1ec9423c",
+      "correct": true,
+      "abstained": false,
+      "predicted": "38.600",
+      "predicted_scale": "percent",
+      "gold": 38.6,
+      "gold_scale": "percent",
+      "reason": "",
+      "plan": {
+        "expression": "(r17c1-r17c2)/r17c2*100",
+        "citations": [
+          "R17"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 1.279
+    },
+    {
+      "id": "a583f56c-2c0b-4dbb-8386-a742b0d6c4b7",
+      "document_id": "425ee1c7-fb82-4853-994a-9876c414fbd5",
+      "correct": true,
+      "abstained": false,
+      "predicted": "2.390752214322023896370379801",
+      "predicted_scale": "percent",
+      "gold": 2.39,
+      "gold_scale": "percent",
+      "reason": "",
+      "plan": {
+        "expression": "(r24c1-r23c1)/r23c1*100",
+        "citations": [
+          "R24",
+          "R23"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 3.419
+    },
+    {
+      "id": "d45b0f7a-ea06-45c6-813f-0b6a3046625a",
+      "document_id": "9d9c239e-60e4-438d-99de-446893d30846",
+      "correct": true,
+      "abstained": false,
+      "predicted": "2751",
+      "predicted_scale": "thousand",
+      "gold": 2751,
+      "gold_scale": "thousand",
+      "reason": "",
+      "plan": {
+        "expression": "r3c1-r3c2",
+        "citations": [
+          "R3"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled difference over 2 source variables"
+      },
+      "latency_ms": 2.103
+    },
+    {
+      "id": "6977ff37-b766-4023-a208-9481f41e20ca",
+      "document_id": "b42e6368-1ea5-4add-b133-56a4e98b12c5",
+      "correct": false,
+      "abstained": false,
+      "predicted": "-1",
+      "predicted_scale": "percent",
+      "gold": 3192,
+      "gold_scale": "million",
+      "reason": "",
+      "plan": {
+        "expression": "r9c2-r9c4",
+        "citations": [
+          "R9"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled difference over 2 source variables"
+      },
+      "latency_ms": 1.962
+    },
+    {
+      "id": "4e98657c-9601-49b2-980d-f290bb9424e1",
+      "document_id": "6009d8f4-a6c6-4f60-8638-2b5ca26c1d2f",
+      "correct": true,
+      "abstained": false,
+      "predicted": "-6",
+      "predicted_scale": "million",
+      "gold": -6,
+      "gold_scale": "million",
+      "reason": "",
+      "plan": {
+        "expression": "r4c2-r4c3",
+        "citations": [
+          "R4"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled difference over 2 source variables"
+      },
+      "latency_ms": 1.29
+    },
+    {
+      "id": "44ec8801-a713-432e-b893-095d23502058",
+      "document_id": "b79da544-0936-423e-bd14-08d9f29ab40c",
+      "correct": true,
+      "abstained": false,
+      "predicted": "11959.5",
+      "predicted_scale": "million",
+      "gold": 11959.5,
+      "gold_scale": "million",
+      "reason": "",
+      "plan": {
+        "expression": "(r2c1+r2c2)/(1+1)",
+        "citations": [
+          "R2"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled average over 2 source variables"
+      },
+      "latency_ms": 0.78
+    },
+    {
+      "id": "33314313-ea8a-4fae-aa6d-e0b924a3f6ad",
+      "document_id": "68fc7842-6146-4e9f-b527-442a458c8735",
+      "correct": true,
+      "abstained": false,
+      "predicted": "15712",
+      "predicted_scale": "thousand",
+      "gold": 15712,
+      "gold_scale": "thousand",
+      "reason": "",
+      "plan": {
+        "expression": "r4c1-r4c2",
+        "citations": [
+          "R4"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled difference over 2 source variables"
+      },
+      "latency_ms": 5.139
+    },
+    {
+      "id": "d2b1580a-4642-49ee-a7cb-e9d627025318",
+      "document_id": "fdfeb681-5bc5-4430-bc8b-b554585f2d46",
+      "correct": true,
+      "abstained": false,
+      "predicted": "38.34401866262092366922788300",
+      "predicted_scale": "percent",
+      "gold": 38.34,
+      "gold_scale": "percent",
+      "reason": "",
+      "plan": {
+        "expression": "(r3c1-r3c2)/r3c2*100",
+        "citations": [
+          "R3"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 0.58
+    },
+    {
+      "id": "f337516d-b091-470f-b2d2-750fbf1dc6e9",
+      "document_id": "3886b747-e711-42d9-9d12-06f31ed47f2b",
+      "correct": true,
+      "abstained": false,
+      "predicted": "177.9264037994192082398734307",
+      "predicted_scale": "percent",
+      "gold": 177.93,
+      "gold_scale": "percent",
+      "reason": "",
+      "plan": {
+        "expression": "(r7c1-r7c2)/r7c2*100",
+        "citations": [
+          "R7"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 1.663
+    },
+    {
+      "id": "6ab22849-cf78-4122-8be3-754f0bb0599d",
+      "document_id": "d9764656-6f2f-4f49-ba07-fdb52990250c",
+      "correct": false,
+      "abstained": false,
+      "predicted": "4835",
+      "predicted_scale": "",
+      "gold": 3311,
+      "gold_scale": "thousand",
+      "reason": "",
+      "plan": {
+        "expression": "(r4c1+r4c3)/(1+1)",
+        "citations": [
+          "R4"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled average over 2 source variables"
+      },
+      "latency_ms": 1.304
+    },
+    {
+      "id": "22cdfb86-5a80-4456-8d4b-69dd1bb65081",
+      "document_id": "c4815f20-f7a6-48da-afea-6c45d1542d60",
+      "correct": true,
+      "abstained": false,
+      "predicted": "0.8",
+      "predicted_scale": "million",
+      "gold": 0.8,
+      "gold_scale": "million",
+      "reason": "",
+      "plan": {
+        "expression": "r2c2-r2c3",
+        "citations": [
+          "R2"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled difference over 2 source variables"
+      },
+      "latency_ms": 0.417
+    },
+    {
+      "id": "486f46c0-f10f-4689-a23f-9b93514b39df",
+      "document_id": "902a57f6-d517-4634-aaec-fa51c9930356",
+      "correct": true,
+      "abstained": false,
+      "predicted": "29.79554629509050657637713244",
+      "predicted_scale": "percent",
+      "gold": 29.8,
+      "gold_scale": "percent",
+      "reason": "",
+      "plan": {
+        "expression": "(r5c1-r5c2)/r5c2*100",
+        "citations": [
+          "R5"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 0.367
+    },
+    {
+      "id": "645de0bf-85d7-4729-834a-d4ebbf6217b6",
+      "document_id": "487ea876-6f31-44c1-8f7b-dc373f24189a",
+      "correct": true,
+      "abstained": false,
+      "predicted": "3.939514524472741742936729009",
+      "predicted_scale": "percent",
+      "gold": 3.94,
+      "gold_scale": "percent",
+      "reason": "",
+      "plan": {
+        "expression": "(r5c2-r1c2)/r1c2*100",
+        "citations": [
+          "R5",
+          "R1"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 0.573
+    },
+    {
+      "id": "78cd9ab4-658b-4356-a521-a38b1cd2e758",
+      "document_id": "20a075d3-c459-4f00-b10f-ab78abc14190",
+      "correct": true,
+      "abstained": false,
+      "predicted": "413",
+      "predicted_scale": "thousand",
+      "gold": 413,
+      "gold_scale": "thousand",
+      "reason": "",
+      "plan": {
+        "expression": "r4c1-r4c2",
+        "citations": [
+          "R4"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled difference over 2 source variables"
+      },
+      "latency_ms": 0.829
+    },
+    {
+      "id": "65cba729-e4bc-431e-96eb-c231172d5f69",
+      "document_id": "3be74b45-d80e-4b2b-9bcc-5bfe731036d4",
+      "correct": true,
+      "abstained": false,
+      "predicted": "-40.45801526717557251908396947",
+      "predicted_scale": "percent",
+      "gold": -40.46,
+      "gold_scale": "percent",
+      "reason": "",
+      "plan": {
+        "expression": "(r5c1-r5c2)/r5c2*100",
+        "citations": [
+          "R5"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 0.425
+    },
+    {
+      "id": "b4411d64-60e2-46ac-b76e-2190c3b45f36",
+      "document_id": "c3a02c86-f7f6-495c-8de2-a74c48f11905",
+      "correct": false,
+      "abstained": true,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 25.5,
+      "gold_scale": "percent",
+      "reason": "Selective proposal rejected: Selected observations do not match the explicitly requested years",
+      "plan": null,
+      "latency_ms": 1.3
+    },
+    {
+      "id": "50ffe3d3-71f5-4e4d-8406-9e2b50b6387c",
+      "document_id": "7ff880cc-98f4-4a64-923f-96359491780b",
+      "correct": false,
+      "abstained": false,
+      "predicted": "33835",
+      "predicted_scale": "percent",
+      "gold": 33835,
+      "gold_scale": "thousand",
+      "reason": "",
+      "plan": {
+        "expression": "r6c3-r6c5",
+        "citations": [
+          "R6"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Explicit metric/period rule; Compiled difference over 2 source variables"
+      },
+      "latency_ms": 0.626
+    }
+  ],
+  "protocol": "selective-v2, training-only choices; local scale-aware numeric scorer",
+  "planner_class": "SelectiveLLM",
+  "cache_entries_before": 39,
+  "cache_entries_after": 39,
+  "latency_status": "cache replay or mixed cache/live requests; not a pure live inference latency",
+  "scorer": "Local scale-aware numeric tolerance0.005 in gold units; not official TATQA EM/F1"
+}

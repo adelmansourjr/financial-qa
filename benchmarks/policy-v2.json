@@ -1,0 +1,30 @@
+{
+  "protocol": "selective-v2",
+  "candidates": [
+    "semantic",
+    "selective",
+    "hybrid",
+    "agreement"
+  ],
+  "references": [
+    "baseline",
+    "header"
+  ],
+  "selection_rule": "Among candidates with validation answered_accuracy >=0.70 and coverage >=0.20, select highest unconditional accuracy, then answered_accuracy, then deterministic semantic for a tie. If none qualify, select highest answered_accuracy among policies answering at least8/40. No selection or prediction tuning on final100.",
+  "validation_documents": 40,
+  "development_documents": 30,
+  "model": "qwen2.5-1.5b-q4",
+  "context_tokens": 8192,
+  "threads": 2,
+  "temperature": 0,
+  "max_tokens": 150,
+  "code_sha256": {
+    "selective.py": "0e3ce9f9d57166c5a0aa3a206042204704c62a07e954be7e9d688075dafbb649",
+    "cli.py": "ed0d87d71e7746c1ae90f0eb790c69fe7cec0cdfca0785c8d525d117ae998563"
+  },
+  "development_notes": [
+    "Initial model-only30-doc pilot and initial rule scores preserved in reports/*-initial.json.",
+    "Correctness audit before final evaluation fixed year-valued observations misclassified as headers. Early deterministic validation summaries were viewed before this independent edge-case fix; candidates were then rerun on the same40 training validation documents. Validation is a policy selection set, not an untouched test."
+  ],
+  "interactive_default_constraint": "The normal browser/launcher must work without a model server. SemanticBaseline is the new deterministic candidate; choose it as interactive default if it meets the same validation quality/coverage thresholds. LLM policies require explicit CLI selection regardless of global candidate ranking."
+}

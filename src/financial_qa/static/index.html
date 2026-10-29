@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      Grounded · Financial reasoning
+    </title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <header>
+      <strong>
+        GROUNDED / FINANCE
+      </strong>
+      <span id="backend" class="small">
+        Checking backend…
+      </span>
+      <a href="/docs">
+        API documentation ↗
+      </a>
+    </header>
+    <main>
+      <div class="eyebrow">
+        Evidence → expression → answer
+      </div>
+      <h1>
+        Numbers you can trace.
+      </h1>
+      <p>
+        Explore financial calculations with visible evidence and a bounded arithmetic executor. The default example is synthetic; benchmark results use real TAT-QA documents.
+      </p>
+      <p id="risk-state" class="small" aria-live="polite">
+        Checking the active answer policy…
+      </p>
+      <div class="grid">
+        <form id="form" class="card">
+          <label for="example">
+            Explore a real financial question
+          </label>
+          <select id="example" style="width:100%;padding:12px;border:1px solid var(--line);border-radius:8px;margin-bottom:18px">
+            <option value="">
+              Synthetic starter example
+            </option>
+          </select>
+          <p id="provenance" class="small">
+            Current source: synthetic demonstration.
+          </p>
+          <label for="question">
+            Your question
+          </label>
+          <input id="question" value="What was the percentage increase in revenue from 2022 to 2023?" required>
+          <label for="document" style="margin-top:20px">
+            Document · JSON table and paragraphs
+          </label>
+          <textarea id="document" spellcheck="false">
+{
+  "table": [
+    ["USD million", "2023", "2022"],
+    ["Revenue", "120", "100"],
+    ["Operating income", "30", "25"]
+  ],
+  "paragraphs": ["Synthetic demonstration, not a company filing."]
+}
+          </textarea>
+          <button id="submit">
+            Analyze evidence
+          </button>
+          <p class="small">
+            The active backend is shown above. Optional program reasoning compiles up to four arithmetic steps and checks source units and currencies. Risk-controlled serving requires a matching independent calibration artifact.
+          </p>
+        </form>
+        <section class="card" aria-live="polite">
+          <div class="eyebrow">
+            Calculation result
+          </div>
+          <div id="answer" class="answer">
+            —
+          </div>
+          <p id="status">
+            Submit a question to inspect its calculation and sources.
+          </p>
+          <pre id="plan">
+No calculation yet.
+          </pre>
+          <div id="sources">
+          </div>
+          <p id="error" class="error" role="alert">
+          </p>
+        </section>
+      </div>
+      <p class="small">
+        Arithmetic validity and source references do not establish whether the selected facts answer the question correctly. Unsupported plans are rejected.
+      </p>
+    </main>
+    <script src="/static/app.js" defer>
+    </script>
+  </body>
+</html>

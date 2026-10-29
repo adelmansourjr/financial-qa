@@ -1,0 +1,39 @@
+{
+  "model": "Qwen2.5-0.5B-Instruct Q4_K_M",
+  "dataset": "synthetic arithmetic integration example",
+  "result": {
+    "answer": "-16.66666666666666666666666667",
+    "abstained": false,
+    "reason": "",
+    "plan": {
+      "expression": "(r1c2-r1c1)/r1c1*100",
+      "citations": [
+        "R0",
+        "R1"
+      ],
+      "scale": "percent",
+      "abstain": false,
+      "reason": "The revenue increased from 2022 to 2023 by 100%."
+    },
+    "evidence": [
+      {
+        "id": "R0",
+        "text": "USD million | 2023 | 2022",
+        "variables": {
+          "r0c1": "2023",
+          "r0c2": "2022"
+        }
+      },
+      {
+        "id": "R1",
+        "text": "Revenue | 120 | 100",
+        "variables": {
+          "r1c1": "120",
+          "r1c2": "100"
+        }
+      }
+    ],
+    "latency_ms": 2113.063,
+    "validation": "Arithmetic and citation checks do not establish semantic correctness."
+  }
+}

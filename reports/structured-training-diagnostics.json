@@ -1,0 +1,514 @@
+{
+  "purpose": "Training-only iteration diagnostics, not a held-out score",
+  "examples": 3,
+  "predictions": [
+    {
+      "id": "dbee8930-0110-41c7-95fe-0178ddf4f841",
+      "backend": "HeaderAwareBaseline",
+      "gold": 2.9,
+      "gold_scale": "percent",
+      "correct": true,
+      "result": {
+        "answer": "2.9",
+        "abstained": false,
+        "reason": "",
+        "plan": {
+          "expression": "(r2c1+r2c2)/(1+1)",
+          "citations": [
+            "R2"
+          ],
+          "scale": "percent",
+          "abstain": false,
+          "reason": "Compiled average over 2 source variables"
+        },
+        "evidence": [
+          {
+            "id": "R0",
+            "text": " | 2019 % | 2018 % | 2017 %",
+            "variables": {
+              "r0c1": "2019",
+              "r0c2": "2018",
+              "r0c3": "2017"
+            }
+          },
+          {
+            "id": "R1",
+            "text": "Weighted average actuarial assumptions used at 31 March1: |  |  | ",
+            "variables": {}
+          },
+          {
+            "id": "R2",
+            "text": "Rate of inflation2 | 2.9 | 2.9 | 3.0",
+            "variables": {
+              "r2c1": "2.9",
+              "r2c2": "2.9",
+              "r2c3": "3.0"
+            }
+          },
+          {
+            "id": "R3",
+            "text": "Rate of increase in salaries | 2.7 | 2.7 | 2.6",
+            "variables": {
+              "r3c1": "2.7",
+              "r3c2": "2.7",
+              "r3c3": "2.6"
+            }
+          },
+          {
+            "id": "R4",
+            "text": "Discount rate | 2.3 | 2.5 | 2.6",
+            "variables": {
+              "r4c1": "2.3",
+              "r4c2": "2.5",
+              "r4c3": "2.6"
+            }
+          },
+          {
+            "id": "P0",
+            "text": "Actuarial assumptions",
+            "variables": {}
+          },
+          {
+            "id": "P2",
+            "text": "Notes: 1 Figures shown represent a weighted average assumption of the individual schemes.",
+            "variables": {
+              "p2n0": "1"
+            }
+          },
+          {
+            "id": "P3",
+            "text": "2 The rate of increases in pensions in payment and deferred revaluation are dependent on the rate of inflation.",
+            "variables": {
+              "p3n0": "2"
+            }
+          }
+        ],
+        "latency_ms": 0.916,
+        "validation": "Arithmetic and citation checks do not establish semantic correctness."
+      }
+    },
+    {
+      "id": "dbee8930-0110-41c7-95fe-0178ddf4f841",
+      "backend": "StructuredLLM",
+      "gold": 2.9,
+      "gold_scale": "percent",
+      "correct": false,
+      "result": {
+        "answer": "2.933333333333333333333333333",
+        "abstained": false,
+        "reason": "",
+        "plan": {
+          "expression": "(r2c1+r2c2+r2c3)/(1+1+1)",
+          "citations": [
+            "R2"
+          ],
+          "scale": "percent",
+          "abstain": false,
+          "reason": "Compiled average over 3 source variables"
+        },
+        "evidence": [
+          {
+            "id": "R0",
+            "text": " | 2019 % | 2018 % | 2017 %",
+            "variables": {
+              "r0c1": "2019",
+              "r0c2": "2018",
+              "r0c3": "2017"
+            }
+          },
+          {
+            "id": "R1",
+            "text": "Weighted average actuarial assumptions used at 31 March1: |  |  | ",
+            "variables": {}
+          },
+          {
+            "id": "R2",
+            "text": "Rate of inflation2 | 2.9 | 2.9 | 3.0",
+            "variables": {
+              "r2c1": "2.9",
+              "r2c2": "2.9",
+              "r2c3": "3.0"
+            }
+          },
+          {
+            "id": "R3",
+            "text": "Rate of increase in salaries | 2.7 | 2.7 | 2.6",
+            "variables": {
+              "r3c1": "2.7",
+              "r3c2": "2.7",
+              "r3c3": "2.6"
+            }
+          },
+          {
+            "id": "R4",
+            "text": "Discount rate | 2.3 | 2.5 | 2.6",
+            "variables": {
+              "r4c1": "2.3",
+              "r4c2": "2.5",
+              "r4c3": "2.6"
+            }
+          },
+          {
+            "id": "P0",
+            "text": "Actuarial assumptions",
+            "variables": {}
+          },
+          {
+            "id": "P2",
+            "text": "Notes: 1 Figures shown represent a weighted average assumption of the individual schemes.",
+            "variables": {
+              "p2n0": "1"
+            }
+          },
+          {
+            "id": "P3",
+            "text": "2 The rate of increases in pensions in payment and deferred revaluation are dependent on the rate of inflation.",
+            "variables": {
+              "p3n0": "2"
+            }
+          }
+        ],
+        "latency_ms": 0.771,
+        "validation": "Arithmetic and citation checks do not establish semantic correctness."
+      }
+    },
+    {
+      "id": "1665b441-93e5-481d-b0b4-2d28ce70e1a8",
+      "backend": "HeaderAwareBaseline",
+      "gold": 2.7,
+      "gold_scale": "percent",
+      "correct": true,
+      "result": {
+        "answer": "2.7",
+        "abstained": false,
+        "reason": "",
+        "plan": {
+          "expression": "(r3c1+r3c2)/(1+1)",
+          "citations": [
+            "R3"
+          ],
+          "scale": "percent",
+          "abstain": false,
+          "reason": "Compiled average over 2 source variables"
+        },
+        "evidence": [
+          {
+            "id": "R0",
+            "text": " | 2019 % | 2018 % | 2017 %",
+            "variables": {
+              "r0c1": "2019",
+              "r0c2": "2018",
+              "r0c3": "2017"
+            }
+          },
+          {
+            "id": "R1",
+            "text": "Weighted average actuarial assumptions used at 31 March1: |  |  | ",
+            "variables": {}
+          },
+          {
+            "id": "R2",
+            "text": "Rate of inflation2 | 2.9 | 2.9 | 3.0",
+            "variables": {
+              "r2c1": "2.9",
+              "r2c2": "2.9",
+              "r2c3": "3.0"
+            }
+          },
+          {
+            "id": "R3",
+            "text": "Rate of increase in salaries | 2.7 | 2.7 | 2.6",
+            "variables": {
+              "r3c1": "2.7",
+              "r3c2": "2.7",
+              "r3c3": "2.6"
+            }
+          },
+          {
+            "id": "R4",
+            "text": "Discount rate | 2.3 | 2.5 | 2.6",
+            "variables": {
+              "r4c1": "2.3",
+              "r4c2": "2.5",
+              "r4c3": "2.6"
+            }
+          },
+          {
+            "id": "P0",
+            "text": "Actuarial assumptions",
+            "variables": {}
+          },
+          {
+            "id": "P2",
+            "text": "Notes: 1 Figures shown represent a weighted average assumption of the individual schemes.",
+            "variables": {
+              "p2n0": "1"
+            }
+          },
+          {
+            "id": "P3",
+            "text": "2 The rate of increases in pensions in payment and deferred revaluation are dependent on the rate of inflation.",
+            "variables": {
+              "p3n0": "2"
+            }
+          }
+        ],
+        "latency_ms": 0.308,
+        "validation": "Arithmetic and citation checks do not establish semantic correctness."
+      }
+    },
+    {
+      "id": "1665b441-93e5-481d-b0b4-2d28ce70e1a8",
+      "backend": "StructuredLLM",
+      "gold": 2.7,
+      "gold_scale": "percent",
+      "correct": true,
+      "result": {
+        "answer": "2.7",
+        "abstained": false,
+        "reason": "",
+        "plan": {
+          "expression": "(r3c1+r3c2)/(1+1)",
+          "citations": [
+            "R3"
+          ],
+          "scale": "percent",
+          "abstain": false,
+          "reason": "Compiled average over 2 source variables"
+        },
+        "evidence": [
+          {
+            "id": "R0",
+            "text": " | 2019 % | 2018 % | 2017 %",
+            "variables": {
+              "r0c1": "2019",
+              "r0c2": "2018",
+              "r0c3": "2017"
+            }
+          },
+          {
+            "id": "R1",
+            "text": "Weighted average actuarial assumptions used at 31 March1: |  |  | ",
+            "variables": {}
+          },
+          {
+            "id": "R2",
+            "text": "Rate of inflation2 | 2.9 | 2.9 | 3.0",
+            "variables": {
+              "r2c1": "2.9",
+              "r2c2": "2.9",
+              "r2c3": "3.0"
+            }
+          },
+          {
+            "id": "R3",
+            "text": "Rate of increase in salaries | 2.7 | 2.7 | 2.6",
+            "variables": {
+              "r3c1": "2.7",
+              "r3c2": "2.7",
+              "r3c3": "2.6"
+            }
+          },
+          {
+            "id": "R4",
+            "text": "Discount rate | 2.3 | 2.5 | 2.6",
+            "variables": {
+              "r4c1": "2.3",
+              "r4c2": "2.5",
+              "r4c3": "2.6"
+            }
+          },
+          {
+            "id": "P0",
+            "text": "Actuarial assumptions",
+            "variables": {}
+          },
+          {
+            "id": "P2",
+            "text": "Notes: 1 Figures shown represent a weighted average assumption of the individual schemes.",
+            "variables": {
+              "p2n0": "1"
+            }
+          },
+          {
+            "id": "P3",
+            "text": "2 The rate of increases in pensions in payment and deferred revaluation are dependent on the rate of inflation.",
+            "variables": {
+              "p3n0": "2"
+            }
+          }
+        ],
+        "latency_ms": 0.853,
+        "validation": "Arithmetic and citation checks do not establish semantic correctness."
+      }
+    },
+    {
+      "id": "2cec8a99-3a83-409b-886b-dbb65a05fb25",
+      "backend": "HeaderAwareBaseline",
+      "gold": 0.2,
+      "gold_scale": "percent",
+      "correct": false,
+      "result": {
+        "answer": null,
+        "abstained": true,
+        "reason": "Several metrics match equally",
+        "plan": {
+          "expression": "",
+          "citations": [],
+          "scale": "",
+          "abstain": true,
+          "reason": "Several metrics match equally"
+        },
+        "evidence": [
+          {
+            "id": "R0",
+            "text": " | 2019 % | 2018 % | 2017 %",
+            "variables": {
+              "r0c1": "2019",
+              "r0c2": "2018",
+              "r0c3": "2017"
+            }
+          },
+          {
+            "id": "R1",
+            "text": "Weighted average actuarial assumptions used at 31 March1: |  |  | ",
+            "variables": {}
+          },
+          {
+            "id": "R2",
+            "text": "Rate of inflation2 | 2.9 | 2.9 | 3.0",
+            "variables": {
+              "r2c1": "2.9",
+              "r2c2": "2.9",
+              "r2c3": "3.0"
+            }
+          },
+          {
+            "id": "R3",
+            "text": "Rate of increase in salaries | 2.7 | 2.7 | 2.6",
+            "variables": {
+              "r3c1": "2.7",
+              "r3c2": "2.7",
+              "r3c3": "2.6"
+            }
+          },
+          {
+            "id": "R4",
+            "text": "Discount rate | 2.3 | 2.5 | 2.6",
+            "variables": {
+              "r4c1": "2.3",
+              "r4c2": "2.5",
+              "r4c3": "2.6"
+            }
+          },
+          {
+            "id": "P0",
+            "text": "Actuarial assumptions",
+            "variables": {}
+          },
+          {
+            "id": "P2",
+            "text": "Notes: 1 Figures shown represent a weighted average assumption of the individual schemes.",
+            "variables": {
+              "p2n0": "1"
+            }
+          },
+          {
+            "id": "P3",
+            "text": "2 The rate of increases in pensions in payment and deferred revaluation are dependent on the rate of inflation.",
+            "variables": {
+              "p3n0": "2"
+            }
+          }
+        ],
+        "latency_ms": 0.298,
+        "validation": "Arithmetic and citation checks do not establish semantic correctness."
+      }
+    },
+    {
+      "id": "2cec8a99-3a83-409b-886b-dbb65a05fb25",
+      "backend": "StructuredLLM",
+      "gold": 0.2,
+      "gold_scale": "percent",
+      "correct": false,
+      "result": {
+        "answer": "0.0",
+        "abstained": false,
+        "reason": "",
+        "plan": {
+          "expression": "r2c1-r2c2",
+          "citations": [
+            "R2"
+          ],
+          "scale": "percent",
+          "abstain": false,
+          "reason": "Compiled difference over 2 source variables"
+        },
+        "evidence": [
+          {
+            "id": "R0",
+            "text": " | 2019 % | 2018 % | 2017 %",
+            "variables": {
+              "r0c1": "2019",
+              "r0c2": "2018",
+              "r0c3": "2017"
+            }
+          },
+          {
+            "id": "R1",
+            "text": "Weighted average actuarial assumptions used at 31 March1: |  |  | ",
+            "variables": {}
+          },
+          {
+            "id": "R2",
+            "text": "Rate of inflation2 | 2.9 | 2.9 | 3.0",
+            "variables": {
+              "r2c1": "2.9",
+              "r2c2": "2.9",
+              "r2c3": "3.0"
+            }
+          },
+          {
+            "id": "R3",
+            "text": "Rate of increase in salaries | 2.7 | 2.7 | 2.6",
+            "variables": {
+              "r3c1": "2.7",
+              "r3c2": "2.7",
+              "r3c3": "2.6"
+            }
+          },
+          {
+            "id": "R4",
+            "text": "Discount rate | 2.3 | 2.5 | 2.6",
+            "variables": {
+              "r4c1": "2.3",
+              "r4c2": "2.5",
+              "r4c3": "2.6"
+            }
+          },
+          {
+            "id": "P0",
+            "text": "Actuarial assumptions",
+            "variables": {}
+          },
+          {
+            "id": "P2",
+            "text": "Notes: 1 Figures shown represent a weighted average assumption of the individual schemes.",
+            "variables": {
+              "p2n0": "1"
+            }
+          },
+          {
+            "id": "P3",
+            "text": "2 The rate of increases in pensions in payment and deferred revaluation are dependent on the rate of inflation.",
+            "variables": {
+              "p3n0": "2"
+            }
+          }
+        ],
+        "latency_ms": 0.555,
+        "validation": "Arithmetic and citation checks do not establish semantic correctness."
+      }
+    }
+  ]
+}

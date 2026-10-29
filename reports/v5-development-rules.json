@@ -1,0 +1,693 @@
+{
+  "scope": "Original100 reused development contexts; diagnostic only, not fresh accuracy",
+  "source_sha256": {
+    "deterministic_v5": "727ba6f572845ca8f42e2120c39b8468fffb64ecf301e2631cc7ab10751a8659",
+    "grounding_v5": "dd51cb6b7550a2fe7f41cff7da5f80fb58649dbc54270eff0645c315f0cf53e1"
+  },
+  "development_count": 100,
+  "rule_supported": 40,
+  "correct": 39,
+  "predictions": [
+    {
+      "id": "e160b778-fea1-47d6-b862-a9372a8ca225",
+      "document_id": "82b0ddc4-ab9d-447e-9477-d659a1c11fc8",
+      "predicted": "5479",
+      "predicted_scale": "thousand",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "(r5c1)-(r5c2)",
+        "citations": [
+          "R5"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "86ccea3e-8234-4ade-859d-0a217cf78011",
+      "document_id": "749e0b5b-951b-4136-9e73-ecef2d01b2e0",
+      "predicted": "52.1",
+      "predicted_scale": "million",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "(r3c1)-(r3c2)",
+        "citations": [
+          "R3"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "d2215e01-f3d2-4bd3-ade7-227ea08a83c1",
+      "document_id": "254c5f8d-d4cd-4454-b267-57678810f075",
+      "predicted": "54580",
+      "predicted_scale": "",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r2c1)+(r2c2))/(1+1)",
+        "citations": [
+          "R2"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "ee2170bf-192c-40d6-89bb-91cffe756006",
+      "document_id": "48097d3f-2545-49f3-8c2f-5a660d1450dd",
+      "predicted": "-31",
+      "predicted_scale": "million",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "(r5c1)-(r5c2)",
+        "citations": [
+          "R5"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "2f3dd8d7-e3bc-4423-b600-ca125a2b0521",
+      "document_id": "988b4303-d440-4b20-97d9-40f6bb22c0ed",
+      "predicted": "0.1731429846085210796341735445",
+      "predicted_scale": "",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "(r1c1)/(r2c1)",
+        "citations": [
+          "R1",
+          "R2"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "2300b901-0c13-4fce-beca-927f3ea9ab1c",
+      "document_id": "24ff90f9-79ee-4e0e-a1ec-1d94abe7bc8b",
+      "predicted": "-6.128404669260700389105058366",
+      "predicted_scale": "percent",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r5c1)-(r5c3))/(r5c3)*100",
+        "citations": [
+          "R5"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "33c585f0-5818-477b-85bd-944714b595ea",
+      "document_id": "800a15a8-7660-4c3c-b680-07484e0fbd4a",
+      "predicted": "26.53333333333333333333333333",
+      "predicted_scale": "percent",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r12c1)+(r12c2)+(r12c3))/(1+1+1)",
+        "citations": [
+          "R12"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "17b9a496-629d-4e2d-8a41-870219dd954f",
+      "document_id": "9f0050a9-8d91-4654-8d2e-2ba50f14adba",
+      "predicted": "5284.644194756554307116104869",
+      "predicted_scale": "percent",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r3c1)-(r3c2))/(r3c2)*100",
+        "citations": [
+          "R3"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "f7fa81f2-d0ed-49ce-901b-eb9221bd2fe9",
+      "document_id": "4c240495-41ed-485d-86c1-b5c0f4fd446b",
+      "predicted": "879",
+      "predicted_scale": "thousand",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "(r2c1)-(r2c2)",
+        "citations": [
+          "R2"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "c275b616-d249-4ee6-a3ee-1cd447480b79",
+      "document_id": "bd43aee5-91b4-46f2-b1a7-e91b3a6f9eb2",
+      "predicted": "139553",
+      "predicted_scale": "",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "(r12c1)-(r12c2)",
+        "citations": [
+          "R12"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "8bef9047-e0d9-4577-be49-fa9f085c81d6",
+      "document_id": "8075bc61-13ca-482e-85a9-1ba9f73f78c9",
+      "predicted": "-33.31661092530657748049052397",
+      "predicted_scale": "percent",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r3c1)-(r3c2))/(r3c2)*100",
+        "citations": [
+          "R3"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "812d88d3-1a8e-4e85-9bd0-d4a1224c2d71",
+      "document_id": "f916c7cb-7070-457f-abc0-93b9fae23127",
+      "predicted": "-4",
+      "predicted_scale": "million",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "(r1c1)-(r1c2)",
+        "citations": [
+          "R1"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "61969a4c-98c8-4e68-962e-25a85231ec9c",
+      "document_id": "6ab8d724-7e07-4254-ab59-c9859b1ec530",
+      "predicted": "-1859",
+      "predicted_scale": "thousand",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "(r2c1)-(r2c2)",
+        "citations": [
+          "R2"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "1cc93405-b883-4d5c-9b38-42121a3af721",
+      "document_id": "93a8e542-9455-4dd1-964c-24c5227f0a14",
+      "predicted": "-19.97903732967830363621704426",
+      "predicted_scale": "percent",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r5c1)-(r5c2))/(r5c2)*100",
+        "citations": [
+          "R5"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "b8ca4298-915c-4298-8c68-033ad2e933aa",
+      "document_id": "d325ba95-604a-474e-b323-d6daee216a2c",
+      "predicted": "2212432",
+      "predicted_scale": "thousand",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r2c1)+(r2c2))/(1+1)",
+        "citations": [
+          "R2"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "fb2b31ad-d398-4e78-a6ca-ed2e1d9cd878",
+      "document_id": "30ef4cd3-3ee5-4c4f-804a-959864f644e9",
+      "predicted": "926877.5",
+      "predicted_scale": "thousand",
+      "correct": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r11c1)+(r11c2))/(1+1)",
+        "citations": [
+          "R11"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "98d1243f-7450-47d6-91ba-1204b35d48f6",
+      "document_id": "0e0248d4-3e81-44e3-bb6b-827b43c6ef16",
+      "predicted": "26.7",
+      "predicted_scale": "million",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "(r5c1)-(r5c2)",
+        "citations": [
+          "R5"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "c574f32e-2600-4db2-81bc-7711d7efd17d",
+      "document_id": "4ad01fd2-9194-4b5b-ad21-9491643768ed",
+      "predicted": "20022",
+      "predicted_scale": "",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r6c1)+(r6c2)+(r6c3))/(1+1+1)",
+        "citations": [
+          "R6"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "aed645fc-c254-4a26-8db0-a2a9e7ca10be",
+      "document_id": "91115dbf-74cd-4392-9632-927f3f17d5a4",
+      "predicted": "52",
+      "predicted_scale": "thousand",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "(r3c1)-(r3c2)",
+        "citations": [
+          "R3"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "a81c5e39-1223-433a-b050-bd6de6cbb730",
+      "document_id": "e22e8b85-37a0-4e48-8b66-b98200220be3",
+      "predicted": "142500.5",
+      "predicted_scale": "thousand",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r2c1)+(r2c2))/(1+1)",
+        "citations": [
+          "R2"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "df39c6b8-bd49-4f0a-9cf7-e72652173e01",
+      "document_id": "ed2ad5e1-c804-46db-bb69-62944686a03c",
+      "predicted": "67",
+      "predicted_scale": "thousand",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "(r2c1)-(r2c2)",
+        "citations": [
+          "R2"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "12d27e2c-12b8-4ca6-a391-06602ff2a9e0",
+      "document_id": "a6777766-950e-42b0-8e41-183fb1c44452",
+      "predicted": "245.7385909367104800281428891",
+      "predicted_scale": "percent",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r11c1)-(r11c2))/(r11c2)*100",
+        "citations": [
+          "R11"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "ef4d7f66-46ee-4174-beec-e4a0f162eff7",
+      "document_id": "b8a371a2-31f9-4922-a622-a165a81a54fb",
+      "predicted": "34.062500",
+      "predicted_scale": "percent",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r4c1)-(r4c2))/(r4c2)*100",
+        "citations": [
+          "R4"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "8592e1e1-17f8-4a7d-8ddd-b04d7d7b895f",
+      "document_id": "41190929-50fa-4f57-8a8f-806078c0eabd",
+      "predicted": "5897",
+      "predicted_scale": "thousand",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r4c1)+(r4c2))/(1+1)",
+        "citations": [
+          "R4"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "673d6c1d-9e3b-4310-bbb9-e16dd8ff4910",
+      "document_id": "abecff2b-f651-483f-88a4-5f9f11e1348d",
+      "predicted": "-53",
+      "predicted_scale": "million",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "(r2c1)-(r2c2)",
+        "citations": [
+          "R2"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "86384bf3-c603-4cbc-8451-804517ce8b5c",
+      "document_id": "725f49da-9041-4f26-8b57-62427b0a3f92",
+      "predicted": "53833.5",
+      "predicted_scale": "thousand",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r4c1)+(r4c3))/(1+1)",
+        "citations": [
+          "R4"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "f158f151-20ea-49f7-826d-ce708f6edb01",
+      "document_id": "293c4d42-79f2-4a16-8d8b-cd51354acc67",
+      "predicted": "24",
+      "predicted_scale": "",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "(r3c5)-(r3c4)",
+        "citations": [
+          "R3"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "a4ec14c0-8bce-4d58-9e83-f6b005682d54",
+      "document_id": "a0a5819e-7741-471e-a5bd-2df3bb3a7f6b",
+      "predicted": "-28",
+      "predicted_scale": "million",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "(r10c1)-(r10c2)",
+        "citations": [
+          "R10"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "b8bf82a5-32c0-41cc-86f5-a52ed0bc7f68",
+      "document_id": "56a05d1e-7492-47bb-b757-459f4b0065b7",
+      "predicted": "272.5",
+      "predicted_scale": "million",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r2c1)+(r2c2))/(1+1)",
+        "citations": [
+          "R2"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "fe027e12-aafd-4ae1-adc4-1ad44117da7f",
+      "document_id": "ea9fbd57-fa1f-4c56-9ba9-1e6281672b84",
+      "predicted": "730955",
+      "predicted_scale": "thousand",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r3c1)+(r3c2))/(1+1)",
+        "citations": [
+          "R3"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "ff2d724f-1309-4720-9719-4f0e54cd94e1",
+      "document_id": "2daefb2f-89bb-42ce-b9b2-a8d310f69444",
+      "predicted": "57.54131511052227878111707691",
+      "predicted_scale": "percent",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r8c2)-(r8c3))/(r8c3)*100",
+        "citations": [
+          "R8"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "79faca5c-720f-4eb7-bc7f-5e3e77444645",
+      "document_id": "5bcaaafd-ada3-496c-839f-00dbe61ef590",
+      "predicted": "-18.36249901021458547786839813",
+      "predicted_scale": "percent",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r2c1)-(r2c2))/(r2c2)*100",
+        "citations": [
+          "R2"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "e227ec32-2078-4309-abce-1161558ad386",
+      "document_id": "00842ff1-169b-4246-9208-7cfef29a4363",
+      "predicted": "0",
+      "predicted_scale": "",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "(r4c1)-(r4c2)",
+        "citations": [
+          "R4"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "fe2b55c9-b7e6-470e-9794-ee3ea2282f04",
+      "document_id": "cede49ab-ac4a-4e41-8393-19d238b883c1",
+      "predicted": "389.25",
+      "predicted_scale": "million",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r3c1)+(r3c2))/(1+1)",
+        "citations": [
+          "R3"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "f43900ff-1dc7-41bd-9603-e3ea0b8cabd8",
+      "document_id": "03dfeac1-a50c-4ddb-bbdc-7107c309bc0c",
+      "predicted": "25.40050590219224283305227656",
+      "predicted_scale": "percent",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r5c1)-(r5c2))/(r5c2)*100",
+        "citations": [
+          "R5"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "4e16f851-cbfa-4309-bfb5-e6150bf8f496",
+      "document_id": "96d014d1-9f4d-4002-85ac-cd19412fb4d0",
+      "predicted": "303675.5",
+      "predicted_scale": "",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r1c1)+(r1c2))/(1+1)",
+        "citations": [
+          "R1"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "d97be352-26c2-4c4b-a8ce-459f5a24f124",
+      "document_id": "855088d1-ed3e-4161-8897-46832fcd3e55",
+      "predicted": "-176.1",
+      "predicted_scale": "million",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "(r3c1)-(r3c2)",
+        "citations": [
+          "R3"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "957768ee-ed3e-4a75-9efb-fd1aab6e2cca",
+      "document_id": "cada5aad-5a98-4010-9462-c35c9be9346d",
+      "predicted": "1680",
+      "predicted_scale": "million",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "(r2c1)-(r2c2)",
+        "citations": [
+          "R2"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "e8f43fba-733a-49ed-9937-cf11d72f3641",
+      "document_id": "00cbb66d-b637-4e5a-ad19-b552bfb03d1c",
+      "predicted": "1597.206408049781543757447372",
+      "predicted_scale": "percent",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r3c2)-(r3c3))/(r3c3)*100",
+        "citations": [
+          "R3"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    },
+    {
+      "id": "08fbbc3f-b73f-40f6-9ac9-97e83f41df9d",
+      "document_id": "51c8eba0-1876-42aa-afdb-d18741b2fe7b",
+      "predicted": "50.1",
+      "predicted_scale": "million",
+      "correct": true,
+      "reason": "",
+      "plan": {
+        "expression": "((r3c1)+(r3c2))/(1+1)",
+        "citations": [
+          "R3"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      }
+    }
+  ]
+}

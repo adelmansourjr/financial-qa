@@ -1,0 +1,452 @@
+{
+  "scope": "All 86 previously uninspected eligible public-development documents; one numeric arithmetic question per document",
+  "frozen_prediction_code_verified": true,
+  "policy_freeze_sha256": "74205ef4d42fd91247282e711e92cc77442646d9a031591b608c66fd3fb64b02",
+  "final_manifest_sha256": "2fc8d417264e0d5531ad6911d765320239896d6dd33118aba6fad0a9c7b2c9e1",
+  "methods": {
+    "semantic": {
+      "cache_entries_before": 85,
+      "cache_entries_after": 85,
+      "new_cached_model_responses": 0,
+      "latency_status": "actual deterministic execution",
+      "manifest_sha256": "2fc8d417264e0d5531ad6911d765320239896d6dd33118aba6fad0a9c7b2c9e1",
+      "backend": "program-v3-semantic",
+      "scorer": "Local scale-aware numeric tolerance0.005 in gold units; not official TATQA",
+      "evaluated": 86,
+      "accuracy": 0.4069767441860465,
+      "coverage": 0.5348837209302325,
+      "answered_accuracy": 0.7608695652173914,
+      "accuracy_interval": {
+        "mean": 0.4069767441860465,
+        "ci95": [
+          0.3023255813953488,
+          0.5116279069767442
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "p95_latency_ms": 2.5165,
+      "abstention_reasons": {
+        "Explicit distinct periods are required": 14,
+        "Metric or category selection is ambiguous": 6,
+        "Rule cannot resolve numerator and denominator": 5,
+        "No explicit matching financial metric": 12,
+        "Selected observations do not match the explicitly requested years": 1,
+        "Exact requested metric has no numeric observations": 1,
+        "Change lacks two unambiguous periods": 1
+      },
+      "coverage_interval": {
+        "mean": 0.5348837209302325,
+        "ci95": [
+          0.4186046511627907,
+          0.6395348837209303
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "answered_accuracy_interval": {
+        "mean": 0.7608695652173914,
+        "ci95": [
+          0.6304347826086957,
+          0.8695652173913043
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "failures": {
+        "correct": 35,
+        "wrong_value_or_operation": 10,
+        "abstained": 40,
+        "wrong_unit_only": 1
+      }
+    },
+    "model": {
+      "cache_entries_before": 0,
+      "cache_entries_after": 85,
+      "new_cached_model_responses": 85,
+      "latency_status": "live local model generation plus validation/rejections",
+      "manifest_sha256": "2fc8d417264e0d5531ad6911d765320239896d6dd33118aba6fad0a9c7b2c9e1",
+      "backend": "program-v3-model",
+      "scorer": "Local scale-aware numeric tolerance0.005 in gold units; not official TATQA",
+      "evaluated": 86,
+      "accuracy": 0.627906976744186,
+      "coverage": 0.8837209302325582,
+      "answered_accuracy": 0.7105263157894737,
+      "accuracy_interval": {
+        "mean": 0.627906976744186,
+        "ci95": [
+          0.5232558139534884,
+          0.7325581395348837
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "p95_latency_ms": 7426.116,
+      "abstention_reasons": {
+        "Program proposal rejected: Program treats a paragraph date as an amount": 1,
+        "Program proposal rejected: Program operands have incompatible or unresolved dimensions/units": 4,
+        "Program proposal rejected: Program observations do not match explicitly requested years": 3,
+        "Program proposal rejected: Program operation has invalid operand count": 1,
+        "Program context exceeds the fixed source budget": 1
+      },
+      "coverage_interval": {
+        "mean": 0.8837209302325582,
+        "ci95": [
+          0.813953488372093,
+          0.9534883720930233
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "answered_accuracy_interval": {
+        "mean": 0.7105263157894737,
+        "ci95": [
+          0.6052631578947368,
+          0.8157894736842105
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "failures": {
+        "correct": 54,
+        "wrong_value_or_operation": 18,
+        "wrong_unit_only": 4,
+        "abstained": 10
+      }
+    },
+    "hybrid": {
+      "cache_entries_before": 85,
+      "cache_entries_after": 85,
+      "new_cached_model_responses": 0,
+      "latency_status": "cached replay or mixed replay/live; not pure live model latency",
+      "manifest_sha256": "2fc8d417264e0d5531ad6911d765320239896d6dd33118aba6fad0a9c7b2c9e1",
+      "backend": "program-v3-hybrid",
+      "scorer": "Local scale-aware numeric tolerance0.005 in gold units; not official TATQA",
+      "evaluated": 86,
+      "accuracy": 0.6627906976744186,
+      "coverage": 0.9418604651162791,
+      "answered_accuracy": 0.7037037037037037,
+      "accuracy_interval": {
+        "mean": 0.6627906976744186,
+        "ci95": [
+          0.5581395348837209,
+          0.7558139534883721
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "p95_latency_ms": 2.8215,
+      "abstention_reasons": {
+        "Program proposal rejected: Program operands have incompatible or unresolved dimensions/units": 2,
+        "Program proposal rejected: Program observations do not match explicitly requested years": 2,
+        "Program context exceeds the fixed source budget": 1
+      },
+      "coverage_interval": {
+        "mean": 0.9418604651162791,
+        "ci95": [
+          0.8953488372093024,
+          0.9883720930232558
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "answered_accuracy_interval": {
+        "mean": 0.7037037037037037,
+        "ci95": [
+          0.6046296296296296,
+          0.8024691358024691
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "failures": {
+        "correct": 57,
+        "wrong_value_or_operation": 21,
+        "wrong_unit_only": 3,
+        "abstained": 5
+      }
+    },
+    "agreement": {
+      "cache_entries_before": 85,
+      "cache_entries_after": 85,
+      "new_cached_model_responses": 0,
+      "latency_status": "cached replay or mixed replay/live; not pure live model latency",
+      "manifest_sha256": "2fc8d417264e0d5531ad6911d765320239896d6dd33118aba6fad0a9c7b2c9e1",
+      "backend": "program-v3-agreement",
+      "scorer": "Local scale-aware numeric tolerance0.005 in gold units; not official TATQA",
+      "evaluated": 86,
+      "accuracy": 0.37209302325581395,
+      "coverage": 0.45348837209302323,
+      "answered_accuracy": 0.8205128205128205,
+      "accuracy_interval": {
+        "mean": 0.37209302325581395,
+        "ci95": [
+          0.26744186046511625,
+          0.47674418604651164
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "p95_latency_ms": 2.95425,
+      "abstention_reasons": {
+        "Program and independent rule disagree": 37,
+        "Program proposal rejected: Program treats a paragraph date as an amount": 1,
+        "Program proposal rejected: Program operands have incompatible or unresolved dimensions/units": 4,
+        "Program proposal rejected: Program observations do not match explicitly requested years": 3,
+        "Program proposal rejected: Program operation has invalid operand count": 1,
+        "Program context exceeds the fixed source budget": 1
+      },
+      "coverage_interval": {
+        "mean": 0.45348837209302323,
+        "ci95": [
+          0.3488372093023256,
+          0.5584302325581393
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "answered_accuracy_interval": {
+        "mean": 0.8205128205128205,
+        "ci95": [
+          0.6923076923076923,
+          0.9230769230769231
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "failures": {
+        "correct": 32,
+        "wrong_value_or_operation": 6,
+        "abstained": 47,
+        "wrong_unit_only": 1
+      }
+    },
+    "strict_agreement": {
+      "cache_entries_before": 85,
+      "cache_entries_after": 85,
+      "new_cached_model_responses": 0,
+      "latency_status": "cached replay or mixed replay/live; not pure live model latency",
+      "manifest_sha256": "2fc8d417264e0d5531ad6911d765320239896d6dd33118aba6fad0a9c7b2c9e1",
+      "backend": "program-v3-strict_agreement",
+      "scorer": "Local scale-aware numeric tolerance0.005 in gold units; not official TATQA",
+      "evaluated": 86,
+      "accuracy": 0.3488372093023256,
+      "coverage": 0.43023255813953487,
+      "answered_accuracy": 0.8108108108108109,
+      "accuracy_interval": {
+        "mean": 0.3488372093023256,
+        "ci95": [
+          0.2441860465116279,
+          0.45348837209302323
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "p95_latency_ms": 2.80225,
+      "abstention_reasons": {
+        "Program and independent rule disagree": 37,
+        "Agreement lacks explicit table dimensions": 2,
+        "Program proposal rejected: Program treats a paragraph date as an amount": 1,
+        "Program proposal rejected: Program operands have incompatible or unresolved dimensions/units": 4,
+        "Program proposal rejected: Program observations do not match explicitly requested years": 3,
+        "Program proposal rejected: Program operation has invalid operand count": 1,
+        "Program context exceeds the fixed source budget": 1
+      },
+      "coverage_interval": {
+        "mean": 0.43023255813953487,
+        "ci95": [
+          0.313953488372093,
+          0.5348837209302325
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "answered_accuracy_interval": {
+        "mean": 0.8108108108108109,
+        "ci95": [
+          0.6756756756756757,
+          0.918918918918919
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "failures": {
+        "correct": 30,
+        "wrong_value_or_operation": 6,
+        "abstained": 49,
+        "wrong_unit_only": 1
+      }
+    }
+  },
+  "criterion_binding_sha256": "b176c9ed94374fcd60dac6286bf57a90dcb134c0f63601bdd6460a72208c1a37",
+  "criterion_binding_path": "reports/v3-criterion-binding.json",
+  "paired_comparisons": [
+    {
+      "first": "program-v3-semantic",
+      "second": "program-v3-model",
+      "second_minus_first_accuracy": {
+        "mean": 0.22093023255813954,
+        "ci95": [
+          0.11627906976744186,
+          0.3372093023255814
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      }
+    },
+    {
+      "first": "program-v3-semantic",
+      "second": "program-v3-hybrid",
+      "second_minus_first_accuracy": {
+        "mean": 0.2558139534883721,
+        "ci95": [
+          0.16279069767441862,
+          0.36046511627906974
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      }
+    },
+    {
+      "first": "program-v3-semantic",
+      "second": "program-v3-agreement",
+      "second_minus_first_accuracy": {
+        "mean": -0.03488372093023256,
+        "ci95": [
+          -0.08139534883720931,
+          0.0
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      }
+    },
+    {
+      "first": "program-v3-semantic",
+      "second": "program-v3-strict_agreement",
+      "second_minus_first_accuracy": {
+        "mean": -0.05813953488372093,
+        "ci95": [
+          -0.10465116279069768,
+          -0.011627906976744186
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      }
+    }
+  ],
+  "risk_control": {
+    "version": 3,
+    "method": "one-sided Clopper-Pearson with finite-grid Bonferroni",
+    "target_error": 0.1,
+    "familywise_alpha": 0.05,
+    "policy_count": 5,
+    "minimum_accepted": 20,
+    "selected_policy": null,
+    "certified": false,
+    "state": "uncertified_fail_closed",
+    "assumptions": "Fixed policies; one independently sampled question per IID document; future documents follow the calibration distribution. No guarantee under distribution shift or model/prompt drift.",
+    "policies": {
+      "semantic": {
+        "accepted": 230,
+        "errors": 53,
+        "evaluated": 400,
+        "coverage": 0.575,
+        "empirical_accepted_accuracy": 0.7695652173913043,
+        "error_upper_bound": 0.3015990514768571,
+        "certified": false,
+        "prediction_sha256": "37ef9e7ef17a1483fe5c416a08542d389e47129117c2ee085e236c213627a3c6"
+      },
+      "model": {
+        "accepted": 355,
+        "errors": 96,
+        "evaluated": 400,
+        "coverage": 0.8875,
+        "empirical_accepted_accuracy": 0.7295774647887324,
+        "error_upper_bound": 0.32906715254447816,
+        "certified": false,
+        "prediction_sha256": "12cf8f88baeb37ae8ecd9c5efa578ed2b49c4cf9e08481085b2d7f101205e0b9"
+      },
+      "hybrid": {
+        "accepted": 369,
+        "errors": 110,
+        "evaluated": 400,
+        "coverage": 0.9225,
+        "empirical_accepted_accuracy": 0.7018970189701896,
+        "error_upper_bound": 0.3568396663584129,
+        "certified": false,
+        "prediction_sha256": "abdcc9e77b5ed8ef5e88414386d4803b1139a6bbc1bafc71bb059fcb21c6861b"
+      },
+      "agreement": {
+        "accepted": 191,
+        "errors": 24,
+        "evaluated": 400,
+        "coverage": 0.4775,
+        "empirical_accepted_accuracy": 0.8743455497382199,
+        "error_upper_bound": 0.19196282474878884,
+        "certified": false,
+        "prediction_sha256": "adddaf7ed49a2e79cbb158c0146ae758bc045cae96cec326caf863279a4dab56"
+      },
+      "strict_agreement": {
+        "accepted": 183,
+        "errors": 21,
+        "evaluated": 400,
+        "coverage": 0.4575,
+        "empirical_accepted_accuracy": 0.8852459016393442,
+        "error_upper_bound": 0.18085556120544086,
+        "certified": false,
+        "prediction_sha256": "1cd9b6e125d0c9a37c0b0e49e5122f9b87458661ed6dc209cebf911ed1fcbece"
+      }
+    },
+    "artifact_sha256": "1589cff65438b5df5d035e956b5852b56873f68e5bc2ab5f262c01d8ee8a34de"
+  },
+  "risk_controlled_final": {
+    "backend": "risk-controlled-v3",
+    "selection": null,
+    "manifest_sha256": "2fc8d417264e0d5531ad6911d765320239896d6dd33118aba6fad0a9c7b2c9e1",
+    "accuracy": 0.0,
+    "coverage": 0.0,
+    "answered_accuracy": null,
+    "evaluated": 86,
+    "evaluation_mode": "Frozen calibration selection applied to identical saved policy predictions; no additional model calls",
+    "calibration_artifact_sha256": "1589cff65438b5df5d035e956b5852b56873f68e5bc2ab5f262c01d8ee8a34de"
+  },
+  "calibration": {
+    "semantic": {
+      "accuracy": 0.4425,
+      "coverage": 0.575,
+      "answered_accuracy": 0.7695652173913043,
+      "p95_latency_ms": 2.96255
+    },
+    "model": {
+      "accuracy": 0.6475,
+      "coverage": 0.8875,
+      "answered_accuracy": 0.7295774647887324,
+      "p95_latency_ms": 10819.007649999989
+    },
+    "hybrid": {
+      "accuracy": 0.6475,
+      "coverage": 0.9225,
+      "answered_accuracy": 0.7018970189701897,
+      "p95_latency_ms": 3.3558499999999962
+    },
+    "agreement": {
+      "accuracy": 0.4175,
+      "coverage": 0.4775,
+      "answered_accuracy": 0.8743455497382199,
+      "p95_latency_ms": 3.3735999999999997
+    },
+    "strict_agreement": {
+      "accuracy": 0.405,
+      "coverage": 0.4575,
+      "answered_accuracy": 0.8852459016393442,
+      "p95_latency_ms": 3.252749999999999
+    }
+  },
+  "raw_cache_entries": {
+    "development": 100,
+    "calibration": 400,
+    "final": 85
+  },
+  "latency_note": "The first model pass is live generation. Other policies replay identical raw model outputs; their measured latency is not fresh LLM inference latency.",
+  "risk_note": "Error upper bound applies only under stated fixed-policy IID document assumptions. No guarantee under distribution shift and no individual-answer confidence claim."
+}

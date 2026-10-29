@@ -1,0 +1,79 @@
+{
+  "scope": "200 project-held-out public-training contexts; one arithmetic question each",
+  "freeze_sha256": "702d0b0d5935b6e9cbf741e679a0d56a0138105bb803adf30b06852f3e517aa0",
+  "methods": {
+    "baseline": {
+      "scope": "200 project-held-out public-training contexts; one arithmetic question each",
+      "criterion_sha256": "e0ea23422df2e7a44053719e1aba81384bd01e8d45a79290286ea6621ce81371",
+      "freeze_sha256": "702d0b0d5935b6e9cbf741e679a0d56a0138105bb803adf30b06852f3e517aa0",
+      "method": "baseline",
+      "backend": "program-v3-model",
+      "manifest_sha256": "22e4ee73147724cecd0650ddae314b729bf197234d8fa650f055167bc45a05c6",
+      "cache_entries_before": 0,
+      "cache_entries_after": 200,
+      "new_cached_model_responses": 200,
+      "evaluated": 200,
+      "correct": 124,
+      "answered": 178,
+      "accuracy": 0.62,
+      "coverage": 0.89,
+      "answered_accuracy": 0.6966292134831461,
+      "p95_latency_ms": 9180.485499999999,
+      "latency_note": "Run can resume/replay cached requests; not pure live latency unless cache starts empty"
+    },
+    "layout": {
+      "scope": "200 project-held-out public-training contexts; one arithmetic question each",
+      "criterion_sha256": "e0ea23422df2e7a44053719e1aba81384bd01e8d45a79290286ea6621ce81371",
+      "freeze_sha256": "702d0b0d5935b6e9cbf741e679a0d56a0138105bb803adf30b06852f3e517aa0",
+      "method": "layout",
+      "backend": "layout-program-v4",
+      "manifest_sha256": "22e4ee73147724cecd0650ddae314b729bf197234d8fa650f055167bc45a05c6",
+      "cache_entries_before": 200,
+      "cache_entries_after": 400,
+      "new_cached_model_responses": 200,
+      "evaluated": 200,
+      "correct": 131,
+      "answered": 182,
+      "accuracy": 0.655,
+      "coverage": 0.91,
+      "answered_accuracy": 0.7197802197802198,
+      "p95_latency_ms": 10806.188499999986,
+      "latency_note": "Run can resume/replay cached requests; not pure live latency unless cache starts empty"
+    }
+  },
+  "paired_accuracy_gain": {
+    "mean": 0.035,
+    "ci95": [
+      -0.025124999999999995,
+      0.09
+    ],
+    "bootstrap_unit": "document",
+    "replicates": 1000
+  },
+  "accuracy_intervals": {
+    "baseline": {
+      "mean": 0.62,
+      "ci95": [
+        0.555,
+        0.69
+      ],
+      "bootstrap_unit": "document",
+      "replicates": 1000
+    },
+    "layout": {
+      "mean": 0.655,
+      "ci95": [
+        0.585,
+        0.715
+      ],
+      "bootstrap_unit": "document",
+      "replicates": 1000
+    }
+  },
+  "limitations": [
+    "Public training labels can be in model pretraining",
+    "Context IDs do not establish unique independent filings",
+    "Project-held-out arithmetic subset is not an official benchmark test"
+  ],
+  "risk_status": "No new calibration certificate; guarded v3 continues to abstain"
+}

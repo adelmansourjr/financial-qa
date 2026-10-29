@@ -1,0 +1,153 @@
+{
+  "scorer": "numeric_with_scale_tolerance_0.005_in_gold_units; NOT official TAT-QA EM/F1",
+  "selection": "first eligible arithmetic questions in pinned split; no gold-derived inputs",
+  "dataset_examples": 1668,
+  "evaluated": 10,
+  "accuracy": 0.1,
+  "coverage": 0.3,
+  "answered_accuracy": 0.3333333333333333,
+  "p95_latency_ms": 10101.0086,
+  "abstention_reasons": {
+    "Provide unique evidence citations": 4,
+    "Variable r4c3 has no cited source": 1,
+    "Local model returned no usable plan: 1 validation error for Plan\n  Invalid JSON: EOF while parsing a string at line 1 column 854 [type=json_invalid, input_value='{\"expression\":\"(192-166)...m | 2018 \\\\u20acm | 201', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid": 1,
+    "Local model returned no usable plan: 2 validation errors for Plan\ncitations.0\n  Input should be a valid string [type=string_type, input_value={'id': 'R0', 'text': 'Inc...tement expense |  |  |'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_type\ncitations.1\n  Input should be a valid string [type=string_type, input_value={'id': 'P8', 'text': 'At ...: '31', 'p8n1': '2019'}}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_type": 1
+  },
+  "predictions": [
+    {
+      "id": "eb787966-fa02-401f-bfaf-ccabf3828b23",
+      "document_id": "3ffd9053-a45d-491c-957a-1b2fa0af0570",
+      "predicted": "-22.22222222222222222222222222",
+      "predicted_scale": "percent",
+      "gold": -12.6,
+      "gold_scale": "million",
+      "correct": false,
+      "abstained": false,
+      "reason": "",
+      "latency_ms": 8481.845
+    },
+    {
+      "id": "05b670d3-5b19-438c-873f-9bf6de29c69e",
+      "document_id": "3ffd9053-a45d-491c-957a-1b2fa0af0570",
+      "predicted": null,
+      "predicted_scale": "percent",
+      "gold": -22.22,
+      "gold_scale": "percent",
+      "correct": false,
+      "abstained": true,
+      "reason": "Provide unique evidence citations",
+      "latency_ms": 8058.716
+    },
+    {
+      "id": "b2786c1a-37de-4120-b03c-32bf5c81f157",
+      "document_id": "53474060-2736-46cb-bd97-1eb42f0ff3c1",
+      "predicted": null,
+      "predicted_scale": "percent",
+      "gold": -94,
+      "gold_scale": "million",
+      "correct": false,
+      "abstained": true,
+      "reason": "Provide unique evidence citations",
+      "latency_ms": 7022.944
+    },
+    {
+      "id": "fe11f001-3bfe-4089-8108-412676f0a780",
+      "document_id": "53474060-2736-46cb-bd97-1eb42f0ff3c1",
+      "predicted": null,
+      "predicted_scale": "percent",
+      "gold": -12.14,
+      "gold_scale": "percent",
+      "correct": false,
+      "abstained": true,
+      "reason": "Provide unique evidence citations",
+      "latency_ms": 5129.8
+    },
+    {
+      "id": "5103aed0-b4e8-4fae-bf78-e2c9f4ba84cf",
+      "document_id": "52164b70-6973-4844-af6a-76e8f1298d64",
+      "predicted": "-30.0",
+      "predicted_scale": "percent",
+      "gold": 2.1,
+      "gold_scale": "percent",
+      "correct": false,
+      "abstained": false,
+      "reason": "",
+      "latency_ms": 6605.78
+    },
+    {
+      "id": "4dc8be43-d8d9-4b08-9ffd-9c19012361ce",
+      "document_id": "52164b70-6973-4844-af6a-76e8f1298d64",
+      "predicted": "6.666666666666666666666666667",
+      "predicted_scale": "percent",
+      "gold": 6.67,
+      "gold_scale": "percent",
+      "correct": true,
+      "abstained": false,
+      "reason": "",
+      "latency_ms": 6146.333
+    },
+    {
+      "id": "6c44a1a8-0785-43a0-90ab-7e21df2c57d9",
+      "document_id": "52164b70-6973-4844-af6a-76e8f1298d64",
+      "predicted": null,
+      "predicted_scale": "percent",
+      "gold": -8.11,
+      "gold_scale": "percent",
+      "correct": false,
+      "abstained": true,
+      "reason": "Variable r4c3 has no cited source",
+      "latency_ms": 7157.173
+    },
+    {
+      "id": "a0414f81-8dc2-44b2-a441-2c9d9c805c4d",
+      "document_id": "6bf238a5-0a3e-492d-91f8-7f62d3b37fba",
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 172,
+      "gold_scale": "million",
+      "correct": false,
+      "abstained": true,
+      "reason": "Local model returned no usable plan: 1 validation error for Plan\n  Invalid JSON: EOF while parsing a string at line 1 column 854 [type=json_invalid, input_value='{\"expression\":\"(192-166)...m | 2018 \\\\u20acm | 201', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid",
+      "latency_ms": 10424.447
+    },
+    {
+      "id": "bf7abd62-d9cd-48d2-8826-1457684019a3",
+      "document_id": "6bf238a5-0a3e-492d-91f8-7f62d3b37fba",
+      "predicted": null,
+      "predicted_scale": "percent",
+      "gold": 50.5,
+      "gold_scale": "million",
+      "correct": false,
+      "abstained": true,
+      "reason": "Provide unique evidence citations",
+      "latency_ms": 5009.407
+    },
+    {
+      "id": "4d259081-6da6-44bd-8830-e4de0031744c",
+      "document_id": "6bf238a5-0a3e-492d-91f8-7f62d3b37fba",
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 121.5,
+      "gold_scale": "million",
+      "correct": false,
+      "abstained": true,
+      "reason": "Local model returned no usable plan: 2 validation errors for Plan\ncitations.0\n  Input should be a valid string [type=string_type, input_value={'id': 'R0', 'text': 'Inc...tement expense |  |  |'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_type\ncitations.1\n  Input should be a valid string [type=string_type, input_value={'id': 'P8', 'text': 'At ...: '31', 'p8n1': '2019'}}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_type",
+      "latency_ms": 9705.695
+    }
+  ],
+  "backend": "llm",
+  "model": "qwen2.5-1.5b-q4",
+  "generation": {
+    "temperature": 0,
+    "max_tokens": 220,
+    "response_format": "json_object"
+  },
+  "cache": "raw response replay keyed by endpoint/model/prompt/settings",
+  "dataset_revision": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+  "data_receipt": {
+    "url": "https://raw.githubusercontent.com/NExTplusplus/TAT-QA/870accc41953dcde885aabeb963d94aabdc0fbc3/dataset_raw/tatqa_dataset_dev.json",
+    "sha256": "8da095a819af6db3c14877c6df2d4d29960e41d1a63dd1fa853507bd2a616af5",
+    "bytes": 1637431,
+    "downloaded_at": "2026-10-21T12:00:36.096718+00:00"
+  }
+}

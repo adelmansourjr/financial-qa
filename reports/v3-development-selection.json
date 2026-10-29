@@ -1,0 +1,34 @@
+{
+  "basis": "The 100 training development documents only, declared before the independent 400-document calibration completed and before final 86-document outcomes.",
+  "experimental_interactive_policy": "model",
+  "serverless_default": "semantic",
+  "risk_controlled_selection": "Unchanged five-policy independent calibration gate",
+  "reason": "The model had the highest development unconditional accuracy: 66/100 compared with 64/100 for hybrid. It also had higher accepted accuracy. This does not claim highest future or final accuracy.",
+  "development_metrics": {
+    "semantic": {
+      "accuracy": 0.45,
+      "coverage": 0.59,
+      "answered_accuracy": 0.7627118644067796
+    },
+    "model": {
+      "accuracy": 0.66,
+      "coverage": 0.89,
+      "answered_accuracy": 0.7415730337078652
+    },
+    "hybrid": {
+      "accuracy": 0.64,
+      "coverage": 0.93,
+      "answered_accuracy": 0.6881720430107527
+    },
+    "agreement": {
+      "accuracy": 0.45,
+      "coverage": 0.5,
+      "answered_accuracy": 0.9
+    },
+    "strict_agreement": {
+      "accuracy": 0.44,
+      "coverage": 0.48,
+      "answered_accuracy": 0.9166666666666666
+    }
+  }
+}

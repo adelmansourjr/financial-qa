@@ -1,0 +1,39 @@
+{
+  "protocol": "selective-v2",
+  "selected_explicit_model_policy": "hybrid",
+  "interactive_default": "semantic",
+  "selection_basis": "Separate40-document training validation. No final100 labels used. Deterministic interactive default required by launcher; explicit model policy chosen by frozen threshold/ranking.",
+  "validation": {
+    "semantic": {
+      "accuracy": 0.6,
+      "coverage": 0.675,
+      "answered_accuracy": 0.8888888888888888,
+      "evaluated": 40
+    },
+    "selective": {
+      "accuracy": 0.5,
+      "coverage": 0.675,
+      "answered_accuracy": 0.7407407407407407,
+      "evaluated": 40
+    },
+    "hybrid": {
+      "accuracy": 0.75,
+      "coverage": 0.9,
+      "answered_accuracy": 0.8333333333333334,
+      "evaluated": 40
+    },
+    "agreement": {
+      "accuracy": 0.35,
+      "coverage": 0.4,
+      "answered_accuracy": 0.875,
+      "evaluated": 40
+    }
+  },
+  "prediction_code_sha256": {
+    "selective.py": "f49769a83ce7de2f9bca7cd47714925cc7640b63854af6fdb7fbd06ff61e69d3",
+    "structured.py": "68a904b8137cf068a859b7e94acf152e7e2638a5a07810102f4f9a78a0d82742",
+    "context.py": "442b13c870df179a94a0fdc39611cfa13e58ff446760e7389ea414baabada60e",
+    "retrieval.py": "15623d9efe7e262a56c7d0890b2e7bddc9bdacc26fb6d64aed945636ac3f34b6"
+  },
+  "manifest_sha256": "4de1e30cf6c85a9d504d7bc5e79f6e5907a57835602d462d911d6f856e9cbb06"
+}

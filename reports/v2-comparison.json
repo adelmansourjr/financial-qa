@@ -1,0 +1,70 @@
+{
+  "comparisons": [
+    {
+      "first": "header",
+      "second": "baseline",
+      "second_minus_first_accuracy": {
+        "mean": -0.19,
+        "ci95": [
+          -0.28,
+          -0.1
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      }
+    },
+    {
+      "first": "header",
+      "second": "semantic",
+      "second_minus_first_accuracy": {
+        "mean": 0.25,
+        "ci95": [
+          0.15,
+          0.35
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      }
+    },
+    {
+      "first": "header",
+      "second": "selective",
+      "second_minus_first_accuracy": {
+        "mean": 0.16,
+        "ci95": [
+          0.05,
+          0.26
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      }
+    },
+    {
+      "first": "header",
+      "second": "hybrid",
+      "second_minus_first_accuracy": {
+        "mean": 0.33,
+        "ci95": [
+          0.23,
+          0.43
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      }
+    },
+    {
+      "first": "header",
+      "second": "agreement",
+      "second_minus_first_accuracy": {
+        "mean": 0.07,
+        "ci95": [
+          -0.02,
+          0.16
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      }
+    }
+  ],
+  "note": "Paired document bootstrap; local numeric scorer, not official TATQA. All methods use the same frozen100 documents."
+}

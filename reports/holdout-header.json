@@ -1,0 +1,1090 @@
+{
+  "backend": "HeaderAwareBaseline",
+  "scorer": "Local scale-aware numeric tolerance; not official TAT-QA EM/F1",
+  "evaluated": 50,
+  "accuracy": 0.34,
+  "accuracy_interval": {
+    "mean": 0.34,
+    "ci95": [
+      0.21950000000000003,
+      0.4604999999999996
+    ],
+    "bootstrap_unit": "document",
+    "replicates": 1000
+  },
+  "coverage": 0.52,
+  "answered_accuracy": 0.6538461538461539,
+  "failures": {
+    "abstained": 24,
+    "correct": 17,
+    "wrong_value_or_unit": 9
+  },
+  "abstention_reasons": {
+    "Requested year is missing": 3,
+    "No unambiguous matching metric": 2,
+    "Several metrics match equally": 8,
+    "No explicit year could be resolved": 7,
+    "Unsupported two-year operation": 1,
+    "Column headers are ambiguous": 2,
+    "Question requires more than a direct lookup": 1
+  },
+  "p95_latency_ms": 0.9414999999999999,
+  "manifest_sha256": "5af9d883ff77ad3ed69d3e67349f8d87460593fa4a0510214d051eb9feaaa61a",
+  "predictions": [
+    {
+      "id": "cfbbdf60-d0d7-458c-853c-d1ffa1e8356f",
+      "document_id": "64587c9c-afc2-45a9-8f47-df5dd18bd913",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 933,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "Requested year is missing",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Requested year is missing"
+      },
+      "latency_ms": 0.833
+    },
+    {
+      "id": "190316bd-8f09-4e44-9648-e83d0bab44fb",
+      "document_id": "8b2c7a63-0dc5-4a6f-83f1-6f9b27a8016c",
+      "correct": true,
+      "predicted": "150092",
+      "predicted_scale": "thousand",
+      "gold": 150092,
+      "gold_scale": "thousand",
+      "abstained": false,
+      "failure": "correct",
+      "reason": "",
+      "plan": {
+        "expression": "r11c1-r11c2",
+        "citations": [
+          "R11"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled difference over 2 source variables"
+      },
+      "latency_ms": 0.561
+    },
+    {
+      "id": "0a12160d-f72a-44ec-9c31-5815d81268a0",
+      "document_id": "d19212a0-822f-4fe2-8d58-2f81af43d6c3",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 1.8,
+      "gold_scale": "million",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "No unambiguous matching metric",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "No unambiguous matching metric"
+      },
+      "latency_ms": 0.379
+    },
+    {
+      "id": "9579685b-84d4-40e9-85d7-ff61a8695d32",
+      "document_id": "43f8c656-9ff1-4b11-b64b-20c049094b6e",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": -3.52,
+      "gold_scale": "",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "Several metrics match equally",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Several metrics match equally"
+      },
+      "latency_ms": 0.398
+    },
+    {
+      "id": "78d004fb-a7b1-4ad5-8870-a7e0462e999e",
+      "document_id": "5e72a0cd-a892-4d3e-bfa8-403c33aaf40f",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 36.01,
+      "gold_scale": "percent",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "No explicit year could be resolved",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "No explicit year could be resolved"
+      },
+      "latency_ms": 0.616
+    },
+    {
+      "id": "e46197ab-25b7-4ecc-8717-50d84c336019",
+      "document_id": "1aa69af8-7349-44da-a558-09e5d5fb73c5",
+      "correct": true,
+      "predicted": "2359.5",
+      "predicted_scale": "thousand",
+      "gold": 2359.5,
+      "gold_scale": "thousand",
+      "abstained": false,
+      "failure": "correct",
+      "reason": "",
+      "plan": {
+        "expression": "(r4c1+r4c2)/(1+1)",
+        "citations": [
+          "R4"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled average over 2 source variables"
+      },
+      "latency_ms": 0.761
+    },
+    {
+      "id": "521b36fd-2b60-466b-b420-fbf776531e37",
+      "document_id": "fb333978-9a21-401f-9660-ccdff2e36d02",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 17842,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "Unsupported two-year operation",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Unsupported two-year operation"
+      },
+      "latency_ms": 0.258
+    },
+    {
+      "id": "b4a95b0a-37ee-4d0b-bc03-12bcd8753011",
+      "document_id": "6c75ac30-a0e0-4edc-a1f2-889c59e394ec",
+      "correct": false,
+      "predicted": "-87.04206241519674355495251018",
+      "predicted_scale": "percent",
+      "gold": 87.04,
+      "gold_scale": "percent",
+      "abstained": false,
+      "failure": "wrong_value_or_unit",
+      "reason": "",
+      "plan": {
+        "expression": "(r3c1-r3c2)/r3c2*100",
+        "citations": [
+          "R3"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 0.297
+    },
+    {
+      "id": "48e5f6f9-a340-43e8-962d-f35ae0712b05",
+      "document_id": "9afaa852-4103-4782-9109-34104931dbc1",
+      "correct": true,
+      "predicted": "-181",
+      "predicted_scale": "thousand",
+      "gold": -181,
+      "gold_scale": "thousand",
+      "abstained": false,
+      "failure": "correct",
+      "reason": "",
+      "plan": {
+        "expression": "r7c1-r7c2",
+        "citations": [
+          "R7"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled difference over 2 source variables"
+      },
+      "latency_ms": 0.925
+    },
+    {
+      "id": "34e0adca-febe-4862-a4db-8581df95e44b",
+      "document_id": "5e60c056-5073-441d-8525-7f834deb5c64",
+      "correct": false,
+      "predicted": "10.0",
+      "predicted_scale": "million",
+      "gold": 25.06,
+      "gold_scale": "percent",
+      "abstained": false,
+      "failure": "wrong_value_or_unit",
+      "reason": "",
+      "plan": {
+        "expression": "r2c1",
+        "citations": [
+          "R2"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled lookup over 1 source variables"
+      },
+      "latency_ms": 0.41
+    },
+    {
+      "id": "4b1ab745-9b93-495b-9c45-ede4e32b7657",
+      "document_id": "ee5ecf56-5866-45e3-8fb3-adbb99a9ba3e",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 0.45,
+      "gold_scale": "percent",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "No explicit year could be resolved",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "No explicit year could be resolved"
+      },
+      "latency_ms": 0.613
+    },
+    {
+      "id": "33fd26df-9da7-489c-96e6-bd43a8b79d89",
+      "document_id": "88f5faa2-dd5b-48bb-8b53-8edd6714f894",
+      "correct": true,
+      "predicted": "12381521",
+      "predicted_scale": "",
+      "gold": 12381521,
+      "gold_scale": "",
+      "abstained": false,
+      "failure": "correct",
+      "reason": "",
+      "plan": {
+        "expression": "(r2c1+r2c2)/(1+1)",
+        "citations": [
+          "R2"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled average over 2 source variables"
+      },
+      "latency_ms": 0.394
+    },
+    {
+      "id": "d8637395-dbdb-4d49-a48b-ef14e97ebce5",
+      "document_id": "ec3603ca-033e-4f41-a246-a19866d8f84d",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 303118,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "Several metrics match equally",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Several metrics match equally"
+      },
+      "latency_ms": 0.546
+    },
+    {
+      "id": "4cdc8b2e-e3ea-4c36-bbda-7c409a84cc78",
+      "document_id": "7a9fdd23-2adc-4cf5-8761-5c7fbec53e6e",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 20.81,
+      "gold_scale": "percent",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "Several metrics match equally",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Several metrics match equally"
+      },
+      "latency_ms": 0.219
+    },
+    {
+      "id": "a0052d66-aa9c-47af-936c-07cd16f817ee",
+      "document_id": "56506759-74a2-4c23-bb16-263af3227c1c",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 4.07,
+      "gold_scale": "percent",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "No explicit year could be resolved",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "No explicit year could be resolved"
+      },
+      "latency_ms": 0.284
+    },
+    {
+      "id": "20092aeb-d39f-4b50-b927-0602b8a95c08",
+      "document_id": "6abeb5d3-0dfa-497f-a7db-bda257756a99",
+      "correct": true,
+      "predicted": "29.16666666666666666666666667",
+      "predicted_scale": "percent",
+      "gold": 29.17,
+      "gold_scale": "percent",
+      "abstained": false,
+      "failure": "correct",
+      "reason": "",
+      "plan": {
+        "expression": "(r3c1-r3c2)/r3c2*100",
+        "citations": [
+          "R3"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 0.201
+    },
+    {
+      "id": "4ece6b8e-230b-475b-8354-b7d281332895",
+      "document_id": "04b25f9b-a271-4b2c-86ff-3e94f9cfb6ad",
+      "correct": true,
+      "predicted": "5.463576158940397350993377483",
+      "predicted_scale": "percent",
+      "gold": 5.46,
+      "gold_scale": "percent",
+      "abstained": false,
+      "failure": "correct",
+      "reason": "",
+      "plan": {
+        "expression": "(r3c1-r3c2)/r3c2*100",
+        "citations": [
+          "R3"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 0.562
+    },
+    {
+      "id": "7707ff1b-ca2c-4d72-aad1-81315a5f54ff",
+      "document_id": "6d9e104c-a89c-4d15-bacf-47c19d8d6445",
+      "correct": true,
+      "predicted": "49872",
+      "predicted_scale": "thousand",
+      "gold": 49872,
+      "gold_scale": "thousand",
+      "abstained": false,
+      "failure": "correct",
+      "reason": "",
+      "plan": {
+        "expression": "r8c1-r8c2",
+        "citations": [
+          "R8"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled difference over 2 source variables"
+      },
+      "latency_ms": 0.547
+    },
+    {
+      "id": "e378f03f-8e13-4020-b4ba-641859e16e25",
+      "document_id": "e5fc54e8-4656-4277-a0a8-db9a938aca3d",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 3.94,
+      "gold_scale": "percent",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "Column headers are ambiguous",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Column headers are ambiguous"
+      },
+      "latency_ms": 0.442
+    },
+    {
+      "id": "c2c0704d-355b-45d8-ac15-d315be9f3c57",
+      "document_id": "736f65a8-7b6b-47bc-8c6a-3a2d641695bc",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 4558,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "No explicit year could be resolved",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "No explicit year could be resolved"
+      },
+      "latency_ms": 0.473
+    },
+    {
+      "id": "9cd0120a-2c6d-48a6-b13f-034cf22d6dd1",
+      "document_id": "ecbdd061-4537-4633-9431-642c65fe627a",
+      "correct": true,
+      "predicted": "66.94345730269870870131240984",
+      "predicted_scale": "percent",
+      "gold": 66.94,
+      "gold_scale": "percent",
+      "abstained": false,
+      "failure": "correct",
+      "reason": "",
+      "plan": {
+        "expression": "(r11c1-r11c2)/r11c2*100",
+        "citations": [
+          "R11"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 0.496
+    },
+    {
+      "id": "22ea63c7-2e41-48d8-8133-1fd9acebbb5b",
+      "document_id": "0027cf6e-f6e8-4d8b-b4ee-0b9f9aeb1f54",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 0.53,
+      "gold_scale": "percent",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "Question requires more than a direct lookup",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Question requires more than a direct lookup"
+      },
+      "latency_ms": 0.807
+    },
+    {
+      "id": "0e22cef8-0342-4085-b5ad-a9ea512a8b3f",
+      "document_id": "3eee9fc1-882b-4146-8c58-55a1e687a5d5",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 1033.5,
+      "gold_scale": "million",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "Several metrics match equally",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Several metrics match equally"
+      },
+      "latency_ms": 0.244
+    },
+    {
+      "id": "14beaf69-31ed-4967-99b0-132a760d9ede",
+      "document_id": "d8d662b8-dbd2-4450-a1fd-7cf111b4236a",
+      "correct": false,
+      "predicted": "-12659",
+      "predicted_scale": "thousand",
+      "gold": -654,
+      "gold_scale": "thousand",
+      "abstained": false,
+      "failure": "wrong_value_or_unit",
+      "reason": "",
+      "plan": {
+        "expression": "r8c1-r8c2",
+        "citations": [
+          "R8"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled difference over 2 source variables"
+      },
+      "latency_ms": 0.473
+    },
+    {
+      "id": "9332c840-68f6-43e1-a06c-902dae3fef81",
+      "document_id": "0a75d1da-9beb-4a61-b2f4-06cff98b755e",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 445.7,
+      "gold_scale": "million",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "Several metrics match equally",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Several metrics match equally"
+      },
+      "latency_ms": 1.104
+    },
+    {
+      "id": "54fec8b2-3105-45fc-aa90-fd07cdd582ae",
+      "document_id": "4bf2b6c8-e1f4-4d67-8008-c2ebcf478ed4",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 48.71,
+      "gold_scale": "",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "No unambiguous matching metric",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "No unambiguous matching metric"
+      },
+      "latency_ms": 0.955
+    },
+    {
+      "id": "176587d4-2707-40ee-9bd5-cd2d75e17980",
+      "document_id": "354bb757-7108-4a32-869a-5220a7f03efe",
+      "correct": true,
+      "predicted": "-13.24575540036789243215965880",
+      "predicted_scale": "percent",
+      "gold": -13.25,
+      "gold_scale": "percent",
+      "abstained": false,
+      "failure": "correct",
+      "reason": "",
+      "plan": {
+        "expression": "(r2c1-r2c2)/r2c2*100",
+        "citations": [
+          "R2"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 0.456
+    },
+    {
+      "id": "f46b6e30-d8a2-4d40-b485-b8c0c98d1b5b",
+      "document_id": "c6df9f0a-4811-48ab-a453-0cb6a7baa35c",
+      "correct": false,
+      "predicted": "271133",
+      "predicted_scale": "",
+      "gold": 78.55,
+      "gold_scale": "percent",
+      "abstained": false,
+      "failure": "wrong_value_or_unit",
+      "reason": "",
+      "plan": {
+        "expression": "r4c1",
+        "citations": [
+          "R4"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled lookup over 1 source variables"
+      },
+      "latency_ms": 0.291
+    },
+    {
+      "id": "8c0bb13b-4ba4-4349-a697-dd2ab11723f8",
+      "document_id": "65cffa0c-2ccc-455d-bc8c-5847bb4866e0",
+      "correct": false,
+      "predicted": "-5.263157894736842105263157895",
+      "predicted_scale": "percent",
+      "gold": -0.5,
+      "gold_scale": "percent",
+      "abstained": false,
+      "failure": "wrong_value_or_unit",
+      "reason": "",
+      "plan": {
+        "expression": "(r4c1-r4c2)/r4c2*100",
+        "citations": [
+          "R4"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 0.527
+    },
+    {
+      "id": "359f9c4c-b405-40e5-88b5-86bfa0069b89",
+      "document_id": "4c2f88e1-b5d4-4565-a98a-04f56127e4af",
+      "correct": true,
+      "predicted": "185.2994555353901996370235935",
+      "predicted_scale": "percent",
+      "gold": 185.3,
+      "gold_scale": "percent",
+      "abstained": false,
+      "failure": "correct",
+      "reason": "",
+      "plan": {
+        "expression": "(r7c2-r7c3)/r7c3*100",
+        "citations": [
+          "R7"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 0.599
+    },
+    {
+      "id": "872a7a6b-ed57-479b-a532-96eb6ccc9b7c",
+      "document_id": "13d33e02-138d-4ee6-93ef-35d0778b11cd",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": -611,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "No explicit year could be resolved",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "No explicit year could be resolved"
+      },
+      "latency_ms": 0.502
+    },
+    {
+      "id": "4c42c33e-d8b3-4b54-bb22-76c5600fbc09",
+      "document_id": "34f239a7-17d1-4f11-8267-adc13f486668",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 62444,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "Several metrics match equally",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Several metrics match equally"
+      },
+      "latency_ms": 0.6
+    },
+    {
+      "id": "2af4c7cf-79a2-4bdf-81b8-dbaff5081bc3",
+      "document_id": "47fb3538-2c0a-4a82-97b2-90a1543b871d",
+      "correct": false,
+      "predicted": "-35071",
+      "predicted_scale": "",
+      "gold": 35071,
+      "gold_scale": "",
+      "abstained": false,
+      "failure": "wrong_value_or_unit",
+      "reason": "",
+      "plan": {
+        "expression": "r3c3-r3c1",
+        "citations": [
+          "R3"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled difference over 2 source variables"
+      },
+      "latency_ms": 0.547
+    },
+    {
+      "id": "4c5a0a4f-9e3f-434f-831b-530327547a01",
+      "document_id": "a8559ad7-3e4c-41c5-a3de-d2927413484c",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 0.59,
+      "gold_scale": "",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "Requested year is missing",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Requested year is missing"
+      },
+      "latency_ms": 0.653
+    },
+    {
+      "id": "b688d135-b29a-4e76-9593-138c3e2812e7",
+      "document_id": "879fb3ae-fc64-49f1-8a85-5756ff4ee3b6",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": -400464,
+      "gold_scale": "",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "Requested year is missing",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Requested year is missing"
+      },
+      "latency_ms": 0.455
+    },
+    {
+      "id": "6f65d33d-c721-45f9-9519-9ea4f5d7e740",
+      "document_id": "d62ea892-9da4-4f67-928d-35e78b798e5e",
+      "correct": true,
+      "predicted": "368.1308679823721019352366354",
+      "predicted_scale": "percent",
+      "gold": 368.13,
+      "gold_scale": "percent",
+      "abstained": false,
+      "failure": "correct",
+      "reason": "",
+      "plan": {
+        "expression": "(r3c1-r3c2)/r3c2*100",
+        "citations": [
+          "R3"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 0.426
+    },
+    {
+      "id": "e314bfab-8cd6-4bb3-b0e6-df664300c380",
+      "document_id": "e6c3cb87-13e2-49c8-81dc-d913b2071499",
+      "correct": false,
+      "predicted": "38059",
+      "predicted_scale": "million",
+      "gold": -1859,
+      "gold_scale": "million",
+      "abstained": false,
+      "failure": "wrong_value_or_unit",
+      "reason": "",
+      "plan": {
+        "expression": "r9c1-r9c2",
+        "citations": [
+          "R9"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled difference over 2 source variables"
+      },
+      "latency_ms": 0.651
+    },
+    {
+      "id": "c48a89ed-da90-4c07-b51e-2e77b5817f3d",
+      "document_id": "329e3ff5-0cff-4849-8fd0-9b1e5606f6ca",
+      "correct": true,
+      "predicted": "1.572126619927767155300616104",
+      "predicted_scale": "percent",
+      "gold": 1.57,
+      "gold_scale": "percent",
+      "abstained": false,
+      "failure": "correct",
+      "reason": "",
+      "plan": {
+        "expression": "(r4c1-r4c2)/r4c2*100",
+        "citations": [
+          "R4"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 0.418
+    },
+    {
+      "id": "6a9b6186-6fea-4846-a230-053903f31e2d",
+      "document_id": "78ccf71e-46ed-4e10-b3e4-80de497780cc",
+      "correct": false,
+      "predicted": "-5.714285714285714285714285714",
+      "predicted_scale": "percent",
+      "gold": 4,
+      "gold_scale": "percent",
+      "abstained": false,
+      "failure": "wrong_value_or_unit",
+      "reason": "",
+      "plan": {
+        "expression": "(r3c3-r3c1)/r3c1*100",
+        "citations": [
+          "R3"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 0.366
+    },
+    {
+      "id": "d547e798-a829-4b95-af68-e50705558993",
+      "document_id": "704b5994-6fee-43b2-a9c9-e5676eac92a1",
+      "correct": true,
+      "predicted": "77718",
+      "predicted_scale": "thousand",
+      "gold": 77718,
+      "gold_scale": "thousand",
+      "abstained": false,
+      "failure": "correct",
+      "reason": "",
+      "plan": {
+        "expression": "(r4c1+r4c2)/(1+1)",
+        "citations": [
+          "R4"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled average over 2 source variables"
+      },
+      "latency_ms": 0.891
+    },
+    {
+      "id": "c29f8c45-be8a-437f-be4d-c844ae303f7a",
+      "document_id": "073a0021-1564-4fe2-8759-73b15dd69ea1",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 1149,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "Column headers are ambiguous",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Column headers are ambiguous"
+      },
+      "latency_ms": 0.89
+    },
+    {
+      "id": "5090ac49-8f00-4c8a-9f15-2fe1d8b77a67",
+      "document_id": "9e0ae25d-0080-4fb6-8396-db61af489520",
+      "correct": true,
+      "predicted": "-52.44646621546654831909464107",
+      "predicted_scale": "percent",
+      "gold": -52.45,
+      "gold_scale": "percent",
+      "abstained": false,
+      "failure": "correct",
+      "reason": "",
+      "plan": {
+        "expression": "(r5c1-r5c2)/r5c2*100",
+        "citations": [
+          "R5"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 0.423
+    },
+    {
+      "id": "f2dec8da-0005-4583-b005-fb87ed60f0b1",
+      "document_id": "3661fba5-2876-41d7-9213-e86a6d5078dd",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 1136.66,
+      "gold_scale": "percent",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "Several metrics match equally",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Several metrics match equally"
+      },
+      "latency_ms": 0.416
+    },
+    {
+      "id": "5de0027a-4080-4423-8987-a11e2a2fc793",
+      "document_id": "69d42a72-0262-4962-94aa-a7c456f6b9d5",
+      "correct": true,
+      "predicted": "-3269",
+      "predicted_scale": "thousand",
+      "gold": -3269,
+      "gold_scale": "thousand",
+      "abstained": false,
+      "failure": "correct",
+      "reason": "",
+      "plan": {
+        "expression": "(r5c1+r5c2)/(1+1)",
+        "citations": [
+          "R5"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled average over 2 source variables"
+      },
+      "latency_ms": 0.462
+    },
+    {
+      "id": "a8a7c154-567e-4b21-878e-85dab9d28fc9",
+      "document_id": "d423c6ef-50f3-4535-a74f-13cb46728627",
+      "correct": true,
+      "predicted": "20.60273972602739726027397260",
+      "predicted_scale": "percent",
+      "gold": 20.6,
+      "gold_scale": "percent",
+      "abstained": false,
+      "failure": "correct",
+      "reason": "",
+      "plan": {
+        "expression": "(r14c1-r14c2)/r14c2*100",
+        "citations": [
+          "R14"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled percent_change over 2 source variables"
+      },
+      "latency_ms": 0.961
+    },
+    {
+      "id": "a58cbfcf-2568-4bd6-ae26-b64656f22dcf",
+      "document_id": "875fa4bd-a56d-4f03-bd52-4ecddf547686",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": -74.31,
+      "gold_scale": "percent",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "Several metrics match equally",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Several metrics match equally"
+      },
+      "latency_ms": 0.377
+    },
+    {
+      "id": "54b11fb5-014a-4042-affa-fe96ea5e5eaa",
+      "document_id": "fe20d447-868a-42f1-8073-843cb3a1e3e8",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 96.33,
+      "gold_scale": "million",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "No explicit year could be resolved",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "No explicit year could be resolved"
+      },
+      "latency_ms": 0.317
+    },
+    {
+      "id": "9750180c-588d-4ba3-bc94-297d64b50e44",
+      "document_id": "4e94f70f-b7e3-453e-ae92-846768589e75",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 29.84,
+      "gold_scale": "percent",
+      "abstained": true,
+      "failure": "abstained",
+      "reason": "No explicit year could be resolved",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "No explicit year could be resolved"
+      },
+      "latency_ms": 0.511
+    },
+    {
+      "id": "c4a0f2ab-d7d0-448a-b5f7-85310e5e3427",
+      "document_id": "b89656a2-196d-42d3-98bf-f58d51aedbb4",
+      "correct": false,
+      "predicted": "32137",
+      "predicted_scale": "thousand",
+      "gold": 92437,
+      "gold_scale": "thousand",
+      "abstained": false,
+      "failure": "wrong_value_or_unit",
+      "reason": "",
+      "plan": {
+        "expression": "r6c1",
+        "citations": [
+          "R6"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled lookup over 1 source variables"
+      },
+      "latency_ms": 0.505
+    },
+    {
+      "id": "d4f18464-2a67-4768-8540-1a9bf577e14d",
+      "document_id": "6455b0fa-9637-4d36-95d6-2890c7728f54",
+      "correct": true,
+      "predicted": "230",
+      "predicted_scale": "thousand",
+      "gold": 230,
+      "gold_scale": "thousand",
+      "abstained": false,
+      "failure": "correct",
+      "reason": "",
+      "plan": {
+        "expression": "r5c1-r5c2",
+        "citations": [
+          "R5"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled difference over 2 source variables"
+      },
+      "latency_ms": 0.679
+    }
+  ],
+  "model": null,
+  "dataset_revision": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+  "protocol": "structured-v1, frozen after training-only iteration"
+}

@@ -1,0 +1,2 @@
+# Optional publication figures; not required for inference or the offline tests.
+matplotlib>=3.8,<4

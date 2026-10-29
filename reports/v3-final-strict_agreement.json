@@ -1,0 +1,3327 @@
+{
+  "cache_entries_before": 85,
+  "cache_entries_after": 85,
+  "new_cached_model_responses": 0,
+  "latency_status": "cached replay or mixed replay/live; not pure live model latency",
+  "manifest_sha256": "2fc8d417264e0d5531ad6911d765320239896d6dd33118aba6fad0a9c7b2c9e1",
+  "identity": {
+    "model": "qwen3-4b-q4-nonthinking",
+    "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "temperature": 0.7,
+    "seed": 42,
+    "max_tokens": 240,
+    "top_p": 0.8,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "prompt_sha256": "3778afe2d1476a8d9e8fccd9d9b3fe370afc7320d0b687d47a5e919158f3a65a",
+    "prediction_code_sha256": {
+      "reasoning_v3.py": "81f353320eb8e05951d81186cbda561f47aa0749a343f562c46234cc849bbbfc",
+      "selective.py": "f49769a83ce7de2f9bca7cd47714925cc7640b63854af6fdb7fbd06ff61e69d3",
+      "structured.py": "68a904b8137cf068a859b7e94acf152e7e2638a5a07810102f4f9a78a0d82742",
+      "context.py": "442b13c870df179a94a0fdc39611cfa13e58ff446760e7389ea414baabada60e",
+      "data.py": "37821bf1affc033a8e8b09181d5b45d4c42687dea7e83d68424f7ac6cdbf12db",
+      "retrieval.py": "15623d9efe7e262a56c7d0890b2e7bddc9bdacc26fb6d64aed945636ac3f34b6",
+      "executor.py": "c71674c53221c6ae29c2f9b76a85e7dd6e42072f23a3cecdaebdced466b0689f",
+      "service.py": "7901b8a4d46cc8f4d8a2b06e4e487eb53608c28f303e7fd1774a1936fae83f54",
+      "calibration.py": "d67a1defad81c548986833900c8f34b2ddaed1cff3bfcf0b94e441cf31252d9d",
+      "model_client.py": "a84985080d12ca5b78e379fdf98fdda88271923f2a2e0b3b1e85d4e94ed8f018"
+    },
+    "runtime": {
+      "build_info": "b11669-620d2225c",
+      "n_ctx": 8192,
+      "chat_template_sha256": "57f1fd00f0013a2be96aa79b857391f27e23df5b5f847072b524c897e24d0361",
+      "default_generation_sha256": "9583c90036128b4269707099118a48dc628f9941c7d07069163bee10fcfaceac",
+      "reasoning_format": "none"
+    },
+    "calibration_manifest_sha256": "fe87b6ed9c49517da70a2a0041145c368e0d10931ff1280a521ae40c73452956",
+    "calibration_data_sha256": "2df6e722cdbaaa37efcbfb280f5c9a15be29a6ec18f618ef936fe63cc6d07c69",
+    "calibration_membership": [
+      {
+        "id": "7c24ac10-08cb-4609-a08d-5a26599ee70c",
+        "document_id": "0c9e1100-f3e9-418a-a7ea-0eb19b7991de"
+      },
+      {
+        "id": "bbc8f8de-a6bf-4e21-856e-c2f5f4ed5d16",
+        "document_id": "58b6579b-8ea7-433d-a901-932d11b0eddb"
+      },
+      {
+        "id": "76d73e7b-c31a-4954-9679-fac5b139b423",
+        "document_id": "375c3395-9976-4d08-bbbd-e0dbe72f3c21"
+      },
+      {
+        "id": "6cad89ff-cf86-4b7f-9d51-5c307379002e",
+        "document_id": "300a01a8-fc5f-4420-ad63-0a18f8839faf"
+      },
+      {
+        "id": "54fc8797-36dc-470a-bfe6-39e172880532",
+        "document_id": "141dd84a-5649-4a61-9ae7-d82379bc2fa3"
+      },
+      {
+        "id": "5a6118c1-7eb6-44da-a51c-b051e0a694f8",
+        "document_id": "47e5d5ca-4756-48e8-931e-dba00241a1c5"
+      },
+      {
+        "id": "2804f8ee-73e3-4cc8-8205-ff4d8fbc12fc",
+        "document_id": "516b4a61-3880-4427-9755-c0e211f64aa7"
+      },
+      {
+        "id": "1f0d575b-ddff-41f1-84aa-d9796b7b3d2c",
+        "document_id": "d8662c4b-5f96-400b-8cd4-ff7b1f585bca"
+      },
+      {
+        "id": "df633664-fb9d-4392-a440-72cd3c6e9b9b",
+        "document_id": "803d4e43-ddd3-41e6-ba5b-d208782da04d"
+      },
+      {
+        "id": "c255fafb-16d1-4fad-b11a-da181026f15c",
+        "document_id": "a472bdff-772a-47b4-a09e-21825f03dee2"
+      },
+      {
+        "id": "0bf2ec0e-36b1-4315-aebf-d970ea0a5f27",
+        "document_id": "195383eb-3e09-4aa3-9f60-89fcc4d7ed61"
+      },
+      {
+        "id": "506023ab-2977-4c58-b8cd-2d42e4bf35c0",
+        "document_id": "46c8681d-4a11-4782-9cae-88c1c0cf8d75"
+      },
+      {
+        "id": "3ebb6738-9be0-4dfd-8766-2155c07004da",
+        "document_id": "deaaf111-7eab-4b9e-b75b-eb0bb2d9f5cc"
+      },
+      {
+        "id": "5699bafc-0589-45f2-8989-865fae0ad6b2",
+        "document_id": "cc303ea1-8363-4b1d-8ac5-61727fa9379d"
+      },
+      {
+        "id": "86482c4a-b689-4548-9170-9d3dcc202aeb",
+        "document_id": "a8f71349-1383-41c2-a5cd-c4b347223e56"
+      },
+      {
+        "id": "d2bc7559-8f04-4768-abd9-6ae62d62a27c",
+        "document_id": "2964e7aa-eecf-4c14-a4de-7a8ae1758186"
+      },
+      {
+        "id": "702d57bd-6448-4488-acaf-6ab3efa9d638",
+        "document_id": "532c14a5-b085-4383-9f4e-76b75969629e"
+      },
+      {
+        "id": "e7e87c7a-251e-48e7-9538-bd0735b816f2",
+        "document_id": "2cb3ef36-9d41-4357-8b09-205ca457a263"
+      },
+      {
+        "id": "a26fb6ae-f824-4ada-841d-23b5720f3bac",
+        "document_id": "bd2776f0-ef0d-499e-af69-1185ccee723e"
+      },
+      {
+        "id": "2d4be776-0d01-49f7-9da2-2a0c1f0c915a",
+        "document_id": "b88ec1fc-3d97-41dc-bab5-daa50da542dc"
+      },
+      {
+        "id": "09bb9fbd-b376-479f-a770-a56f8482a960",
+        "document_id": "8b8d215c-987a-4935-bf19-c71530b81b63"
+      },
+      {
+        "id": "7c633484-0c8d-4de4-92ed-e816c44a7bd8",
+        "document_id": "8fb1c5fa-32d4-4852-b4f2-5302648adb66"
+      },
+      {
+        "id": "ff9f180d-424c-4351-a8be-9724e72b753b",
+        "document_id": "7228db23-8c79-4595-b76d-095f52974b37"
+      },
+      {
+        "id": "18ef639d-c650-46f4-86a9-ffa97401ab67",
+        "document_id": "5b5ffbf6-3d3b-4d3f-b37d-4ffa094b3d27"
+      },
+      {
+        "id": "65fbce61-cf86-4510-ac5e-456be326f19a",
+        "document_id": "2fadb317-8a08-4c38-ba3d-a8451d73be72"
+      },
+      {
+        "id": "a4096b7d-ef61-49dd-a5bb-5ece2975a5ca",
+        "document_id": "e41b25f4-b3a0-458c-ad89-5ffb519c5641"
+      },
+      {
+        "id": "a12d1692-7100-4ab9-9e7e-8fb9aedfa6a0",
+        "document_id": "0d52987f-79af-430f-b7da-73c8a5003cbc"
+      },
+      {
+        "id": "e14db710-8282-4713-b16e-84fa4e34e560",
+        "document_id": "2ac2c807-2f03-491a-8a06-49ca800cdc90"
+      },
+      {
+        "id": "2fa393c9-8671-4cb7-8d31-f2b858ea1aa3",
+        "document_id": "46557a47-26a7-45f2-901d-3398aa4aabdb"
+      },
+      {
+        "id": "fe91b220-db60-4fba-bb70-36a5553ab16b",
+        "document_id": "6651cfa6-fe03-41a5-8713-32eb0e3b704a"
+      },
+      {
+        "id": "4bed22fe-3ab2-4196-ae77-6c3f35cce014",
+        "document_id": "c1ca8ba0-8614-43cf-8385-18d946853e9b"
+      },
+      {
+        "id": "5212a2d6-7f36-43e3-84f3-48dc594880d7",
+        "document_id": "16de49e2-15e1-44c9-94ca-455fe6c860d0"
+      },
+      {
+        "id": "650f649f-2973-47d0-b567-956d43757fdb",
+        "document_id": "906decc3-1bc8-49a4-b0ff-a79d3ce5531f"
+      },
+      {
+        "id": "72a4833d-a74d-410c-9311-dad856c7fe26",
+        "document_id": "50be65ba-d3de-47fb-b516-f6d8f2a6dd45"
+      },
+      {
+        "id": "e12b5bf8-fe91-47e1-9cfc-8df2c4e0412b",
+        "document_id": "304d371c-05ee-481d-af74-9986e287078b"
+      },
+      {
+        "id": "dc81f50b-eb74-472b-9dfe-f34629fb1d6c",
+        "document_id": "c50f645c-1927-451f-9919-8ecba1d67c63"
+      },
+      {
+        "id": "52beb1ad-df25-4961-8eaf-0468a614c36c",
+        "document_id": "c4522ebf-33b7-44f0-a385-10b4ff0a6ebe"
+      },
+      {
+        "id": "d0837050-e05c-4fa2-8f15-6237f3cb95d5",
+        "document_id": "773dbd30-c4ee-4d6e-996e-d408123eabf3"
+      },
+      {
+        "id": "df5b7cdb-c1e0-458c-bb1f-b24c6207ed67",
+        "document_id": "a5051dc9-32b7-463d-b616-7794ce89b0fe"
+      },
+      {
+        "id": "10b5ed63-acdd-4410-8749-5adcd0f36f35",
+        "document_id": "7a9ace59-4227-4c84-a4e0-f9e5c3f15185"
+      },
+      {
+        "id": "949f93e7-dc41-4aee-a67e-ef86def518ef",
+        "document_id": "5f2ac6bb-e408-411f-b20a-21962a708d7f"
+      },
+      {
+        "id": "25ae745e-083f-4045-a01c-6bc7214fbc72",
+        "document_id": "24aea4eb-751e-4be8-a422-e5e34b45269b"
+      },
+      {
+        "id": "22a04f3c-258c-4793-a828-22a81544a4ee",
+        "document_id": "8363e1b1-8e3e-4009-8df4-24f591433791"
+      },
+      {
+        "id": "8cd9b335-f67d-4687-8316-99a081e57841",
+        "document_id": "e8d97ec8-c820-48d8-b35b-6606d1837c68"
+      },
+      {
+        "id": "5a99a9cc-5c77-4791-80fc-ff4b36ffc79c",
+        "document_id": "81d9eda3-577f-4238-a661-65d2cc8c00f6"
+      },
+      {
+        "id": "6cacd904-5899-437e-bd55-9cf9f801e6fc",
+        "document_id": "3c1091a3-c1af-406d-aead-3b47ace2e588"
+      },
+      {
+        "id": "9fe8a199-0ba1-416c-b5dd-4907624df2e6",
+        "document_id": "688b3aed-1f69-4ad7-a5c2-9e1321ed4e89"
+      },
+      {
+        "id": "e91d005e-d7ab-427d-b81c-3510e02a1ebe",
+        "document_id": "5efb1e4f-adfd-45d8-9afa-6550b098e9c3"
+      },
+      {
+        "id": "add34610-4637-409d-9d8b-c5b25705c57d",
+        "document_id": "1217f03d-6c02-4897-8533-24148ed591ae"
+      },
+      {
+        "id": "d6bb1f03-cc11-4483-9cb6-20c718328e7d",
+        "document_id": "21c316d6-5e25-4af5-a29a-82b748175279"
+      },
+      {
+        "id": "2a4f9d5a-f85d-4eb1-8869-d60256a99b59",
+        "document_id": "29f10f58-87bb-43b0-b98a-1e4f329b600a"
+      },
+      {
+        "id": "9ffd735a-b688-495b-8eef-ade8d1342747",
+        "document_id": "85429313-209d-48ac-afb3-932c1e641ca1"
+      },
+      {
+        "id": "5cb9d275-0c62-44e9-a235-e7b9aabd34c8",
+        "document_id": "3158b230-32e7-4c12-944b-5352b5867ace"
+      },
+      {
+        "id": "ea8d43fc-6920-41d8-ac2e-ddd2f44477b2",
+        "document_id": "cd87554f-31c6-4b0c-807f-48925bd2fb4f"
+      },
+      {
+        "id": "d37eb8cb-547c-4c9d-b227-2660c1b39329",
+        "document_id": "691cbfc7-5e14-467d-aac2-cacd19083947"
+      },
+      {
+        "id": "5f42f06b-b296-48bb-8fbd-af1b78416243",
+        "document_id": "e9bc0d99-da3a-495e-952d-c989c6791bc9"
+      },
+      {
+        "id": "6ce9727e-0b0a-4999-97f8-d4fe24312393",
+        "document_id": "9f56f965-5991-410f-92e7-2060a0676515"
+      },
+      {
+        "id": "68f768e0-587a-4ba3-ab35-8466a26b4bc6",
+        "document_id": "3b750c01-9cfe-4476-a97f-4aa0b5fcdd8b"
+      },
+      {
+        "id": "4b9c43c4-3509-49c6-abc9-583690f44931",
+        "document_id": "24d86174-163b-47e6-bc47-5ac63a60d1c9"
+      },
+      {
+        "id": "15cafae8-582b-4dfe-b573-04b99a5eb93c",
+        "document_id": "e54be8db-ad0d-4110-8a0e-9c0e2dd143e6"
+      },
+      {
+        "id": "a33f7d58-4bd1-4b2c-8811-8b2ec42d51ce",
+        "document_id": "7700bdc1-cea3-406f-8848-577ba195baff"
+      },
+      {
+        "id": "aff70a7a-df45-4cf2-980e-ebb1e9099649",
+        "document_id": "df8d573b-af45-40d9-9273-a3bfb7301dc4"
+      },
+      {
+        "id": "b4f4c4b3-21f2-4c3b-864a-b065034b096d",
+        "document_id": "ad239a4b-a551-42c6-a26c-a8dbb78b7f6c"
+      },
+      {
+        "id": "d7926021-79c6-465c-b5a2-3058f0f0a265",
+        "document_id": "456ab4b6-98f9-4c62-954b-750210de57cf"
+      },
+      {
+        "id": "65e31e62-0a66-4b60-81e5-3a8e3d8b5c96",
+        "document_id": "e568fccf-2685-4598-baa9-1e8b1431fbc2"
+      },
+      {
+        "id": "4359c02d-d1a0-4c4d-bd72-53119c06c617",
+        "document_id": "0a14f957-3f01-4c22-a12d-9ed74fa8ab29"
+      },
+      {
+        "id": "0370c4de-3f16-481d-a50c-2c9fc24a190c",
+        "document_id": "bc28fb2e-6552-497b-97db-73c11ef7337e"
+      },
+      {
+        "id": "4807e107-c4c1-49bb-b33c-a1e67385fce0",
+        "document_id": "815ced53-4586-4edd-bb96-eeb17ac979ae"
+      },
+      {
+        "id": "1681d37a-4138-4294-9cc0-c1c096a440ae",
+        "document_id": "3ffa6f99-366a-4901-b200-ab867a6c53b0"
+      },
+      {
+        "id": "26400a26-cc70-40aa-beee-79eeb05bd9cf",
+        "document_id": "50f6ad69-0a4f-4f89-9232-90cfbfdbec5c"
+      },
+      {
+        "id": "ec0c776a-bf99-458c-bb9a-414569e33dd8",
+        "document_id": "f07a1c9f-0082-4b61-bb2e-4d061d9b8036"
+      },
+      {
+        "id": "81d7f8bb-3817-4279-bb3d-bb5e77414dfd",
+        "document_id": "e048bcb4-9b40-4076-bf73-dc1758002c73"
+      },
+      {
+        "id": "34e4e2e9-f4f9-44e3-978b-37f4b055b120",
+        "document_id": "1e4178e8-1705-46d5-aaf5-4772aa858400"
+      },
+      {
+        "id": "247ed0b2-4f8b-4ac9-a3e2-0454807076db",
+        "document_id": "2b784db4-b23a-4455-9621-7b8adc51d1c6"
+      },
+      {
+        "id": "ac7004dc-c5b9-4df6-b2bc-54b2611ea30e",
+        "document_id": "514115ec-6e2f-468b-9f7c-405f63041720"
+      },
+      {
+        "id": "ec58a343-a7f6-489e-9c33-1817e8500c0d",
+        "document_id": "2f7f975b-f12c-4c92-a36b-17d6f7e630e0"
+      },
+      {
+        "id": "3f6b3c80-4ad3-4914-9b12-55cad214b6c7",
+        "document_id": "16ebd25a-f23a-4182-9de0-8427a64a7fd2"
+      },
+      {
+        "id": "ffbc665a-c6f1-4625-a940-08a83b77be2e",
+        "document_id": "bd32fbda-28f6-49b0-834c-81e8c65c7af3"
+      },
+      {
+        "id": "f1d265be-b426-4461-8e9c-0f7642288ec6",
+        "document_id": "138f606c-c605-4e7a-ab09-4aee34084ba3"
+      },
+      {
+        "id": "c635e314-7bc9-4828-9591-cfdb1cfe1841",
+        "document_id": "637d5671-0913-4e80-b135-2d4a516b79bb"
+      },
+      {
+        "id": "858940e9-21f1-45db-acf2-21f298e367e5",
+        "document_id": "a5283e18-51a8-4d2a-a6be-cba392b1f375"
+      },
+      {
+        "id": "62cae1a3-686c-41c7-96b6-fcee751a957e",
+        "document_id": "5008d55b-150f-4ec4-ab0b-0c85cd5c2fd4"
+      },
+      {
+        "id": "98fadab8-2fd8-48f2-82bd-e9cacaab39ce",
+        "document_id": "2df54ed2-35ab-40b6-ae86-77cddd0df790"
+      },
+      {
+        "id": "8b992296-0080-45ab-ace2-de7777b6d118",
+        "document_id": "cbc6ae9f-7526-4e3b-9440-f4876f63f716"
+      },
+      {
+        "id": "98958cd1-dfbf-41c8-bf08-c7ffd18c6715",
+        "document_id": "986b00a5-66f1-4de0-945c-1a774ca11d34"
+      },
+      {
+        "id": "c4eb5f20-8d18-4d1a-be03-b014e541eab3",
+        "document_id": "2140f80a-5dc3-43cc-b664-65871e5f0ba1"
+      },
+      {
+        "id": "d0ad6a5a-ced2-40a2-b2e8-757e43727b58",
+        "document_id": "648e1260-d160-45d2-a744-57be0fd89850"
+      },
+      {
+        "id": "931b6f1b-8426-4876-b74a-6ed0378429a7",
+        "document_id": "87f701c5-ad4b-455e-9839-a87ce744df64"
+      },
+      {
+        "id": "79e5db2f-779f-45c4-924f-9e1b7c4d505f",
+        "document_id": "322ecd99-b933-4b97-b26d-cfd819ee4875"
+      },
+      {
+        "id": "ad0c9e23-adff-4f08-99f1-6cf92c04fedf",
+        "document_id": "66210694-acb9-4386-b71e-930cb2ba0da0"
+      },
+      {
+        "id": "33ffde9e-33c3-4b35-955a-2fe3056428f1",
+        "document_id": "d154f69c-5001-4240-a8cd-c79d982340e1"
+      },
+      {
+        "id": "6a576dbd-5caf-4961-9270-2a5bd40c80e4",
+        "document_id": "c806d59b-bae6-41a9-a252-10dbc079810d"
+      },
+      {
+        "id": "566f7b6b-72f2-4367-9e5d-d5351d570419",
+        "document_id": "0e4b8f6a-c5bd-4242-a805-7c14c40f5668"
+      },
+      {
+        "id": "2417a1d6-4664-4a0c-a120-1cfaf7108927",
+        "document_id": "1dd5da67-e619-4117-8336-fe86baae0244"
+      },
+      {
+        "id": "8bfb693a-b0fd-4fef-9d2d-6a985d54a0ec",
+        "document_id": "1a8b131f-b561-4b48-aa9a-2282f6518da2"
+      },
+      {
+        "id": "10ea60cc-f8ba-434b-8516-94b44b7ca4b0",
+        "document_id": "7f48271c-c615-4e72-bf74-6864c6a8c0a0"
+      },
+      {
+        "id": "70dbcd9a-26f9-45d0-89db-b5b01217581c",
+        "document_id": "5392fb07-12f3-4716-ae68-7e94d285a660"
+      },
+      {
+        "id": "06231df3-b6f7-485d-83de-591d062faa14",
+        "document_id": "6190df2f-e5ab-4ed5-9fce-848665a6c2ba"
+      },
+      {
+        "id": "431d3a81-449c-4cf1-b31e-500eb2f25f2f",
+        "document_id": "9119b12e-c373-4afc-a638-66e6d71adebf"
+      },
+      {
+        "id": "47d538b8-341a-4799-9242-deed4b32aa06",
+        "document_id": "7d8484e2-2fe7-4b7a-9428-fb4246394d18"
+      },
+      {
+        "id": "93161bd9-4fb6-46e4-b921-3c54b0f797a7",
+        "document_id": "bda4ad11-4967-4b02-9676-d5768f24c58e"
+      },
+      {
+        "id": "28ab4bcd-5e8d-4c1c-9fb9-f7a8051df1ba",
+        "document_id": "ede133d2-9e56-4f5c-8ad5-00b2323e3b36"
+      },
+      {
+        "id": "a6b0009f-d016-48f9-b827-e4c688a92c4a",
+        "document_id": "0b528705-55a8-4260-8756-c40ac5ea49dd"
+      },
+      {
+        "id": "862aece2-71e2-4e41-9485-518185c6d478",
+        "document_id": "8fe749ea-564d-4c9e-866c-00a78cf2865a"
+      },
+      {
+        "id": "e7e09228-a595-4b61-b046-d6aa2d866fad",
+        "document_id": "ae8c6686-a8da-4c54-990e-090f6b20d9f9"
+      },
+      {
+        "id": "3d639aa1-36b1-478e-9eac-d9e1c230f086",
+        "document_id": "66b7c6dd-a4fc-48db-a226-6ecbb174aa77"
+      },
+      {
+        "id": "7a593261-8616-4b98-a1bf-4815f48b3be5",
+        "document_id": "491c1a04-f824-4244-927f-06c42f0c47db"
+      },
+      {
+        "id": "2a07ebc6-b09f-4774-aea7-8c60b37c0472",
+        "document_id": "6fd09172-6ea8-4983-81eb-284e6046aa6d"
+      },
+      {
+        "id": "839def7d-4356-4d9a-9c75-1d23b9d230a5",
+        "document_id": "5b6d5017-d613-4683-843f-16122a559fc6"
+      },
+      {
+        "id": "6c3f52a1-bf15-44a5-ba7d-866d3214f4de",
+        "document_id": "7ac100f5-8d0a-4fb1-ad1b-6e5eebb4d3fa"
+      },
+      {
+        "id": "03c81011-5165-439a-ac47-4ec9cc33e967",
+        "document_id": "bf05ad69-e3db-420f-a2fe-dfd6615dc336"
+      },
+      {
+        "id": "7d3b5916-9015-46c3-92a5-d538c42953a3",
+        "document_id": "236579c6-ac6d-48f9-95c3-e70e8039abb5"
+      },
+      {
+        "id": "d8460a0e-4386-4ca9-b227-e35262c3bb5e",
+        "document_id": "2bf7faf0-1493-4ab2-94b4-b3aa0c134193"
+      },
+      {
+        "id": "cc6e0953-cd6e-47cd-ad44-756ee25695a9",
+        "document_id": "d6195b5b-d197-485e-8a55-f953de7d5dfc"
+      },
+      {
+        "id": "b73b74c6-2270-4897-9b5c-eb331cf44a66",
+        "document_id": "46ddb24b-68a8-46d4-b83d-cd6ff24d3b25"
+      },
+      {
+        "id": "6871ffbe-a101-4138-aa82-9771c57ae608",
+        "document_id": "cce45fed-279f-4889-ac57-6f8faae6d170"
+      },
+      {
+        "id": "8900cab0-1977-4692-8954-fc1a100ef110",
+        "document_id": "243c25a8-b45d-463c-b8ba-29618982cb33"
+      },
+      {
+        "id": "640f0a84-b1bf-44aa-92ae-84259399a208",
+        "document_id": "8882b251-aba4-405b-8d99-c2f365f4727e"
+      },
+      {
+        "id": "c785415c-ae76-4bd4-9c9f-0e74934b1768",
+        "document_id": "bf840385-a423-4daa-ba41-7b8cb481e303"
+      },
+      {
+        "id": "982544ce-e623-4b02-b21b-81ad0e0c38b3",
+        "document_id": "2ebbbee8-7db0-4c12-b466-43804a4944dd"
+      },
+      {
+        "id": "4efd2fc3-3a77-4002-b9d4-82eb98bff8b7",
+        "document_id": "dea80753-ad8a-49bf-a9b9-4316b213c653"
+      },
+      {
+        "id": "c38762eb-4807-4b68-918a-b8d7be517f02",
+        "document_id": "cf1d366c-670c-45cc-b2e4-eb8210df3e8a"
+      },
+      {
+        "id": "ff068a0c-0d2c-4855-878b-95e1d5d15457",
+        "document_id": "53414783-3c37-43f9-9d2d-1533c08e7bcc"
+      },
+      {
+        "id": "76eb8a0e-127f-4c94-acb4-5a90a6e05211",
+        "document_id": "a9bb6c15-8103-456a-b273-7b35b2eed202"
+      },
+      {
+        "id": "4470d047-bca0-432f-a55a-7ac9c2abd4d1",
+        "document_id": "6beb0a93-1838-42bb-ab64-e19f0db220cc"
+      },
+      {
+        "id": "b9a4863a-9ac6-4e85-9027-d488ec85a557",
+        "document_id": "a824b7af-61e8-4800-83c6-72e56e64a36d"
+      },
+      {
+        "id": "b92b8866-c09e-4afe-a35b-1c3031e24903",
+        "document_id": "1aa6b017-92dc-4f65-829a-b4d5fae3f625"
+      },
+      {
+        "id": "262f2446-5c69-4480-bac8-e45af15677f4",
+        "document_id": "28a311c3-17fa-4a66-aca8-48b55c962212"
+      },
+      {
+        "id": "60102137-68c2-4ffd-9432-21a83459a2f3",
+        "document_id": "29b5adaa-f859-4258-b268-e283899013a1"
+      },
+      {
+        "id": "018099fe-884b-4b7a-8476-f92f36b07f44",
+        "document_id": "b19b33b6-7e3a-4a16-bc22-7ee816d0728c"
+      },
+      {
+        "id": "be30530e-1b70-41ff-9a71-94725d187cc8",
+        "document_id": "eb01aae6-7342-4c8b-8e80-cf79d2eda8ed"
+      },
+      {
+        "id": "c0d5e4bf-bbda-424c-82b4-240f90efcdcd",
+        "document_id": "4de03a4a-9857-4f2c-bf91-662b2effb407"
+      },
+      {
+        "id": "faff4ce8-6a33-4118-b6cc-5d4f6a7ac380",
+        "document_id": "c5b624e7-4b57-4d1b-a70c-080ce250aa2c"
+      },
+      {
+        "id": "bdc3cb1e-cd5e-4b06-9f03-d74d384af9e1",
+        "document_id": "4cb21934-cf2f-4a49-b007-5f839ea3cd09"
+      },
+      {
+        "id": "0f767299-655f-4eea-ac0e-2ec45785509e",
+        "document_id": "c11f85e3-07f1-4262-b35a-c597c53b99a7"
+      },
+      {
+        "id": "9a341911-567e-4045-9e9d-e59c630044bd",
+        "document_id": "c53e4a09-c7af-4016-8829-ba19c86e4ba7"
+      },
+      {
+        "id": "cca74d6f-5b53-4928-8534-4ddc1453522c",
+        "document_id": "b7376c0a-9cb0-4ef0-9d8f-101235aec6e0"
+      },
+      {
+        "id": "eb5ad8ec-5dca-4764-9cf8-2166bef68ef3",
+        "document_id": "cb307b56-aceb-47ad-9a8f-358bb8dfe083"
+      },
+      {
+        "id": "0a69054d-42cc-4dc0-aae7-b3c7ffe6a348",
+        "document_id": "0a430c48-407c-445d-9ece-23c74feaed92"
+      },
+      {
+        "id": "e4f9a4f4-1bd4-4e73-93a9-c9f5d5c8bf19",
+        "document_id": "21038755-b864-44f9-861f-fdd0736492fe"
+      },
+      {
+        "id": "1e19b554-2a40-41f5-bd9d-38d0a03ebc24",
+        "document_id": "f6ed3a85-03eb-442f-8538-4a24a6719061"
+      },
+      {
+        "id": "0c703497-f7b7-4ed0-80fb-1ad2c7bee176",
+        "document_id": "789a37d0-5d7f-422b-9bd4-46293cea01ca"
+      },
+      {
+        "id": "d711c15e-4698-41e0-a632-80685e8b1083",
+        "document_id": "f47d9a01-a25d-436c-a28b-7aa04e2df491"
+      },
+      {
+        "id": "a549e97e-ed71-4bb6-bd7e-10322c915935",
+        "document_id": "204cdf7d-7530-43dc-aadf-816e2d3c6c41"
+      },
+      {
+        "id": "0046ac9b-746b-4be8-88e1-7f38fc4c686c",
+        "document_id": "e65e5d4f-af0b-42e6-8d1f-297886c3cc60"
+      },
+      {
+        "id": "43faad14-2426-4045-bedd-c833e368ab3b",
+        "document_id": "d21abb01-5bda-4a72-be49-e43a9d41c723"
+      },
+      {
+        "id": "24e4c802-e3fa-48a0-a994-e2a556df09c3",
+        "document_id": "99ae7359-70dc-44de-9e69-7c1ce8a6744e"
+      },
+      {
+        "id": "e2eac5db-027d-4809-abd6-29fbbef43d5b",
+        "document_id": "1d865014-a69d-4906-9028-cb8252b765c7"
+      },
+      {
+        "id": "6cd7581c-0d23-4cf3-b60d-1bbf0d87411f",
+        "document_id": "b57ef29d-d41e-46e2-a0c4-6be91bec69ab"
+      },
+      {
+        "id": "ebb28fbc-3581-410d-b24b-54ad9e480b10",
+        "document_id": "aa54cfa3-baf6-4f0b-873a-24fa0417daf9"
+      },
+      {
+        "id": "8e9f30e1-af62-4f76-9999-20e897533ab8",
+        "document_id": "28574802-614b-4f11-9946-0ca726ecc008"
+      },
+      {
+        "id": "a724db36-d544-443b-9f1c-c68266b52ba7",
+        "document_id": "617deeb3-f222-4172-a824-c62fc2214a89"
+      },
+      {
+        "id": "da37b609-6568-44d4-b692-9e1deceec55f",
+        "document_id": "91d4b703-0719-4081-9549-4b44dcdaefba"
+      },
+      {
+        "id": "915ee218-d97f-4372-8a9d-f630191d0bf1",
+        "document_id": "d0cb44d8-d2a4-4d10-a1fe-2daf8bb5b255"
+      },
+      {
+        "id": "81205e2c-c6fc-4933-9ad0-94d142e23c99",
+        "document_id": "cf8269cb-4483-42f3-bb1f-1896c9e15ef4"
+      },
+      {
+        "id": "9a32022f-267e-49c4-a619-10fb19eb237c",
+        "document_id": "c3e6e199-05db-44fc-8f30-9511c71d7f86"
+      },
+      {
+        "id": "78ba78a6-dc2b-47e3-9a78-d2ff14348279",
+        "document_id": "ca16fd4a-e3b6-4232-a484-e35d9cd2963d"
+      },
+      {
+        "id": "c1db50da-57eb-4da1-b2ad-998d3697a70b",
+        "document_id": "6c0c1292-752b-430d-b590-aaac01463b0c"
+      },
+      {
+        "id": "3e820856-467a-44bc-a800-835d78d4ef35",
+        "document_id": "80114e1a-7d0f-47ee-981e-08bc9897b8db"
+      },
+      {
+        "id": "3c73fce9-fae4-4214-b746-27511a272775",
+        "document_id": "0d04bb9f-7495-4891-ad90-b9b8a695c9a5"
+      },
+      {
+        "id": "69d3aa03-f302-41b2-baba-3df5deece5a7",
+        "document_id": "d246cebc-8f13-424b-a46c-7829f1c6f060"
+      },
+      {
+        "id": "5975f80a-045b-4f12-93e0-5fe9a9d185bc",
+        "document_id": "9943bc3a-cdc3-4308-b389-8ac81606ac80"
+      },
+      {
+        "id": "70b22ccb-798a-45c4-8e8a-ca01d0799038",
+        "document_id": "08fc429e-6371-4b4b-a9c3-af063d92bb97"
+      },
+      {
+        "id": "1d1587fc-acac-482b-a5b5-3710b00ebea4",
+        "document_id": "14ac5755-27ec-4065-84b7-02ed27c236e7"
+      },
+      {
+        "id": "1102ec18-d554-4dfc-bc65-fb8ff7669c29",
+        "document_id": "a594f421-95f3-4987-9258-bdbe41612c48"
+      },
+      {
+        "id": "1bc355da-edf7-4796-b0aa-8fbffbac6849",
+        "document_id": "94d2f9e6-0bbc-49d4-9ca5-4fcb3b1d4636"
+      },
+      {
+        "id": "1228eebb-fdd2-44c7-9d48-cda11e7dfcba",
+        "document_id": "8d844211-bfdc-49d9-af10-e7bbc3c8d2ed"
+      },
+      {
+        "id": "af8c557d-8db2-453e-a943-1aad79435ca6",
+        "document_id": "41db8520-faff-4d20-9fd9-5e60d6fe4f2a"
+      },
+      {
+        "id": "cea7d03a-52dc-4c49-8be0-2d6b2a084bd8",
+        "document_id": "7e12c96e-40e3-45a0-b268-e2863222a289"
+      },
+      {
+        "id": "03113761-34fb-4d6a-98b9-131f2f7e99a5",
+        "document_id": "5881e145-990d-43da-a81e-259c9514e306"
+      },
+      {
+        "id": "678a543c-800b-4656-a826-da4c1139e45b",
+        "document_id": "259d5911-b453-4ebf-9567-70242987c093"
+      },
+      {
+        "id": "b7c1f5e0-d889-4c8f-850b-c2a70b7c8de2",
+        "document_id": "91fa0ed4-3f6a-446f-afdb-5a033f723ec0"
+      },
+      {
+        "id": "5e8377ef-a67d-4c58-90c0-0be4d8637cc6",
+        "document_id": "d7990183-3079-4e28-975b-bd60cafdcd1d"
+      },
+      {
+        "id": "e1a449cb-f783-4c9b-8aaa-20376243a1b3",
+        "document_id": "70c84339-8118-43fe-88d4-2535c76cf30c"
+      },
+      {
+        "id": "e93a2107-b945-4ec6-9987-31b49c1eefec",
+        "document_id": "6b651c9b-f91a-422d-9566-61f446653ac3"
+      },
+      {
+        "id": "d62ef67c-3e3d-41f7-aa48-78fa43dd6df7",
+        "document_id": "00e40078-bd98-4c1c-b651-bdcbf9050bf8"
+      },
+      {
+        "id": "272e9522-2bbf-40f6-befd-7daadad04daf",
+        "document_id": "f6edd6d7-1bb3-4e7b-85b8-412d54ac8e6a"
+      },
+      {
+        "id": "e2cc6345-d2b0-4552-9d07-4f6a383e1b9f",
+        "document_id": "0a4ef914-2354-4b04-b2ef-b05687980890"
+      },
+      {
+        "id": "82b6f8f1-fd97-477f-afb9-7f3a477dce1f",
+        "document_id": "a9612faf-cded-4519-ad51-b181c69155c5"
+      },
+      {
+        "id": "a4809906-6b5b-4530-82ca-6435b55fa795",
+        "document_id": "0eaade9d-65f5-4c2a-af19-7681a12b3ad6"
+      },
+      {
+        "id": "678a3e89-80a5-4201-936a-95e233d5ee06",
+        "document_id": "9d05ca5e-63ce-47c0-8590-ce227ae34943"
+      },
+      {
+        "id": "dfea42d6-63ce-4478-a53f-0de5a77dceca",
+        "document_id": "cfe0ee38-48b2-46d2-8920-e423fc6c91ac"
+      },
+      {
+        "id": "b06fc963-b9d1-45e4-b2c9-28168c26cb00",
+        "document_id": "5027d461-1237-4aab-af1f-f6b9f07bd8a3"
+      },
+      {
+        "id": "931cf63c-d6c2-41e1-92ca-81e426517861",
+        "document_id": "15e484c6-9405-4ac6-8ed0-5e1f1836d80f"
+      },
+      {
+        "id": "5efdff5c-d4f8-44c5-b259-ba4dbe5a1b00",
+        "document_id": "033a9522-86a0-4c2a-a40e-9dd0ff47aeb6"
+      },
+      {
+        "id": "69ae40c7-29de-4bf0-bf0a-d3710013daa3",
+        "document_id": "927cb78d-2b15-4987-a062-53532ef78575"
+      },
+      {
+        "id": "a4fd6d29-bff8-4833-b4a1-767332ab5331",
+        "document_id": "8c724c98-7efd-4e18-96b2-1f6104f5c6e1"
+      },
+      {
+        "id": "09d3ca1a-6256-41a4-ac30-64f6d2b3ada3",
+        "document_id": "83bd24e8-af1c-4802-bc0f-f44003f43632"
+      },
+      {
+        "id": "fd38b10c-bcb3-4f9b-8279-bca9d9198a8d",
+        "document_id": "dec8f71d-ab4e-42d7-82df-29e0c3ca0c42"
+      },
+      {
+        "id": "5acbec1f-830c-426a-834f-281a8920d8ce",
+        "document_id": "d71b9619-6a65-4eed-8895-de2d1c4339b4"
+      },
+      {
+        "id": "1ab24e0f-a22f-49e0-b08b-d65abcf7ee7f",
+        "document_id": "c4cb39fa-3389-4b59-b995-36c35eeb1ede"
+      },
+      {
+        "id": "33e2cec1-a31d-4782-90ae-0995e9d16547",
+        "document_id": "6cb2c048-463e-419d-a219-30ae5251bcaa"
+      },
+      {
+        "id": "07b8a783-56ac-4531-8efc-cc1204f43bbc",
+        "document_id": "98a25102-b735-4d7b-ab43-98dde0c1ae22"
+      },
+      {
+        "id": "2310b4ae-447a-4253-932b-a075431bdbca",
+        "document_id": "1bd763c9-f086-4d16-bd7a-17469c873ab4"
+      },
+      {
+        "id": "413ed84b-b6b6-4c66-9112-3dd3e29f96ac",
+        "document_id": "52246c49-d7cb-405d-bab9-384a276940cd"
+      },
+      {
+        "id": "c347c723-9d66-4370-ad6d-cba22837d341",
+        "document_id": "9d609d8f-42c9-4c35-8b1f-a09a00987a8f"
+      },
+      {
+        "id": "598613cb-e748-492d-9baa-af3ae11be8c7",
+        "document_id": "45fc7311-561d-461d-b445-ecb22f6f6496"
+      },
+      {
+        "id": "bbc1800b-51f6-40f3-a1c0-8b18a19e02cc",
+        "document_id": "84d20cef-b5ff-42df-80fb-b6b280d13da6"
+      },
+      {
+        "id": "e84871c3-999d-40df-a51f-83769bc2e4f0",
+        "document_id": "2b246dd6-4ca2-4289-9972-f82b4683974f"
+      },
+      {
+        "id": "1f63375e-998b-4ba7-8bc3-4be6b2a386f2",
+        "document_id": "f1b1a441-164d-4ac5-a88f-0af3122a5d1e"
+      },
+      {
+        "id": "3cb14086-9c16-468b-8371-aa265b500517",
+        "document_id": "e12d7235-fff3-47d1-aa86-514f7d88782b"
+      },
+      {
+        "id": "44b2ccdf-33b8-4617-aedc-b526a797f87b",
+        "document_id": "b323ac04-4139-4995-a176-bf6022989730"
+      },
+      {
+        "id": "79a28339-32a7-42de-80db-fa4b1f2b2cbd",
+        "document_id": "58347702-d0ca-4b32-8593-4ac01472f1b1"
+      },
+      {
+        "id": "e250558a-da9c-4f39-8058-a6713c0434ae",
+        "document_id": "16534ec8-57c5-4f39-898b-2403e4740e86"
+      },
+      {
+        "id": "6db94fb6-4116-44dc-8426-229509a07473",
+        "document_id": "937049a4-a3ac-4650-98c6-e60172d53395"
+      },
+      {
+        "id": "0f40ee46-9df5-42f7-92da-008ff9a750c5",
+        "document_id": "71af41cf-6910-491c-861d-c3d70a4853b7"
+      },
+      {
+        "id": "cdae6552-1678-4140-9279-ce8ab050fa6d",
+        "document_id": "a13f7129-b964-4071-a6a7-2f8dcd9bf545"
+      },
+      {
+        "id": "b0f47168-49bb-42e2-a2aa-c000604cb632",
+        "document_id": "4fa0f9f0-4665-4faa-89e8-7d0f208331d1"
+      },
+      {
+        "id": "741207c7-eec2-4356-a6a1-67488ddfee4e",
+        "document_id": "d08e1dae-402d-4065-8fb7-f811180fe7fa"
+      },
+      {
+        "id": "2f8e6faf-5c03-499f-acb8-b98b58040995",
+        "document_id": "f2419e7a-ef2d-4ed9-924c-7bf2e7326794"
+      },
+      {
+        "id": "c11ebb9d-b141-49c3-913e-f50f0dd4194a",
+        "document_id": "10b89668-7666-48d6-aad3-8df5df594b2b"
+      },
+      {
+        "id": "3afa8bf7-9a93-44b6-9625-b594484bb44e",
+        "document_id": "1e712660-7b78-4791-8264-e517efde2e62"
+      },
+      {
+        "id": "bad333e9-3596-4ad5-a294-e01ef9d27066",
+        "document_id": "9e50f02e-3b82-4e00-8628-71647b290e36"
+      },
+      {
+        "id": "ef8cf420-1d02-4977-b362-080baf6d7849",
+        "document_id": "1de6c680-d9c4-4d1f-b265-ee8def2dae5b"
+      },
+      {
+        "id": "a38407e1-d341-4825-933e-81c2a559035f",
+        "document_id": "a36d9a6f-67f2-4a5a-8449-ac9bb1794516"
+      },
+      {
+        "id": "31e0cdd9-d25a-4747-84f5-1f818da74767",
+        "document_id": "521a4c96-442d-474b-bd09-9d7313668b4c"
+      },
+      {
+        "id": "8bd6e9a4-c6b4-4f4d-bc34-006be5bbf79b",
+        "document_id": "75f4540a-f323-4b79-bc13-87a6e9eb8331"
+      },
+      {
+        "id": "bdcb731d-6504-407f-af45-67ab3dd987c1",
+        "document_id": "ae3e690d-a4f8-4ba2-93e6-2148543bdbf9"
+      },
+      {
+        "id": "72a7e6ed-0a32-4454-9ce3-5b5b057a789c",
+        "document_id": "ee155edc-e536-4d3a-8bc5-ef6de21e853d"
+      },
+      {
+        "id": "3d74d05b-e791-4a36-ba96-8b90184b63d9",
+        "document_id": "e45b43f0-d568-478b-80c0-8098a4ffdf48"
+      },
+      {
+        "id": "13dd5f0d-033d-408a-8471-dda7e5d3f8ea",
+        "document_id": "f7182ea8-ae18-4fca-b735-717c6073ca55"
+      },
+      {
+        "id": "60103f37-1c8b-40d0-bc1a-3a282e473e18",
+        "document_id": "19eba7b3-f932-4cd8-8741-6f07ad2038b2"
+      },
+      {
+        "id": "fb2c2a77-01c8-4ce2-bf1b-619ac523a605",
+        "document_id": "f6d54f3c-5b39-493c-add7-acd090223c7f"
+      },
+      {
+        "id": "b6c2661f-8a6c-4503-b6fc-f9a7682a976b",
+        "document_id": "21523653-ff5c-4d4b-9b8d-1452d4c5abf9"
+      },
+      {
+        "id": "b0326e43-a9e1-4e36-9dfa-3979cc1fdc0e",
+        "document_id": "bf8027cf-0a63-4aba-82d3-f413a180aa59"
+      },
+      {
+        "id": "2de303c8-db6d-4452-b33b-5d86d5727328",
+        "document_id": "58567520-c343-43fd-b803-bc078bb77c87"
+      },
+      {
+        "id": "168a4d08-86d1-4ce7-b499-5478fe4e4d78",
+        "document_id": "691564f3-f0bd-48bf-8728-af36970b08f5"
+      },
+      {
+        "id": "99958abe-0476-49a0-afc1-c2bf2abf9bce",
+        "document_id": "f7f5d717-4fa6-4f4d-99b8-38fe343fae40"
+      },
+      {
+        "id": "04c46c21-219c-4094-824f-a05c793ae69c",
+        "document_id": "19d8fd13-c24a-4da9-9103-87d7d71f4081"
+      },
+      {
+        "id": "be2e3427-94ab-4c3a-8cff-a392a8fa32ad",
+        "document_id": "8634831d-011c-4b6f-8416-fcd5a05146f4"
+      },
+      {
+        "id": "902cfa4d-b146-4713-b248-68f09b966e9a",
+        "document_id": "e9d193bb-4f94-49be-b2ee-f04766f8b08f"
+      },
+      {
+        "id": "b50c2c6a-b29f-4483-9033-c14d1214d3bc",
+        "document_id": "e041a336-1d1b-4c94-b476-90f4f57593da"
+      },
+      {
+        "id": "90c89b08-dfdf-4bba-83be-c35e6624f679",
+        "document_id": "65a76e8e-47b4-41cb-8872-b184bf743294"
+      },
+      {
+        "id": "b7f38920-34f6-4c5f-b0c2-e6ff933d03b8",
+        "document_id": "36a0c0fa-9571-48b3-b1e2-b975c1191f03"
+      },
+      {
+        "id": "cae964c8-1ada-4a43-b41e-50a60ebb7abc",
+        "document_id": "b472ca1c-c537-497b-bda9-4da87994a8e6"
+      },
+      {
+        "id": "4784ef31-5cd9-4db4-9efd-5b8ffeab05b1",
+        "document_id": "3ba08e69-7eb1-496e-bb2d-2fe651f924cc"
+      },
+      {
+        "id": "37cee040-7f2d-49f5-baf9-766e2fb858c3",
+        "document_id": "6e966ad8-33f3-4007-92a3-b31a0c597ae7"
+      },
+      {
+        "id": "e02b9cf6-ce6c-4a61-8328-04da16f1b226",
+        "document_id": "ac6e77fe-ba02-4764-9806-943cd8572e67"
+      },
+      {
+        "id": "eeb7d169-56e0-4f0f-bcd6-869af8d6ecde",
+        "document_id": "1b90541f-9a34-43a2-8fab-ebd84d49dbe0"
+      },
+      {
+        "id": "ac1a17d9-81e5-4ad1-90fc-e63c624788cc",
+        "document_id": "72b79d03-72a0-42ec-8b86-eaec5b850e29"
+      },
+      {
+        "id": "f28813fe-6510-4172-9754-a2cc45789af1",
+        "document_id": "ed00647d-df8c-42e8-96a9-c2fcd65c9ea9"
+      },
+      {
+        "id": "09ae2393-ddc7-4cf2-ab05-bd6e08367e37",
+        "document_id": "f7a7de72-0a9f-4f7c-8187-0b57936d0ee5"
+      },
+      {
+        "id": "6cd322f4-555f-48c5-9524-7de58f773818",
+        "document_id": "442a8e31-6a53-437a-b49a-7580ebea4a22"
+      },
+      {
+        "id": "96541645-7585-4fd6-9e17-0eed8817278a",
+        "document_id": "bb41b75f-2685-4ed3-931b-e71d558dfe6a"
+      },
+      {
+        "id": "24e1f219-25f4-45ee-8621-1d9af556904a",
+        "document_id": "4565ded8-5e2e-4cd7-beab-6da622434396"
+      },
+      {
+        "id": "09201000-2bc1-4d1b-ac46-f2a20351db13",
+        "document_id": "f9e543f7-bfe6-4ef6-bd79-3f1126e56459"
+      },
+      {
+        "id": "63443003-a1b0-4d11-a048-f376863556d1",
+        "document_id": "4ffb5e39-2974-4ec9-96d9-b5952dc936a7"
+      },
+      {
+        "id": "e61297b5-f54d-43a8-86f5-6d4f2a436f9f",
+        "document_id": "78936f70-0129-4b43-999a-c3838c53a056"
+      },
+      {
+        "id": "91c87f4f-db59-41f6-912d-2e7bb3d2559a",
+        "document_id": "f069afb6-f2a4-43fc-8908-9686b62cf714"
+      },
+      {
+        "id": "1d0e8459-7f37-4ea6-9c8a-89c40d610ee7",
+        "document_id": "e316af95-270d-4107-99d4-6f52e4d61d38"
+      },
+      {
+        "id": "c522050d-662b-407b-b3ee-519da467690f",
+        "document_id": "f01b9dce-4efa-4db3-b293-8558b00237f1"
+      },
+      {
+        "id": "3fb1f8ee-dd9a-4807-b374-01001bf86982",
+        "document_id": "44fb7411-32a2-475b-acc8-ab0d6493bc8a"
+      },
+      {
+        "id": "a37d423c-41f9-4235-a6b6-617451983b5a",
+        "document_id": "861fbad6-2ef5-47aa-bc22-1a3223ee1e4b"
+      },
+      {
+        "id": "7a75f9b9-f835-443e-9022-02d8503d95f7",
+        "document_id": "cf9554ae-8805-4c4e-a972-3a871527a687"
+      },
+      {
+        "id": "84edc5a4-ddb9-4e17-a5bc-f8d90b767784",
+        "document_id": "b1246fe5-2bb4-490c-a751-26acd01a1e1a"
+      },
+      {
+        "id": "bbd88687-82d7-49ba-a0c4-f1c02ad7a667",
+        "document_id": "3d9053b5-ec12-413a-8a73-269a01fd9a2e"
+      },
+      {
+        "id": "3fb36677-4b18-4c1a-879e-0cdc1a903a57",
+        "document_id": "21bbdf5a-25aa-447a-af28-f452fbeae8a6"
+      },
+      {
+        "id": "27467580-738d-458f-a002-cc6ec96474d0",
+        "document_id": "c18cdbd9-1c04-4adc-b449-bbae17c4bd7c"
+      },
+      {
+        "id": "599ea973-0d73-4bfc-9271-3cda2408937e",
+        "document_id": "14f3bbae-ef8f-4545-ae4b-f043372d8c3c"
+      },
+      {
+        "id": "6f1113a8-b0f5-4684-a7a6-9645e7e0b27f",
+        "document_id": "8ce402cb-17b3-4a59-8897-623ffe9e0a25"
+      },
+      {
+        "id": "fb7b2090-79ea-416f-8d40-599cfd4a5bfc",
+        "document_id": "c3726402-6ac2-4cd5-81e9-6102a59e510d"
+      },
+      {
+        "id": "5f5fe7b0-7750-4a77-a4b0-0c4aaa8d8477",
+        "document_id": "bee6f024-d1ec-425a-ab14-3a78e65361d3"
+      },
+      {
+        "id": "d4108580-b8f7-4f05-bc79-e561e9d3337b",
+        "document_id": "c0353429-91c5-41f0-be59-4a4a036ffaaa"
+      },
+      {
+        "id": "602c9ce2-cd6d-4418-bb4d-2d1afbb95fef",
+        "document_id": "0cbb3940-c078-4046-a7f2-dee41f6d68ed"
+      },
+      {
+        "id": "b46d328d-6f5e-46b4-ba00-e3bf462b0033",
+        "document_id": "a784a8e4-33a3-4f22-b338-ca218f76831c"
+      },
+      {
+        "id": "a1f65480-cd03-40cd-9ea0-98ece01168ab",
+        "document_id": "6c4a1642-8251-4fce-a2bc-86b420b485e9"
+      },
+      {
+        "id": "5664d076-e426-48fb-a9ab-6c8e462f097d",
+        "document_id": "8be3c9df-0aa7-42af-986b-3038abb2197f"
+      },
+      {
+        "id": "51546b08-dd1f-44fd-be0d-6430732e772c",
+        "document_id": "a0f11f52-b1ce-4727-95b3-c9bd9ce03e19"
+      },
+      {
+        "id": "8e8d8cd8-7f0d-41d2-8019-06c51f0735cf",
+        "document_id": "48bdb5aa-4121-491c-bb80-c4a5f14913a0"
+      },
+      {
+        "id": "0a1148ba-0439-4fa4-8bd1-2cc92e7ae60b",
+        "document_id": "36456b5d-93eb-40f4-8496-84c84aa37b88"
+      },
+      {
+        "id": "648d625b-11e0-4a33-bdaf-394695da3f7c",
+        "document_id": "e0318fa5-348a-4a8e-aa74-b99dc017cac3"
+      },
+      {
+        "id": "649b73ba-c44d-43b4-9bb5-075aba628a60",
+        "document_id": "a058d161-f1c1-497d-95ef-84ba648f391f"
+      },
+      {
+        "id": "225420b6-ac91-4136-963c-25c5849ac6b3",
+        "document_id": "4756441a-c188-4792-b1a7-c3156bfa48cc"
+      },
+      {
+        "id": "fcdcfe93-bc76-4f41-b588-8f838d3e525c",
+        "document_id": "83a133ee-5987-4eab-bb18-bfb0754f1aa7"
+      },
+      {
+        "id": "7a8fe3f9-f1b5-4dc6-ab7e-7fead77963d1",
+        "document_id": "e482aad2-9788-4f4b-a334-c60f37d313ab"
+      },
+      {
+        "id": "7a9be128-1844-401a-a442-6f8e5b969856",
+        "document_id": "f9f7186e-c7c8-4714-b7f3-b4e64f67e523"
+      },
+      {
+        "id": "4f52994e-c7dc-4e98-ab41-34dc45d3aff8",
+        "document_id": "31b59507-dcb1-41cf-8752-e2bb17dd62db"
+      },
+      {
+        "id": "06a9fa0d-0036-4af1-b68a-67973229e0a8",
+        "document_id": "f777e2ca-42e4-4fca-9ae7-e2fc936c2534"
+      },
+      {
+        "id": "c8e09bea-4a4a-4d58-bb3f-fdaf02c0ff1e",
+        "document_id": "9624345c-f3b3-45cc-91eb-36c96caae5be"
+      },
+      {
+        "id": "7e979846-f9f9-4c9d-938d-3929591ab648",
+        "document_id": "0375f1cf-e500-483b-b29a-509632a9ffab"
+      },
+      {
+        "id": "04f5bc86-c824-4519-a9dd-d55c094fd77b",
+        "document_id": "ff491a38-1020-41ea-b830-11c11cd57b5e"
+      },
+      {
+        "id": "8968467b-de59-4fc8-87a7-e0d98f679a47",
+        "document_id": "ce09caff-769d-498f-9e5d-09dc1e741d70"
+      },
+      {
+        "id": "14c4bb3a-0cb8-4674-b7b9-4b13c50eb71d",
+        "document_id": "981b4acb-12eb-4729-a297-96a0f0cefdba"
+      },
+      {
+        "id": "ff498c8f-84c1-4a62-843e-3b90a05de678",
+        "document_id": "d5b3ccf5-ec0b-4d63-af92-a2cd92bf5dfc"
+      },
+      {
+        "id": "e29d9cdc-7f13-41b9-a17f-43701624e7a1",
+        "document_id": "57d15d5c-ad89-434a-b455-cabd50e8731a"
+      },
+      {
+        "id": "604fc751-5861-4cd4-864f-bea629bf6535",
+        "document_id": "6b6bd6bb-7296-4c05-a358-a3f8de8342ec"
+      },
+      {
+        "id": "35c016f0-c636-410e-80c0-3bd7d4b98406",
+        "document_id": "9a8f8448-ba1b-45a8-bdbd-277ed197de04"
+      },
+      {
+        "id": "a7b4a93d-bd09-49aa-8c01-db02d49e2bfb",
+        "document_id": "040b7804-7df9-46cf-8d4e-ce0c7f4c407f"
+      },
+      {
+        "id": "ed97b463-5b4b-48dc-aad3-33ab005ebad4",
+        "document_id": "26d614bb-9729-4dd3-a0c6-98990e82426c"
+      },
+      {
+        "id": "11b72e71-6b83-41bf-a465-0a73313ce56b",
+        "document_id": "162e3672-337d-4f6d-b177-e37b137f7115"
+      },
+      {
+        "id": "62412154-7bdb-4c2b-8cc8-35b3ad90fe7b",
+        "document_id": "f06a0777-6aaf-4dcc-81d5-08aeaa715b47"
+      },
+      {
+        "id": "18084bcc-8504-4c0b-9af8-9d0c6f680c32",
+        "document_id": "b526fde1-d88c-4e71-ac15-3f944e0569a1"
+      },
+      {
+        "id": "aa50bbc3-b8c6-4477-9e73-47b6d4610f4b",
+        "document_id": "4aea3d1f-b5a0-4aec-b9da-96e9b27f5218"
+      },
+      {
+        "id": "0034f39d-314e-467d-8792-1376f9477cc6",
+        "document_id": "00a11cc5-dc80-4e56-baea-d12d74ca79f5"
+      },
+      {
+        "id": "a09a2bb0-da2b-4f1b-b502-24f546d152d9",
+        "document_id": "3e109c2f-13e5-436c-970b-08679db63bb7"
+      },
+      {
+        "id": "5b7b686b-b22a-4995-b083-b6a10ebdcba9",
+        "document_id": "77f00ddc-b25a-4a0f-b33d-a27fa465cb28"
+      },
+      {
+        "id": "1f2526ba-db90-4388-8499-8fda51621e85",
+        "document_id": "4b999f4a-ed44-4283-b46d-0c4d1cbf194a"
+      },
+      {
+        "id": "374c4ad9-300a-44b0-95bc-77f05de463b0",
+        "document_id": "f03c1625-d8ae-496c-a48c-ea464f96b2c8"
+      },
+      {
+        "id": "0c63c054-003f-4005-8e7d-3d5e6dfed6b5",
+        "document_id": "3f29c754-223a-4d53-8d7b-6fb40ee0774f"
+      },
+      {
+        "id": "15ca1a7e-27c4-4e4c-bdbc-820cf771ba55",
+        "document_id": "567a03c7-0324-46f4-adbe-4143b60a7eff"
+      },
+      {
+        "id": "afe30085-17a9-4eb3-b540-07bc93268bb9",
+        "document_id": "04b0b64e-7f90-44c9-a899-9bfbd6400fe9"
+      },
+      {
+        "id": "118a3ddc-2282-4f6e-8314-07d2103a3f1d",
+        "document_id": "2053c704-96d3-45f7-b001-5fc1de9f9a55"
+      },
+      {
+        "id": "3c7c6154-c516-4900-b26a-eb3d1f4bb122",
+        "document_id": "e5418d94-eb77-4ad2-9e9c-8b5f344b974f"
+      },
+      {
+        "id": "37b040b9-c80e-45c9-b8ac-1c79e0f4e067",
+        "document_id": "10033a3d-bb14-4a29-a06d-ac3697a2f52d"
+      },
+      {
+        "id": "e817c840-a612-460b-968b-86f51d36c304",
+        "document_id": "1112bb5e-7fd5-4841-9289-7945c4f73755"
+      },
+      {
+        "id": "ccb9fa89-4eeb-4489-a2f5-c652cd5dfc60",
+        "document_id": "071e4f62-a099-4581-a35a-ee143e51eb31"
+      },
+      {
+        "id": "a990a9a1-708a-4740-9129-c95994ff08b2",
+        "document_id": "a307e0a5-119a-467f-93b3-fed0911782a8"
+      },
+      {
+        "id": "3669ea91-2ddf-4f8f-a3c0-e26395285c84",
+        "document_id": "ea00fb45-b0a9-416a-b0ab-5e0f088b2d06"
+      },
+      {
+        "id": "4146201c-b1e4-45a1-82e9-32d6cc0e3a8b",
+        "document_id": "85d4834f-fb99-4e1d-adb6-2434af8397be"
+      },
+      {
+        "id": "60024941-d26d-4960-ae82-d3667a52a507",
+        "document_id": "3719c279-e6db-4ce6-ae0e-9102ba335f74"
+      },
+      {
+        "id": "0caaad8f-7f23-4994-a853-2bb02e8fbc06",
+        "document_id": "1826d599-4eb3-4d1f-b6ef-b21adc0aff64"
+      },
+      {
+        "id": "7c3b59b5-13db-4d5c-87a4-5076789aecf9",
+        "document_id": "74509a86-77cf-48ee-92f4-f4cd19ad1610"
+      },
+      {
+        "id": "594dd2b4-03bc-4b95-90ee-19ccf4d73d48",
+        "document_id": "7e8494f0-2a12-4484-ac5a-2554279562ef"
+      },
+      {
+        "id": "f2fafdbe-9494-4546-876e-b57cc72dc674",
+        "document_id": "3093b295-26e0-4634-a9ab-6d2d6cd97861"
+      },
+      {
+        "id": "57d7d4d6-d40d-45ac-88c2-6102fd543dd8",
+        "document_id": "c554b294-466b-4c83-8f3a-5c795fa950f3"
+      },
+      {
+        "id": "6cc39930-f09c-4b75-8941-594d055623e1",
+        "document_id": "ee2d9cd0-f9ee-47ae-b1c2-86c4b4adcf66"
+      },
+      {
+        "id": "1ab41849-2c17-4546-a60f-550899a43f52",
+        "document_id": "131065f5-75ac-4f7d-a768-95f8737f881d"
+      },
+      {
+        "id": "f04ba0c1-0c0b-4184-a329-edf36c079592",
+        "document_id": "f44f047d-bb89-4559-afaa-048842efa47d"
+      },
+      {
+        "id": "1f8a4e12-d0d5-4181-a1ee-9ffbf28423f3",
+        "document_id": "276d4eff-6476-4a1a-9e2c-188a80d79445"
+      },
+      {
+        "id": "9b989d93-23c1-45e8-bf9b-4d1e354c9f81",
+        "document_id": "f86b8b8a-d94b-4b1e-b055-28a663a09562"
+      },
+      {
+        "id": "dcf47d08-a49a-405f-bd96-6f81129d983a",
+        "document_id": "26a973ba-41c1-4ad3-a75b-0a55e30c0010"
+      },
+      {
+        "id": "2496b2c3-324b-4874-ae26-eab17de4de79",
+        "document_id": "3e1408bb-a283-4e6f-bfe4-bbfab28043d2"
+      },
+      {
+        "id": "307f72ed-1979-4b10-b268-cb71e990650a",
+        "document_id": "99584727-6bf0-43f4-bb15-336baa5160ba"
+      },
+      {
+        "id": "85a758b1-7b1d-4a16-b66c-4712c6e894a8",
+        "document_id": "f1317910-20cc-408d-b886-5f8641392aec"
+      },
+      {
+        "id": "fb47fc2c-4b57-4974-8c6b-3ecdac4d6f2d",
+        "document_id": "c1be0945-1444-4d45-9c26-ad2ab19aeff1"
+      },
+      {
+        "id": "2077df6a-0775-44d2-be8c-64516426cd1c",
+        "document_id": "35623713-5a38-4754-8f3c-3a0312f940f0"
+      },
+      {
+        "id": "1b40d1f2-95d8-4d22-b6e5-7da399901243",
+        "document_id": "e3efb804-1337-46f3-964c-27cecd79e0f7"
+      },
+      {
+        "id": "207ec3a4-3dac-4586-9b9b-18bce65298ee",
+        "document_id": "241ac2fa-ad05-4d30-98f2-0d699bbbea94"
+      },
+      {
+        "id": "fd2c9353-5efb-451b-8bf7-cbcad98af62a",
+        "document_id": "b68b2559-7217-4d8f-9eff-fc46e2146581"
+      },
+      {
+        "id": "f0cebb92-b1cc-4ed5-b1f9-1534796d45df",
+        "document_id": "e1754270-0867-4525-876e-5579322d3fa5"
+      },
+      {
+        "id": "65ea29cb-7794-4f85-80d0-b6ecff44fe0f",
+        "document_id": "762cb645-2411-4c6e-a6a0-121557d8a9d3"
+      },
+      {
+        "id": "41c94220-4278-4d1d-bfb4-4f4f9f100b56",
+        "document_id": "a3b40fa6-2877-441f-94e0-af9d888b2d99"
+      },
+      {
+        "id": "485db1fd-a477-4880-9b39-e20bea7dbea9",
+        "document_id": "4ceee23a-7017-407c-903c-f19a2008c8f5"
+      },
+      {
+        "id": "8af0fe9d-4372-49ba-8f96-5c5b3db538e0",
+        "document_id": "0fc46351-c2c2-433d-b47e-05de3e54fee8"
+      },
+      {
+        "id": "bf166a50-d7ab-40a1-96ef-7e16fcca75f6",
+        "document_id": "fa43dec1-4dfc-4054-8b92-cde782334ca0"
+      },
+      {
+        "id": "24605eed-6c32-4379-ba67-afd8a655ae29",
+        "document_id": "681a7d32-7a6e-4750-949b-7d6c20c5ae93"
+      },
+      {
+        "id": "e7778450-5a96-4f65-bf48-36761f4df0bb",
+        "document_id": "10708b14-3f01-44b7-ba75-6da6da8cbbac"
+      },
+      {
+        "id": "77739a02-24f7-4ef8-99aa-07e2a2a54fc6",
+        "document_id": "227c6f8e-084d-47c5-95df-21c8b3509150"
+      },
+      {
+        "id": "1ed7f724-8610-4d70-a0d9-ce14da05caf7",
+        "document_id": "3c69f702-6604-43f0-8188-dcb86bb0cdea"
+      },
+      {
+        "id": "38e8a119-49bb-47d9-bcfe-d429c1eeba77",
+        "document_id": "872dda86-71e6-436b-8061-9fb246cd12e7"
+      },
+      {
+        "id": "46aa42ca-3f6d-4102-a891-0a84fe1e4cdc",
+        "document_id": "bad5561f-b192-4bde-a8c3-5039d2bc2d46"
+      },
+      {
+        "id": "e4378fe4-7a83-4daa-b4ee-d93a0f6a4293",
+        "document_id": "9b137ba1-7c80-464b-ba39-c1eec0f305bd"
+      },
+      {
+        "id": "ac7f697b-455e-48d6-8d06-038619de3a93",
+        "document_id": "b713a939-bb19-4246-9f11-5358b509c43b"
+      },
+      {
+        "id": "7cac7586-c8de-4ffb-a706-260d6d912009",
+        "document_id": "7efdb0e6-e693-4bb2-a99a-3402b2cf2444"
+      },
+      {
+        "id": "2cdbf4b8-fc3c-4c66-a359-6169a6f37569",
+        "document_id": "b9fc53eb-b8db-441b-81cb-fd0f590b54e9"
+      },
+      {
+        "id": "b666dc33-2f06-47f5-a278-138331878212",
+        "document_id": "8df5c241-c68c-427a-99af-30c44214199b"
+      },
+      {
+        "id": "053e5b79-a70f-43d0-89e6-cf706766c508",
+        "document_id": "2918b4f5-e480-4b97-96f4-7692682c1503"
+      },
+      {
+        "id": "5744ed07-c631-40e9-bc16-72fb6f346e12",
+        "document_id": "51834374-0878-44d1-b83a-3729efda7eb9"
+      },
+      {
+        "id": "ac167968-58ef-4547-ae4d-39b93449823f",
+        "document_id": "56dda777-2cf1-4213-b6fe-3be22028ccf6"
+      },
+      {
+        "id": "03962029-7a58-4d44-9f1c-18a5a6631be9",
+        "document_id": "0eb83f83-1250-44b5-bc10-26282f6781a8"
+      },
+      {
+        "id": "4c317c9d-56a0-49ba-aa02-36167af0e3a2",
+        "document_id": "32042523-919e-4f7c-a584-8a89b4fc2f8d"
+      },
+      {
+        "id": "89e309d8-e4eb-4a22-b1af-080fedcd7391",
+        "document_id": "d8be2c69-6f83-4e0b-9b38-346ff77660ca"
+      },
+      {
+        "id": "8f9e5f8b-4abc-49d9-812a-27af5692e4e1",
+        "document_id": "cd9c59ee-929a-4aa5-b7b5-64af1789f951"
+      },
+      {
+        "id": "25d57fa6-fe44-4b8a-87f4-3d8383dcc1d6",
+        "document_id": "32c45a53-b1b5-46b6-a519-8f7bbbddf93f"
+      },
+      {
+        "id": "d2b33bd9-8f88-4716-be4c-85791156aa64",
+        "document_id": "94c910f0-07ea-4e57-8ae5-5d35c446709b"
+      },
+      {
+        "id": "8377cf25-fe20-4c4b-8bca-bc6049e2eca3",
+        "document_id": "71cddf75-e127-4b19-9896-1c2f77132b68"
+      },
+      {
+        "id": "4ca1818d-fd87-4d3e-ad55-737b70fad8d1",
+        "document_id": "f5790c6f-c18e-4224-ad8e-e0f1de3493ca"
+      },
+      {
+        "id": "a148e6f8-733a-4b89-9500-854ab531e9df",
+        "document_id": "765c80d2-5094-4484-9f2a-4a81f61fc3c2"
+      },
+      {
+        "id": "f4b58ebd-cc6d-4b5d-a1d6-821e1148b2d6",
+        "document_id": "b90ce98e-cbe2-4d98-8d34-ead09d977c00"
+      },
+      {
+        "id": "abd5166e-ec3e-4909-8b7c-3c60c8a84049",
+        "document_id": "457b25d2-bfdf-4e31-95cf-61407e59f8d9"
+      },
+      {
+        "id": "2f6f4311-f09e-435c-9e06-fc475a876901",
+        "document_id": "f70db73a-663f-4ed4-8185-4990ccd7f0da"
+      },
+      {
+        "id": "a2eb030c-aff6-4f9c-a5ca-54e6eb5b5872",
+        "document_id": "72f960c0-4569-4a5d-ac7c-ec2b1a4ea8f0"
+      },
+      {
+        "id": "2cc3d001-3758-41f6-9608-b034ea56c464",
+        "document_id": "7cd3bc97-89ad-4cd2-a067-bcb994bf29e1"
+      },
+      {
+        "id": "485591ce-de35-4b6b-8d5d-331c21aeb62a",
+        "document_id": "08b9f4af-dd94-4858-841e-9a036992f149"
+      },
+      {
+        "id": "db4d2558-36cb-4ff0-977b-c58308eb9d13",
+        "document_id": "129eb556-5357-43ec-87ee-7b784bb30ae4"
+      },
+      {
+        "id": "35f6df76-8f3a-4ad9-98de-55efb7115648",
+        "document_id": "f9918028-f8fd-4f43-b224-79ebf380d59f"
+      },
+      {
+        "id": "6d50f812-472c-45fc-81df-cbc5e6ad0b42",
+        "document_id": "7ede7842-7383-4909-bca7-de167c2a5a67"
+      },
+      {
+        "id": "e5d971f8-ad94-46de-a447-77a3b011f197",
+        "document_id": "ef8670d4-a99c-4a8c-a890-52fe524be221"
+      },
+      {
+        "id": "1f06cd25-d9f3-4aab-8d35-ea70f683d259",
+        "document_id": "20df23bb-3d0e-4d2e-8d54-cf05b3852cfc"
+      },
+      {
+        "id": "bd244303-50e4-4222-99e4-24a1ce744c1e",
+        "document_id": "1d112cb6-291d-4969-9b4b-df9a50979cd5"
+      },
+      {
+        "id": "3f25fc7a-19ca-41b2-bc34-2a9ccc531bff",
+        "document_id": "9fe12426-9e0e-4323-ae33-57da1e8d3e4d"
+      },
+      {
+        "id": "f4db367f-93ba-4f8e-9e0d-b10e1d8cc7b7",
+        "document_id": "a15caffa-d0dc-452c-91c6-a359773b734f"
+      },
+      {
+        "id": "3bebc792-60dc-4eaa-97b6-139e6f58ebae",
+        "document_id": "603765c5-9aac-4c93-aecb-fd0a94787c25"
+      },
+      {
+        "id": "11719580-09b9-4154-a381-d246c432d9ad",
+        "document_id": "0a2812e0-137f-4952-a865-88b0a16c76fd"
+      },
+      {
+        "id": "54a0d462-029a-418e-ad93-c752dfed6271",
+        "document_id": "2a4c60af-5fdb-4d51-8326-ca70168b5225"
+      },
+      {
+        "id": "ea6b206b-d829-4553-a9a0-d7c9dfc08ed3",
+        "document_id": "93ad51c3-febe-467f-9086-41598d0f9f40"
+      },
+      {
+        "id": "9b116e15-3169-41c8-8147-d150d60875ba",
+        "document_id": "956a9dc6-f0d6-4aa6-8873-c7d0ad2345de"
+      },
+      {
+        "id": "73ab9d9e-d2e4-4347-8254-adacde6cd718",
+        "document_id": "b0c8063b-bc5f-4741-949b-3150643eeac8"
+      },
+      {
+        "id": "4c7b4651-2c9e-4662-9d06-2728930f50ed",
+        "document_id": "6abb170c-ca67-4b40-9b66-5cee89019980"
+      },
+      {
+        "id": "344e554d-f2dd-4b57-8965-8227f40da22f",
+        "document_id": "91af4b08-d8b2-4130-9ae1-dc1e6452e343"
+      },
+      {
+        "id": "413faecf-60d4-42e7-bd71-70e64feb0ce8",
+        "document_id": "af0b5c0a-2030-4ab6-8514-146af90a5581"
+      },
+      {
+        "id": "2871e644-5bfa-4529-9b4e-cd8e3a27d307",
+        "document_id": "c3839707-4a28-4e9d-8962-deed14b6f0e3"
+      },
+      {
+        "id": "d3b8986e-2887-407c-a3fd-7677e2a81628",
+        "document_id": "bcb712e5-8f52-48d2-8b97-09a9cbc738d1"
+      },
+      {
+        "id": "28067691-2468-43f9-ba5d-201dacef8197",
+        "document_id": "f9f83964-853c-4ece-8efb-503d68f9bea2"
+      },
+      {
+        "id": "b49550ac-555e-49ba-a0b8-c0b3dcc4f5c8",
+        "document_id": "d34f5a48-3d43-4dd6-88bb-9717710da038"
+      },
+      {
+        "id": "9458d6d6-f115-461b-a285-1fd869c6eb7a",
+        "document_id": "a037c478-05cf-45ce-91c5-e9642ea52d97"
+      },
+      {
+        "id": "7ff19a69-978f-41de-8bac-593042aed1b5",
+        "document_id": "0ff0cf82-61d7-4100-a22a-6535235f4b49"
+      },
+      {
+        "id": "36d155f7-d1d7-4185-8841-6791c0b1e075",
+        "document_id": "cbe33997-01ab-4fa4-a724-a4a2d7b38161"
+      },
+      {
+        "id": "2868860b-2084-4184-acbf-9bdce5f6b441",
+        "document_id": "0417ded2-c660-4def-bec3-3c6c7634e90b"
+      },
+      {
+        "id": "7e2d439b-dc9d-47e5-9521-0c89e2474d77",
+        "document_id": "1b6fe334-3e8b-468e-af0c-4de123fca154"
+      },
+      {
+        "id": "5e1891aa-eb20-403e-b3ba-a1ee16a3733c",
+        "document_id": "73a817fc-25df-494d-b0f2-79cfdab34076"
+      },
+      {
+        "id": "87f02a59-385c-4e48-a20b-719865efd52f",
+        "document_id": "7920e7c9-76e4-4fcc-9ad8-d26b9559db97"
+      },
+      {
+        "id": "8abfdf40-d451-474b-bf1c-c294663462a2",
+        "document_id": "d485759b-37c4-49a9-a33a-a39eb973b92a"
+      },
+      {
+        "id": "45b82100-5428-4d9a-9688-298b472c1783",
+        "document_id": "578eb49f-4944-4f85-a667-1da1955f5b50"
+      },
+      {
+        "id": "1479601e-70b9-44aa-90ed-92baaa0f4bca",
+        "document_id": "43fac1ff-7968-4e7b-adcc-8a611b283ff2"
+      },
+      {
+        "id": "b9b39bc1-7dbd-4de7-9aac-882c11b5ebae",
+        "document_id": "bf654ee6-5db0-428c-9ccf-911c6eb61bef"
+      },
+      {
+        "id": "c9439fef-383c-44e5-81a8-9c5e64746768",
+        "document_id": "6082d8ef-75ae-4c52-a26d-adc6f6ae58ac"
+      },
+      {
+        "id": "e045f1cd-c591-4bfd-9cf5-4a259887c8ca",
+        "document_id": "ba4e60af-bed4-4c0b-a4f2-2fe540d4ac79"
+      },
+      {
+        "id": "63572e69-e2af-4025-bab5-16cc244fa428",
+        "document_id": "92a2a3e8-8b7d-462a-86da-a474a7b338af"
+      },
+      {
+        "id": "34cfa348-6b5d-42eb-a166-bcce1930e4f1",
+        "document_id": "64cf85f6-c18e-4d03-8017-c4a77833a092"
+      }
+    ],
+    "policy": "strict_agreement",
+    "stage": "final",
+    "manifest_sha256": "b914921c03b08658236f29ec6b372975faa9b80f4d6a04b6509bd8920741a03c"
+  },
+  "backend": "program-v3-strict_agreement",
+  "scorer": "Local scale-aware numeric tolerance0.005 in gold units; not official TATQA",
+  "evaluated": 86,
+  "accuracy": 0.3488372093023256,
+  "coverage": 0.43023255813953487,
+  "answered_accuracy": 0.8108108108108109,
+  "accuracy_interval": {
+    "mean": 0.3488372093023256,
+    "ci95": [
+      0.2441860465116279,
+      0.45348837209302323
+    ],
+    "bootstrap_unit": "document",
+    "replicates": 1000
+  },
+  "p95_latency_ms": 2.80225,
+  "abstention_reasons": {
+    "Program and independent rule disagree": 37,
+    "Agreement lacks explicit table dimensions": 2,
+    "Program proposal rejected: Program treats a paragraph date as an amount": 1,
+    "Program proposal rejected: Program operands have incompatible or unresolved dimensions/units": 4,
+    "Program proposal rejected: Program observations do not match explicitly requested years": 3,
+    "Program proposal rejected: Program operation has invalid operand count": 1,
+    "Program context exceeds the fixed source budget": 1
+  },
+  "predictions": [
+    {
+      "id": "a8b031ed-58ec-418a-a229-89ad5444a6bb",
+      "document_id": "139e8d2d-0a3a-4ed1-80a7-f7614b1518b7",
+      "correct": true,
+      "predicted": "77",
+      "predicted_scale": "million",
+      "gold": 77,
+      "gold_scale": "million",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r10c1)-(r10c2)",
+        "citations": [
+          "R10"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 2.503
+    },
+    {
+      "id": "13d32108-e758-457b-95a1-73f3bd918975",
+      "document_id": "e9d3bb25-89ab-4aed-8bec-5501d5fe7b16",
+      "correct": false,
+      "predicted": "325",
+      "predicted_scale": "thousand",
+      "gold": 11.36,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r10c1)-(r10c2)",
+        "citations": [
+          "R10"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 1.013
+    },
+    {
+      "id": "57f38b17-ccdb-4d57-b075-9d1ff7dfb5e7",
+      "document_id": "b9871425-cbf5-4b6c-b1d3-6931727226a1",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 1.75,
+      "gold_scale": "percent",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 1.896
+    },
+    {
+      "id": "14501a2e-1369-44f4-aa58-c5eb42c8d68b",
+      "document_id": "fa0d7378-4217-44f1-bfb0-38688f03bdf3",
+      "correct": true,
+      "predicted": "-171.1006165551620097074642529",
+      "predicted_scale": "percent",
+      "gold": -171.1,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r3c1)-(r3c2))/(r3c2)*100",
+        "citations": [
+          "R3"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 0.956
+    },
+    {
+      "id": "fe5839ad-4387-4abb-ae4b-9e61feacd97a",
+      "document_id": "26d46b77-411e-47aa-b650-5c84ef3e9e21",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 58442,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 0.755
+    },
+    {
+      "id": "fb2036af-5359-4b80-975f-3604f1ad67d5",
+      "document_id": "abba843f-be4e-4905-8bab-19942dbfedef",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 15.53,
+      "gold_scale": "percent",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 1.044
+    },
+    {
+      "id": "b70433bd-7c92-413d-af00-cef3907cafe8",
+      "document_id": "f8ebe17f-9ca2-43e9-92f8-cee64f33068b",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 93.7,
+      "gold_scale": "percent",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 2.584
+    },
+    {
+      "id": "e25992fd-1fe4-44cb-a8d7-5c023a8ca5c8",
+      "document_id": "cca95e4f-c7f7-4ded-92e0-3371290f1374",
+      "correct": false,
+      "predicted": "-153",
+      "predicted_scale": "",
+      "gold": -153,
+      "gold_scale": "thousand",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r5c1)-(r5c2)",
+        "citations": [
+          "R5"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 1.06
+    },
+    {
+      "id": "5a58d6e1-8526-49cc-a56a-c4ade901790c",
+      "document_id": "41abd239-2074-4945-ade8-5cf7bce26b48",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 22,
+      "gold_scale": "percent",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 1.139
+    },
+    {
+      "id": "ee74c321-b0e8-44f6-b15a-a4e8511b6183",
+      "document_id": "7d228e82-671c-4b83-aad1-405493c0aa0c",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": -301.9,
+      "gold_scale": "",
+      "abstained": true,
+      "reason": "Agreement lacks explicit table dimensions",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Agreement lacks explicit table dimensions"
+      },
+      "latency_ms": 1.011
+    },
+    {
+      "id": "ebae8430-83a7-49c7-af14-99ddf4b1e376",
+      "document_id": "b224a7d4-b81c-400d-b4ed-4d7473dd85cc",
+      "correct": true,
+      "predicted": "113000",
+      "predicted_scale": "",
+      "gold": 113000,
+      "gold_scale": "",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r2c1)+(r2c2)",
+        "citations": [
+          "R2"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 0.857
+    },
+    {
+      "id": "072bf5fb-0edd-4267-bae7-b57f1c598017",
+      "document_id": "8217d51e-d170-4381-b018-072586fb1024",
+      "correct": true,
+      "predicted": "52",
+      "predicted_scale": "thousand",
+      "gold": 52,
+      "gold_scale": "thousand",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r5c1)-(r5c2)",
+        "citations": [
+          "R5"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 0.96
+    },
+    {
+      "id": "aef42c33-65c0-40a3-92e7-fefd107aacdb",
+      "document_id": "63a1e75f-72a5-4638-a3e2-51f881708f37",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 60.5,
+      "gold_scale": "million",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 1.427
+    },
+    {
+      "id": "170c75fb-da08-4e9d-8c5a-7cbb94e4176e",
+      "document_id": "41481127-0df1-490c-b7e4-bdd902d38a59",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 82.05,
+      "gold_scale": "percent",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 0.564
+    },
+    {
+      "id": "e93ba03b-59c0-4107-8f4b-ce9da002e06c",
+      "document_id": "ed571eb6-d635-44a0-84c3-1d21115db374",
+      "correct": true,
+      "predicted": "27923",
+      "predicted_scale": "thousand",
+      "gold": 27923,
+      "gold_scale": "thousand",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r3c1)-(r3c2)",
+        "citations": [
+          "R3"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 0.763
+    },
+    {
+      "id": "d15e8080-5504-4eee-8571-ea83294e51c0",
+      "document_id": "577a9bb6-6158-41aa-b2ec-1a3dd5cdfa06",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 19653.67,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 2.195
+    },
+    {
+      "id": "8de2ed8c-c548-4bb9-982c-5d714675b443",
+      "document_id": "687d09ee-4aa8-402a-ae27-96ce063115a5",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 12405.18,
+      "gold_scale": "",
+      "abstained": true,
+      "reason": "Program proposal rejected: Program treats a paragraph date as an amount",
+      "plan": null,
+      "latency_ms": 1.807
+    },
+    {
+      "id": "f6cb9974-2af7-43b3-9e1c-8cd5439dff67",
+      "document_id": "8b43d33f-3ad3-489a-b5b1-51fa95808128",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 43.15,
+      "gold_scale": "percent",
+      "abstained": true,
+      "reason": "Program proposal rejected: Program operands have incompatible or unresolved dimensions/units",
+      "plan": null,
+      "latency_ms": 1.406
+    },
+    {
+      "id": "e4deb430-6bd6-4505-a2cc-facbd0d502bf",
+      "document_id": "80e4cf21-5ead-4d13-98e7-0d57b30f8617",
+      "correct": true,
+      "predicted": "8.609271523178807947019867550",
+      "predicted_scale": "percent",
+      "gold": 8.61,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r4c1)-(r4c2))/(r4c2)*100",
+        "citations": [
+          "R4"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 0.644
+    },
+    {
+      "id": "9547b235-f8de-4c17-a9ac-e78277fcaf1a",
+      "document_id": "1b2ca134-09ae-4936-bc3d-453699823f6e",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 2035.5,
+      "gold_scale": "million",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 1.125
+    },
+    {
+      "id": "88795fae-3c5b-48d4-ae2d-57fe04b15c31",
+      "document_id": "dace18a6-701f-49d4-a16d-078e5b62fc94",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": -0.5,
+      "gold_scale": "million",
+      "abstained": true,
+      "reason": "Program proposal rejected: Program operands have incompatible or unresolved dimensions/units",
+      "plan": null,
+      "latency_ms": 1.237
+    },
+    {
+      "id": "ab7c4466-0cd7-4f3b-8d2a-73bb9abf0053",
+      "document_id": "e573a09b-3053-4c6e-9766-3cce1d2c087d",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 0,
+      "gold_scale": "percent",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 1.091
+    },
+    {
+      "id": "98b13aba-4ca2-4369-87eb-a960c71b8a2c",
+      "document_id": "c107d7d9-5208-4e97-823c-ec492c4ce75e",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 67.5,
+      "gold_scale": "percent",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 1.022
+    },
+    {
+      "id": "33d6e35e-0c0d-4234-99ce-2df83034136e",
+      "document_id": "98db5a3a-5b9e-4f91-aea4-bdc2672f1661",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 411.5,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 3.766
+    },
+    {
+      "id": "424177bf-1bab-4f7a-b11c-61e7eaa1a493",
+      "document_id": "483ae181-20b3-49f4-9d7b-6d75e8356250",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": -1.4,
+      "gold_scale": "percent",
+      "abstained": true,
+      "reason": "Program proposal rejected: Program observations do not match explicitly requested years",
+      "plan": null,
+      "latency_ms": 2.147
+    },
+    {
+      "id": "b11567d3-d651-40d8-9b9e-bc71eb37d7f9",
+      "document_id": "1c48b8a3-6132-49e3-b966-e8f6198a8724",
+      "correct": true,
+      "predicted": "-3.616352201257861635220125786",
+      "predicted_scale": "percent",
+      "gold": -3.62,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r6c1)-(r6c2))/(r6c2)*100",
+        "citations": [
+          "R6"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 0.805
+    },
+    {
+      "id": "634122ee-5fb5-4e38-a552-5673e23987cf",
+      "document_id": "aea0cfae-19e9-4aec-a577-de0230696ce0",
+      "correct": true,
+      "predicted": "-4.729729729729729729729729730",
+      "predicted_scale": "percent",
+      "gold": -4.73,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r4c1)-(r4c2))/(r4c2)*100",
+        "citations": [
+          "R4"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 0.717
+    },
+    {
+      "id": "503dde52-a6e1-4c63-aca5-ff3d92ea2854",
+      "document_id": "d4f5a342-4efd-42fd-aa11-7e762d1e3f8f",
+      "correct": true,
+      "predicted": "2904",
+      "predicted_scale": "thousand",
+      "gold": 2904,
+      "gold_scale": "thousand",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r4c1)-(r4c2)",
+        "citations": [
+          "R4"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 0.955
+    },
+    {
+      "id": "e9b75381-50b1-4717-a322-31ed1eef4259",
+      "document_id": "239347c1-faf9-4fb1-a167-d3c83fd0dead",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": -2,
+      "gold_scale": "",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 1.154
+    },
+    {
+      "id": "204ecd0e-d405-4a41-8163-10f670f987b5",
+      "document_id": "ff281ea5-25cf-4e1d-b7f5-f0dc51a40f25",
+      "correct": true,
+      "predicted": "75.2",
+      "predicted_scale": "million",
+      "gold": 75.2,
+      "gold_scale": "million",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r2c2)+(r2c1))/(1+1)",
+        "citations": [
+          "R2"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 1.081
+    },
+    {
+      "id": "3bc9ea91-f346-4cc1-9ca7-10c481be3ac9",
+      "document_id": "808ccf05-6f40-43d5-a71f-154ed45ce499",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 0.1,
+      "gold_scale": "million",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 1.525
+    },
+    {
+      "id": "3f6ca4fd-abb8-4a86-bd11-e77921f9cd8c",
+      "document_id": "46466da8-bb43-453f-aa9b-f2230b663864",
+      "correct": true,
+      "predicted": "-4049.058149058149058149058149",
+      "predicted_scale": "percent",
+      "gold": -4049.06,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r20c1)-(r20c2))/(r20c2)*100",
+        "citations": [
+          "R20"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 1.519
+    },
+    {
+      "id": "2581c0dc-1e8d-49b5-90a0-dd8a0f0ecfef",
+      "document_id": "017e0ecd-5b06-4450-a632-b6ae9bffefbb",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 18778,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "reason": "Program proposal rejected: Program observations do not match explicitly requested years",
+      "plan": null,
+      "latency_ms": 1.31
+    },
+    {
+      "id": "276ac70b-a4ae-4163-bf39-bdb6ed29a4be",
+      "document_id": "5f71e969-c63e-4b46-ad47-5fce09490ab6",
+      "correct": true,
+      "predicted": "-0.2",
+      "predicted_scale": "percent",
+      "gold": -0.2,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r6c1)-(r6c2)",
+        "citations": [
+          "R6"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 2.048
+    },
+    {
+      "id": "1d92a278-69c4-4b79-adcc-615db7d2e5cc",
+      "document_id": "e614befa-40ae-43c0-93b1-385899b6b181",
+      "correct": true,
+      "predicted": "468",
+      "predicted_scale": "million",
+      "gold": 468,
+      "gold_scale": "million",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r3c2)-(r3c3)",
+        "citations": [
+          "R3"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 1.423
+    },
+    {
+      "id": "8c882f0d-684c-430e-8194-997c565a7258",
+      "document_id": "fd7e14ed-efb6-4992-bdc2-b5603d91f126",
+      "correct": true,
+      "predicted": "73.6",
+      "predicted_scale": "",
+      "gold": 73.6,
+      "gold_scale": "",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r13c1)-(r13c2)",
+        "citations": [
+          "R13"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 1.473
+    },
+    {
+      "id": "8697d0a4-7073-4834-a055-44cccb3db95c",
+      "document_id": "39fda147-0e87-41e1-a4d5-0e71abbadf16",
+      "correct": true,
+      "predicted": "19582777",
+      "predicted_scale": "",
+      "gold": 19582777,
+      "gold_scale": "",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r2c1)+(r2c2))/(1+1)",
+        "citations": [
+          "R2"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 1.656
+    },
+    {
+      "id": "9b71194f-7599-4368-a529-76b0d44359b0",
+      "document_id": "44c7c9ef-bb9f-45c9-9ee5-e2bf465c3617",
+      "correct": true,
+      "predicted": "-25.53191489361702127659574468",
+      "predicted_scale": "percent",
+      "gold": -25.53,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r5c1)-(r4c1))/(r4c1)*100",
+        "citations": [
+          "R5",
+          "R4"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 0.835
+    },
+    {
+      "id": "8f75bf3a-849c-4979-b82a-b53dbcf42509",
+      "document_id": "1fc1784c-38a0-49a2-a985-8c8a479f5f66",
+      "correct": true,
+      "predicted": "1972",
+      "predicted_scale": "million",
+      "gold": 1972,
+      "gold_scale": "million",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r2c1)+(r2c2))/(1+1)",
+        "citations": [
+          "R2"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 0.858
+    },
+    {
+      "id": "8414474d-b00d-4231-8973-9c76f29d3e1c",
+      "document_id": "1ca5293d-2ea9-4a14-88a1-641795d7e142",
+      "correct": true,
+      "predicted": "-5260",
+      "predicted_scale": "",
+      "gold": -5260,
+      "gold_scale": "",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r3c1)-(r3c2)",
+        "citations": [
+          "R3"
+        ],
+        "scale": "",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 0.828
+    },
+    {
+      "id": "c669a023-261f-4170-a39e-c29b72cb4488",
+      "document_id": "88097457-b056-45fb-bb8d-9106df18df0d",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 0.15,
+      "gold_scale": "percent",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 1.859
+    },
+    {
+      "id": "00a60f91-b2d2-4bc5-acc4-69121abf68a9",
+      "document_id": "2f655c5a-3936-48e6-aa15-4145a5c12c3f",
+      "correct": true,
+      "predicted": "-7",
+      "predicted_scale": "million",
+      "gold": -7,
+      "gold_scale": "million",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r9c1)-(r9c2)",
+        "citations": [
+          "R9"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 1.848
+    },
+    {
+      "id": "1427bbad-0def-4340-a537-4713dad96ea7",
+      "document_id": "921148c5-ea09-4de1-aefb-8ec85702982b",
+      "correct": false,
+      "predicted": "-11888",
+      "predicted_scale": "thousand",
+      "gold": 11888,
+      "gold_scale": "thousand",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r5c2)+(r5c1))/(1+1)",
+        "citations": [
+          "R5"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 1.382
+    },
+    {
+      "id": "2d86600b-f6f6-493c-9c36-37e38e351932",
+      "document_id": "4dddba76-8925-4f79-9d9c-749341fcc978",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 24584,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 0.98
+    },
+    {
+      "id": "a6cc136d-ceb2-49d7-9a0b-fae5b6d0424c",
+      "document_id": "d5fdfbe6-8e07-4ca9-a84c-cf07c3b871c1",
+      "correct": true,
+      "predicted": "10.84143023707734162456276720",
+      "predicted_scale": "percent",
+      "gold": 10.84,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r4c1)-(r4c2))/(r4c2)*100",
+        "citations": [
+          "R4"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 0.769
+    },
+    {
+      "id": "3d6668c4-bae7-40fc-a69a-0a38bf220af9",
+      "document_id": "97b55a6f-ce8f-49de-b53a-8a523ab47835",
+      "correct": true,
+      "predicted": "12.46229064808072401955685010",
+      "predicted_scale": "percent",
+      "gold": 12.46,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r10c1)-(r10c2))/(r10c2)*100",
+        "citations": [
+          "R10"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 1.153
+    },
+    {
+      "id": "e08bf359-5dc5-4df9-8679-5144747fdb6b",
+      "document_id": "d4d2731b-3a60-4569-8dc2-005e525c4de8",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 38.24,
+      "gold_scale": "percent",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 0.494
+    },
+    {
+      "id": "3cbbe606-2c3c-4e20-a266-3dc3fc00adb7",
+      "document_id": "7fa11b39-7af2-408b-9ee2-03479d6f6ffe",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 3.5,
+      "gold_scale": "million",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 0.74
+    },
+    {
+      "id": "078e34fa-b33a-43fe-afd3-d39b4cbd6a6b",
+      "document_id": "a190aaec-d9e9-4555-a64b-e833f1db0843",
+      "correct": false,
+      "predicted": "-21.41453831041257367387033399",
+      "predicted_scale": "percent",
+      "gold": -10.9,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r3c1)-(r3c2))/(r3c2)*100",
+        "citations": [
+          "R3"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 0.92
+    },
+    {
+      "id": "5a97069f-9b7c-446f-8738-73f534c52fe0",
+      "document_id": "cf49db0f-608a-4ef4-a248-d73c6030df4b",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 1541.5,
+      "gold_scale": "million",
+      "abstained": true,
+      "reason": "Program proposal rejected: Program operation has invalid operand count",
+      "plan": null,
+      "latency_ms": 1.159
+    },
+    {
+      "id": "49e5b466-62c9-4cab-8d70-8e9317e7a007",
+      "document_id": "b4fefe60-e68c-4ba3-a8f9-35395b7ea0a5",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 2.41,
+      "gold_scale": "",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 0.664
+    },
+    {
+      "id": "beb114d0-5ff6-452b-ae71-774f70b9cca5",
+      "document_id": "f824a6f0-d7fe-43ae-9455-59aaa0854aa3",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": -66.67,
+      "gold_scale": "percent",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 0.906
+    },
+    {
+      "id": "38bfd292-e881-4558-89f8-5139010db8cf",
+      "document_id": "5b874c83-80f7-48d2-bdac-166f2c778e37",
+      "correct": true,
+      "predicted": "1258",
+      "predicted_scale": "thousand",
+      "gold": 1258,
+      "gold_scale": "thousand",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r2c1)-(r2c2)",
+        "citations": [
+          "R2"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 1.217
+    },
+    {
+      "id": "f329027f-e65a-402c-908e-21f0a0d25fe0",
+      "document_id": "946c64c4-a9f2-4f49-857e-1dc373c5940b",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": -3270,
+      "gold_scale": "",
+      "abstained": true,
+      "reason": "Agreement lacks explicit table dimensions",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Agreement lacks explicit table dimensions"
+      },
+      "latency_ms": 1.589
+    },
+    {
+      "id": "27911d6f-dfe5-487b-bc56-7e5cf16a32e0",
+      "document_id": "8db2d2a5-fdcd-45c2-be2f-813cba4fbca7",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 37.35,
+      "gold_scale": "million",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 0.846
+    },
+    {
+      "id": "eb50d3aa-16da-4087-9ab2-10106ebd10e7",
+      "document_id": "c29582f8-d95d-480c-8daf-320273546471",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 2988,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 0.921
+    },
+    {
+      "id": "a9d3a57e-89ab-4345-b32c-f2bc615f218e",
+      "document_id": "75ab135a-beab-4a3e-ae96-356cd0dd0b59",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 12,
+      "gold_scale": "percent",
+      "abstained": true,
+      "reason": "Program proposal rejected: Program observations do not match explicitly requested years",
+      "plan": null,
+      "latency_ms": 3.369
+    },
+    {
+      "id": "bd8bb8d3-c7e9-4a7f-be23-97b27a29f74e",
+      "document_id": "b24ee687-2712-4f16-9bc9-0f3f3636e407",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": -4.59,
+      "gold_scale": "percent",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 1.448
+    },
+    {
+      "id": "a366ea30-5ba3-4f62-b027-7fd4c0b7d6af",
+      "document_id": "da44d518-c39a-4673-9298-31feeafc61e4",
+      "correct": true,
+      "predicted": "259190.5",
+      "predicted_scale": "thousand",
+      "gold": 259190.5,
+      "gold_scale": "thousand",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r8c2)+(r8c1))/(1+1)",
+        "citations": [
+          "R8"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 1.17
+    },
+    {
+      "id": "973464b5-a5fe-4381-9bc5-e225f5ba9a2c",
+      "document_id": "89cf13a2-6d08-48be-a45d-2346422d5c38",
+      "correct": false,
+      "predicted": "66.66666666666666666666666667",
+      "predicted_scale": "percent",
+      "gold": 0.8,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r4c2)-(r4c3))/(r4c3)*100",
+        "citations": [
+          "R4"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 0.847
+    },
+    {
+      "id": "32cbd9ff-637d-4b5f-b10b-92243f2e1a93",
+      "document_id": "c962af59-9f65-4db7-9775-32c864045d7f",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 2.65,
+      "gold_scale": "",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 2.102
+    },
+    {
+      "id": "fda3b0cb-bc87-4cbc-bc8f-79604538a700",
+      "document_id": "d7d65228-96c1-4890-951c-c3d7578f8031",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 835623,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 0.774
+    },
+    {
+      "id": "71384b98-32c8-46e6-a820-9551c8c10e2d",
+      "document_id": "6ea63cce-37b7-4210-b446-952afde67eb5",
+      "correct": true,
+      "predicted": "1.234567901234567901234567901",
+      "predicted_scale": "percent",
+      "gold": 1.23,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r1c1)-(r1c2))/(r1c2)*100",
+        "citations": [
+          "R1"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 1.648
+    },
+    {
+      "id": "81cab6e1-acb6-4c1e-a5f7-ae283cbd1b53",
+      "document_id": "428d5e87-612b-468c-80f3-5b5298d589c8",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": -531925,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 1.648
+    },
+    {
+      "id": "e3f430ad-0f9f-4cfc-9976-3e99271555fa",
+      "document_id": "ef1f83ac-45f8-4d92-b577-390b4d8d9473",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": -4931,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 2.287
+    },
+    {
+      "id": "58060f0e-fb29-4aaf-b4c7-7e43d16e009d",
+      "document_id": "8dcb30f6-a302-4704-b665-a82ee828a3d6",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 1622,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 0.765
+    },
+    {
+      "id": "89e21fa8-60b1-4f4f-be8d-497733907f52",
+      "document_id": "3b51990b-6604-4af1-947a-98e6a499ad58",
+      "correct": true,
+      "predicted": "-3",
+      "predicted_scale": "million",
+      "gold": -3,
+      "gold_scale": "million",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r6c1)-(r6c2)",
+        "citations": [
+          "R6"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 1.078
+    },
+    {
+      "id": "8cb754f8-8411-4846-b6f8-8e2467ce08f3",
+      "document_id": "2a704bb9-4bd3-4071-b8e6-212957b04ada",
+      "correct": false,
+      "predicted": "31.2500",
+      "predicted_scale": "percent",
+      "gold": 0.5,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r10c1)-(r10c2))/(r10c2)*100",
+        "citations": [
+          "R10"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 1.349
+    },
+    {
+      "id": "acbacb07-2a66-418b-b6da-53424c35abd5",
+      "document_id": "a961dd41-e5cb-40ce-876d-7c2f2c7dae96",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 141,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 1.017
+    },
+    {
+      "id": "3a216553-f87b-4278-ac56-1ff31d94db07",
+      "document_id": "af31958a-184d-4005-9fcb-cfad9912ba8c",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 18.99,
+      "gold_scale": "percent",
+      "abstained": true,
+      "reason": "Program proposal rejected: Program operands have incompatible or unresolved dimensions/units",
+      "plan": null,
+      "latency_ms": 0.722
+    },
+    {
+      "id": "535feed7-48cc-4429-97f3-52bfb31fe19a",
+      "document_id": "b7650647-937a-4dff-965c-2535d4918d5e",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 48410,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 1.054
+    },
+    {
+      "id": "1352b9c0-2cca-432e-807e-08580574f3a8",
+      "document_id": "62d958c0-fb12-4683-b503-e5c01da9aea6",
+      "correct": true,
+      "predicted": "-1161.333333333333333333333333",
+      "predicted_scale": "thousand",
+      "gold": -1161.33,
+      "gold_scale": "thousand",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r2c1)+(r2c2)+(r2c3))/(1+1+1)",
+        "citations": [
+          "R2"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 1.373
+    },
+    {
+      "id": "e81574d8-f9e8-48b3-85ab-a7ed36f8cbb0",
+      "document_id": "2d43502e-4c4a-4334-954c-25502374d317",
+      "correct": true,
+      "predicted": "9",
+      "predicted_scale": "million",
+      "gold": 9,
+      "gold_scale": "million",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r4c1)-(r4c2)",
+        "citations": [
+          "R4"
+        ],
+        "scale": "million",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 0.739
+    },
+    {
+      "id": "feb46963-3b1f-4eaa-8325-74044812e35b",
+      "document_id": "5ce66c1d-89ff-48d1-8689-ec08918dc634",
+      "correct": true,
+      "predicted": "49.40042614340220999950448442",
+      "predicted_scale": "percent",
+      "gold": 49.4,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r8c1)-(r8c5))/(r8c5)*100",
+        "citations": [
+          "R8"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 2.356
+    },
+    {
+      "id": "2e4cfc8c-d8a7-419a-ab68-216fc1624093",
+      "document_id": "e598e43e-f2b3-4d9f-8de1-78ddead7f85b",
+      "correct": false,
+      "predicted": "-466",
+      "predicted_scale": "thousand",
+      "gold": 466,
+      "gold_scale": "thousand",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "(r16c1)-(r16c2)",
+        "citations": [
+          "R16"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 2.875
+    },
+    {
+      "id": "d13b3204-0428-41af-8e4a-771dde352c50",
+      "document_id": "d8568399-5323-490a-9ea9-90968abca2f4",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 8.64,
+      "gold_scale": "percent",
+      "abstained": true,
+      "reason": "Program context exceeds the fixed source budget",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program context exceeds the fixed source budget"
+      },
+      "latency_ms": 10.441
+    },
+    {
+      "id": "cd461457-bc43-45fe-9a82-147a7dd1c700",
+      "document_id": "e6e7a1b1-07ba-4347-83df-8137dd88fd81",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 17.34,
+      "gold_scale": "percent",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 1.379
+    },
+    {
+      "id": "735a2fcf-f401-4636-8e75-43743beddad4",
+      "document_id": "1ccf32ea-826a-4ea7-9a9d-f8bd33917e14",
+      "correct": true,
+      "predicted": "134",
+      "predicted_scale": "thousand",
+      "gold": 134,
+      "gold_scale": "thousand",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r3c1)+(r3c2))/(1+1)",
+        "citations": [
+          "R3"
+        ],
+        "scale": "thousand",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 0.711
+    },
+    {
+      "id": "95497d9b-23d7-4c89-832c-bcf408981985",
+      "document_id": "502dd70a-926b-49d7-b236-63855c98e740",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": -27603,
+      "gold_scale": "",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 1.158
+    },
+    {
+      "id": "5a09d607-3502-4451-9d1a-a222dfc32968",
+      "document_id": "f6dd98fe-96f6-48c9-b952-d7d8a5914f5f",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 242.5,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 1.531
+    },
+    {
+      "id": "b29f1fb0-a644-4f3d-9968-8977e5e37d4c",
+      "document_id": "8dce706b-08f3-4489-be7c-4b35d4f3677c",
+      "correct": true,
+      "predicted": "64.70588235294117647058823529",
+      "predicted_scale": "percent",
+      "gold": 64.71,
+      "gold_scale": "percent",
+      "abstained": false,
+      "reason": "",
+      "plan": {
+        "expression": "((r4c1)-(r4c2))/(r4c2)*100",
+        "citations": [
+          "R4"
+        ],
+        "scale": "percent",
+        "abstain": false,
+        "reason": "Compiled 1 source-grounded program step(s)"
+      },
+      "latency_ms": 0.655
+    },
+    {
+      "id": "a692d44e-823d-4b9f-a9f6-5e7caa53295e",
+      "document_id": "daf81839-002f-40c2-8067-b4ad7eaf1517",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 4277,
+      "gold_scale": "million",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 2.876
+    },
+    {
+      "id": "14120019-ba0a-483f-9046-2f2d4118761c",
+      "document_id": "21a432eb-166c-4178-adf9-08b6ad3fde7d",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": -12069,
+      "gold_scale": "million",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 1.966
+    },
+    {
+      "id": "765f1e20-9c75-4611-99ef-68a193d7e101",
+      "document_id": "a5fb7f90-4f37-460a-886e-13195f501f1b",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 30.3,
+      "gold_scale": "million",
+      "abstained": true,
+      "reason": "Program proposal rejected: Program operands have incompatible or unresolved dimensions/units",
+      "plan": null,
+      "latency_ms": 2.504
+    },
+    {
+      "id": "4de47ae5-67fc-422d-841e-d31a5a7352b4",
+      "document_id": "bea3f426-e6ba-438f-8058-b815be4cf646",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 192699,
+      "gold_scale": "thousand",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 1.863
+    },
+    {
+      "id": "65581c66-9e18-4e1b-979a-dcd2a873d998",
+      "document_id": "d9fd4f62-fd62-4254-a96d-70d23f08fc61",
+      "correct": false,
+      "predicted": null,
+      "predicted_scale": "",
+      "gold": 2.5,
+      "gold_scale": "million",
+      "abstained": true,
+      "reason": "Program and independent rule disagree",
+      "plan": {
+        "expression": "",
+        "citations": [],
+        "scale": "",
+        "abstain": true,
+        "reason": "Program and independent rule disagree"
+      },
+      "latency_ms": 0.689
+    }
+  ]
+}

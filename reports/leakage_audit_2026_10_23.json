@@ -1,0 +1,1610 @@
+{
+  "grouping_version": "exact-table-or-informative-paragraph-components-v1",
+  "minimum_paragraph_characters": 80,
+  "minimum_paragraph_words": 12,
+  "source_contexts": 2479,
+  "source_groups": 2240,
+  "stage_counts": {
+    "historical_training_contexts": 108,
+    "prompt_development": 100,
+    "calibration_v3": 400,
+    "comparison_v4": 200,
+    "calibration_v4": 300,
+    "retired_public_development": 278
+  },
+  "source_group_disjoint": false,
+  "pairs": [
+    {
+      "left": "historical_training_contexts",
+      "right": "prompt_development",
+      "shared_context_ids": [],
+      "shared_table_keys": 0,
+      "shared_paragraph_keys": 1,
+      "shared_source_groups": 1,
+      "left_contexts_in_shared_groups": [
+        "03c8396f-eb08-4b8c-ad8c-809815b3a857",
+        "15c366af-d696-466b-a7b4-d56928d13cae",
+        "9060df78-c972-4f3b-8bfe-271059f4cb5d"
+      ],
+      "right_contexts_in_shared_groups": [
+        "a6777766-950e-42b0-8e41-183fb1c44452"
+      ],
+      "direct_shared_sources": [
+        {
+          "kind": "paragraph",
+          "source_sha256": "158a77a5aefc86126144181f1afb02e4495dfdf332df4ae3b71d0ac952f4beac",
+          "left_contexts": [
+            "03c8396f-eb08-4b8c-ad8c-809815b3a857",
+            "15c366af-d696-466b-a7b4-d56928d13cae",
+            "9060df78-c972-4f3b-8bfe-271059f4cb5d"
+          ],
+          "right_contexts": [
+            "a6777766-950e-42b0-8e41-183fb1c44452"
+          ]
+        }
+      ]
+    },
+    {
+      "left": "historical_training_contexts",
+      "right": "calibration_v3",
+      "shared_context_ids": [],
+      "shared_table_keys": 0,
+      "shared_paragraph_keys": 5,
+      "shared_source_groups": 4,
+      "left_contexts_in_shared_groups": [
+        "03c8396f-eb08-4b8c-ad8c-809815b3a857",
+        "15c366af-d696-466b-a7b4-d56928d13cae",
+        "9060df78-c972-4f3b-8bfe-271059f4cb5d",
+        "978b1f60-e55c-4969-b9c9-cc5142c8e1c9",
+        "b3b0041d-6b7b-4997-b106-d0c5672771e6",
+        "f9e06732-8c46-45a8-9738-48eaefb78167"
+      ],
+      "right_contexts_in_shared_groups": [
+        "10033a3d-bb14-4a29-a06d-ac3697a2f52d",
+        "241ac2fa-ad05-4d30-98f2-0d699bbbea94",
+        "2df54ed2-35ab-40b6-ae86-77cddd0df790",
+        "3158b230-32e7-4c12-944b-5352b5867ace",
+        "4ceee23a-7017-407c-903c-f19a2008c8f5",
+        "57d15d5c-ad89-434a-b455-cabd50e8731a",
+        "9fe12426-9e0e-4323-ae33-57da1e8d3e4d"
+      ],
+      "direct_shared_sources": [
+        {
+          "kind": "paragraph",
+          "source_sha256": "0b3f136446721fc3843e45c2a33f02532784b291c052dbfaa4619a985ba618b9",
+          "left_contexts": [
+            "b3b0041d-6b7b-4997-b106-d0c5672771e6"
+          ],
+          "right_contexts": [
+            "9fe12426-9e0e-4323-ae33-57da1e8d3e4d"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "158a77a5aefc86126144181f1afb02e4495dfdf332df4ae3b71d0ac952f4beac",
+          "left_contexts": [
+            "03c8396f-eb08-4b8c-ad8c-809815b3a857",
+            "15c366af-d696-466b-a7b4-d56928d13cae",
+            "9060df78-c972-4f3b-8bfe-271059f4cb5d"
+          ],
+          "right_contexts": [
+            "10033a3d-bb14-4a29-a06d-ac3697a2f52d",
+            "2df54ed2-35ab-40b6-ae86-77cddd0df790",
+            "3158b230-32e7-4c12-944b-5352b5867ace",
+            "4ceee23a-7017-407c-903c-f19a2008c8f5"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "4f1c08fefa50b0b6cca82c559faf8f5bca848ea826758129f8dffccb6f53e38c",
+          "left_contexts": [
+            "978b1f60-e55c-4969-b9c9-cc5142c8e1c9"
+          ],
+          "right_contexts": [
+            "241ac2fa-ad05-4d30-98f2-0d699bbbea94"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "b80e0c455a6b82afbe7c5009f3a0c4d94ffabaafe87215d14ff1516f272174f7",
+          "left_contexts": [
+            "03c8396f-eb08-4b8c-ad8c-809815b3a857"
+          ],
+          "right_contexts": [
+            "4ceee23a-7017-407c-903c-f19a2008c8f5"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "fb52604866a7547365d1dca1a00a7dfec82fd0f46660acaea2b153865bba9aab",
+          "left_contexts": [
+            "f9e06732-8c46-45a8-9738-48eaefb78167"
+          ],
+          "right_contexts": [
+            "57d15d5c-ad89-434a-b455-cabd50e8731a"
+          ]
+        }
+      ]
+    },
+    {
+      "left": "historical_training_contexts",
+      "right": "comparison_v4",
+      "shared_context_ids": [],
+      "shared_table_keys": 0,
+      "shared_paragraph_keys": 4,
+      "shared_source_groups": 4,
+      "left_contexts_in_shared_groups": [
+        "03c8396f-eb08-4b8c-ad8c-809815b3a857",
+        "15c366af-d696-466b-a7b4-d56928d13cae",
+        "9060df78-c972-4f3b-8bfe-271059f4cb5d",
+        "978b1f60-e55c-4969-b9c9-cc5142c8e1c9",
+        "c3a02c86-f7f6-495c-8de2-a74c48f11905",
+        "f9e06732-8c46-45a8-9738-48eaefb78167"
+      ],
+      "right_contexts_in_shared_groups": [
+        "70b05eb3-abb5-4204-86d9-2ffce11f9171",
+        "ae9effab-a89c-435a-bcf3-a504d9fef286",
+        "b3812392-5cb3-4972-ae26-1d6054fbcc32",
+        "dc4fb8ca-0f30-4e88-a88b-1d86d1187187",
+        "e60e8ee4-b06d-4e07-aecd-459d863dae45"
+      ],
+      "direct_shared_sources": [
+        {
+          "kind": "paragraph",
+          "source_sha256": "158a77a5aefc86126144181f1afb02e4495dfdf332df4ae3b71d0ac952f4beac",
+          "left_contexts": [
+            "03c8396f-eb08-4b8c-ad8c-809815b3a857",
+            "15c366af-d696-466b-a7b4-d56928d13cae",
+            "9060df78-c972-4f3b-8bfe-271059f4cb5d"
+          ],
+          "right_contexts": [
+            "70b05eb3-abb5-4204-86d9-2ffce11f9171"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "4f1c08fefa50b0b6cca82c559faf8f5bca848ea826758129f8dffccb6f53e38c",
+          "left_contexts": [
+            "978b1f60-e55c-4969-b9c9-cc5142c8e1c9"
+          ],
+          "right_contexts": [
+            "b3812392-5cb3-4972-ae26-1d6054fbcc32"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "fb52604866a7547365d1dca1a00a7dfec82fd0f46660acaea2b153865bba9aab",
+          "left_contexts": [
+            "f9e06732-8c46-45a8-9738-48eaefb78167"
+          ],
+          "right_contexts": [
+            "e60e8ee4-b06d-4e07-aecd-459d863dae45"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "fd57aa12969280f3668ddff0ca2956e0c3ac015016c5f13f9b028f223aff4180",
+          "left_contexts": [
+            "c3a02c86-f7f6-495c-8de2-a74c48f11905"
+          ],
+          "right_contexts": [
+            "dc4fb8ca-0f30-4e88-a88b-1d86d1187187"
+          ]
+        }
+      ]
+    },
+    {
+      "left": "historical_training_contexts",
+      "right": "calibration_v4",
+      "shared_context_ids": [],
+      "shared_table_keys": 0,
+      "shared_paragraph_keys": 6,
+      "shared_source_groups": 5,
+      "left_contexts_in_shared_groups": [
+        "03c8396f-eb08-4b8c-ad8c-809815b3a857",
+        "15c366af-d696-466b-a7b4-d56928d13cae",
+        "88df4eda-48ab-465b-834e-d79b8c14b65c",
+        "9060df78-c972-4f3b-8bfe-271059f4cb5d",
+        "b3b0041d-6b7b-4997-b106-d0c5672771e6",
+        "ec23a5b9-95a9-4ea4-a3f2-4c61a0f1ec33",
+        "f9e06732-8c46-45a8-9738-48eaefb78167"
+      ],
+      "right_contexts_in_shared_groups": [
+        "0a7bcc81-bfa3-42bb-9b90-ca5341f0652e",
+        "38e317da-db7f-46d6-bde5-8fcb492007d8",
+        "41802aff-1ee5-4447-9f73-d31d938c947a",
+        "4b13be0a-74c0-4548-86a6-6cd836a7a7de",
+        "984a201a-c5c4-48f2-823d-b573e3f3c8f5",
+        "ca75fded-f5a4-473a-a6d5-dad69d0b69bd",
+        "d9712dd9-d020-4370-9ae4-e3f05babf44d",
+        "e045cb9a-275d-4503-9710-f437a4bfa14f",
+        "f0f7e36a-cf9c-4935-b8d4-56bc978fdf4e"
+      ],
+      "direct_shared_sources": [
+        {
+          "kind": "paragraph",
+          "source_sha256": "0b3f136446721fc3843e45c2a33f02532784b291c052dbfaa4619a985ba618b9",
+          "left_contexts": [
+            "b3b0041d-6b7b-4997-b106-d0c5672771e6"
+          ],
+          "right_contexts": [
+            "f0f7e36a-cf9c-4935-b8d4-56bc978fdf4e"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "0d5770607a5765e8403d7e447b1d5b883f8ef6b3d677334288a34831bd95637d",
+          "left_contexts": [
+            "88df4eda-48ab-465b-834e-d79b8c14b65c"
+          ],
+          "right_contexts": [
+            "984a201a-c5c4-48f2-823d-b573e3f3c8f5"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "158a77a5aefc86126144181f1afb02e4495dfdf332df4ae3b71d0ac952f4beac",
+          "left_contexts": [
+            "03c8396f-eb08-4b8c-ad8c-809815b3a857",
+            "15c366af-d696-466b-a7b4-d56928d13cae",
+            "9060df78-c972-4f3b-8bfe-271059f4cb5d"
+          ],
+          "right_contexts": [
+            "0a7bcc81-bfa3-42bb-9b90-ca5341f0652e",
+            "38e317da-db7f-46d6-bde5-8fcb492007d8",
+            "4b13be0a-74c0-4548-86a6-6cd836a7a7de",
+            "ca75fded-f5a4-473a-a6d5-dad69d0b69bd",
+            "d9712dd9-d020-4370-9ae4-e3f05babf44d"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "81bbb54bdb7970f840c4d9e36e2afead2613a14d51439b6f4137316a0fc1b37a",
+          "left_contexts": [
+            "ec23a5b9-95a9-4ea4-a3f2-4c61a0f1ec33"
+          ],
+          "right_contexts": [
+            "e045cb9a-275d-4503-9710-f437a4bfa14f"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "b54a1e7d11de04440017d539666b8f9fb75c1a69a7d9cd2aa5e814dce902d386",
+          "left_contexts": [
+            "b3b0041d-6b7b-4997-b106-d0c5672771e6"
+          ],
+          "right_contexts": [
+            "f0f7e36a-cf9c-4935-b8d4-56bc978fdf4e"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "fb52604866a7547365d1dca1a00a7dfec82fd0f46660acaea2b153865bba9aab",
+          "left_contexts": [
+            "f9e06732-8c46-45a8-9738-48eaefb78167"
+          ],
+          "right_contexts": [
+            "41802aff-1ee5-4447-9f73-d31d938c947a"
+          ]
+        }
+      ]
+    },
+    {
+      "left": "historical_training_contexts",
+      "right": "retired_public_development",
+      "shared_context_ids": [],
+      "shared_table_keys": 0,
+      "shared_paragraph_keys": 3,
+      "shared_source_groups": 2,
+      "left_contexts_in_shared_groups": [
+        "03c8396f-eb08-4b8c-ad8c-809815b3a857",
+        "15c366af-d696-466b-a7b4-d56928d13cae",
+        "9060df78-c972-4f3b-8bfe-271059f4cb5d",
+        "b3b0041d-6b7b-4997-b106-d0c5672771e6"
+      ],
+      "right_contexts_in_shared_groups": [
+        "4c2f88e1-b5d4-4565-a98a-04f56127e4af",
+        "dd5eac5a-de74-4ed4-b959-e6ad134e646b"
+      ],
+      "direct_shared_sources": [
+        {
+          "kind": "paragraph",
+          "source_sha256": "0b3f136446721fc3843e45c2a33f02532784b291c052dbfaa4619a985ba618b9",
+          "left_contexts": [
+            "b3b0041d-6b7b-4997-b106-d0c5672771e6"
+          ],
+          "right_contexts": [
+            "dd5eac5a-de74-4ed4-b959-e6ad134e646b"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "158a77a5aefc86126144181f1afb02e4495dfdf332df4ae3b71d0ac952f4beac",
+          "left_contexts": [
+            "03c8396f-eb08-4b8c-ad8c-809815b3a857",
+            "15c366af-d696-466b-a7b4-d56928d13cae",
+            "9060df78-c972-4f3b-8bfe-271059f4cb5d"
+          ],
+          "right_contexts": [
+            "4c2f88e1-b5d4-4565-a98a-04f56127e4af"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "b54a1e7d11de04440017d539666b8f9fb75c1a69a7d9cd2aa5e814dce902d386",
+          "left_contexts": [
+            "b3b0041d-6b7b-4997-b106-d0c5672771e6"
+          ],
+          "right_contexts": [
+            "dd5eac5a-de74-4ed4-b959-e6ad134e646b"
+          ]
+        }
+      ]
+    },
+    {
+      "left": "prompt_development",
+      "right": "calibration_v3",
+      "shared_context_ids": [],
+      "shared_table_keys": 0,
+      "shared_paragraph_keys": 5,
+      "shared_source_groups": 5,
+      "left_contexts_in_shared_groups": [
+        "41190929-50fa-4f57-8a8f-806078c0eabd",
+        "66aba6fe-545f-4198-abda-9bfa98a53151",
+        "6c2e54e8-eea2-4bb0-90b0-77609be0ed88",
+        "a6777766-950e-42b0-8e41-183fb1c44452",
+        "ea031e89-1bf8-4f64-8ed5-d1d0327003cf"
+      ],
+      "right_contexts_in_shared_groups": [
+        "10033a3d-bb14-4a29-a06d-ac3697a2f52d",
+        "2df54ed2-35ab-40b6-ae86-77cddd0df790",
+        "3158b230-32e7-4c12-944b-5352b5867ace",
+        "4cb21934-cf2f-4a49-b007-5f839ea3cd09",
+        "4ceee23a-7017-407c-903c-f19a2008c8f5",
+        "56dda777-2cf1-4213-b6fe-3be22028ccf6",
+        "8fe749ea-564d-4c9e-866c-00a78cf2865a",
+        "d08e1dae-402d-4065-8fb7-f811180fe7fa",
+        "e12d7235-fff3-47d1-aa86-514f7d88782b",
+        "f9e543f7-bfe6-4ef6-bd79-3f1126e56459"
+      ],
+      "direct_shared_sources": [
+        {
+          "kind": "paragraph",
+          "source_sha256": "158a77a5aefc86126144181f1afb02e4495dfdf332df4ae3b71d0ac952f4beac",
+          "left_contexts": [
+            "a6777766-950e-42b0-8e41-183fb1c44452"
+          ],
+          "right_contexts": [
+            "10033a3d-bb14-4a29-a06d-ac3697a2f52d",
+            "2df54ed2-35ab-40b6-ae86-77cddd0df790",
+            "3158b230-32e7-4c12-944b-5352b5867ace",
+            "4ceee23a-7017-407c-903c-f19a2008c8f5"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "3b8654742cb026ceb6cc3fd304e9d3ffbd9a126de82e23489659ca3426b701d0",
+          "left_contexts": [
+            "6c2e54e8-eea2-4bb0-90b0-77609be0ed88"
+          ],
+          "right_contexts": [
+            "4cb21934-cf2f-4a49-b007-5f839ea3cd09",
+            "8fe749ea-564d-4c9e-866c-00a78cf2865a"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "544ed723ff6fe0fea564169281e2bace4e34ea1e0802deac1f1e405eb6cbe551",
+          "left_contexts": [
+            "41190929-50fa-4f57-8a8f-806078c0eabd"
+          ],
+          "right_contexts": [
+            "f9e543f7-bfe6-4ef6-bd79-3f1126e56459"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "82ce85ec8b60f76ea78b6677c805fc276d570fec426636549cfdd64782e0fffe",
+          "left_contexts": [
+            "ea031e89-1bf8-4f64-8ed5-d1d0327003cf"
+          ],
+          "right_contexts": [
+            "56dda777-2cf1-4213-b6fe-3be22028ccf6",
+            "d08e1dae-402d-4065-8fb7-f811180fe7fa"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "96f185f189f62cb2d2a31c36d19ccf057d3cf69d07c08ed238e4044e72e732b8",
+          "left_contexts": [
+            "66aba6fe-545f-4198-abda-9bfa98a53151"
+          ],
+          "right_contexts": [
+            "e12d7235-fff3-47d1-aa86-514f7d88782b"
+          ]
+        }
+      ]
+    },
+    {
+      "left": "prompt_development",
+      "right": "comparison_v4",
+      "shared_context_ids": [],
+      "shared_table_keys": 0,
+      "shared_paragraph_keys": 3,
+      "shared_source_groups": 3,
+      "left_contexts_in_shared_groups": [
+        "6c2e54e8-eea2-4bb0-90b0-77609be0ed88",
+        "a6777766-950e-42b0-8e41-183fb1c44452",
+        "ea031e89-1bf8-4f64-8ed5-d1d0327003cf"
+      ],
+      "right_contexts_in_shared_groups": [
+        "686a3c9f-df2c-41ce-bfeb-41abbf7ae4e6",
+        "70b05eb3-abb5-4204-86d9-2ffce11f9171",
+        "a8cf914b-a9fa-49a4-9d8c-de62bc9ee3cf",
+        "ae9effab-a89c-435a-bcf3-a504d9fef286",
+        "bb740de6-e7be-4b96-975b-936a652c628c"
+      ],
+      "direct_shared_sources": [
+        {
+          "kind": "paragraph",
+          "source_sha256": "158a77a5aefc86126144181f1afb02e4495dfdf332df4ae3b71d0ac952f4beac",
+          "left_contexts": [
+            "a6777766-950e-42b0-8e41-183fb1c44452"
+          ],
+          "right_contexts": [
+            "70b05eb3-abb5-4204-86d9-2ffce11f9171"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "3b8654742cb026ceb6cc3fd304e9d3ffbd9a126de82e23489659ca3426b701d0",
+          "left_contexts": [
+            "6c2e54e8-eea2-4bb0-90b0-77609be0ed88"
+          ],
+          "right_contexts": [
+            "686a3c9f-df2c-41ce-bfeb-41abbf7ae4e6",
+            "a8cf914b-a9fa-49a4-9d8c-de62bc9ee3cf"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "82ce85ec8b60f76ea78b6677c805fc276d570fec426636549cfdd64782e0fffe",
+          "left_contexts": [
+            "ea031e89-1bf8-4f64-8ed5-d1d0327003cf"
+          ],
+          "right_contexts": [
+            "bb740de6-e7be-4b96-975b-936a652c628c"
+          ]
+        }
+      ]
+    },
+    {
+      "left": "prompt_development",
+      "right": "calibration_v4",
+      "shared_context_ids": [],
+      "shared_table_keys": 1,
+      "shared_paragraph_keys": 8,
+      "shared_source_groups": 8,
+      "left_contexts_in_shared_groups": [
+        "41190929-50fa-4f57-8a8f-806078c0eabd",
+        "66aba6fe-545f-4198-abda-9bfa98a53151",
+        "6c2e54e8-eea2-4bb0-90b0-77609be0ed88",
+        "761a5572-0188-4ea1-a310-47d5ff69e4f7",
+        "7add94b7-dbd7-4de6-998b-c05a7b617811",
+        "a6777766-950e-42b0-8e41-183fb1c44452",
+        "ea031e89-1bf8-4f64-8ed5-d1d0327003cf",
+        "fdbe9fbf-ede7-495c-85b4-ebe5071b55b9"
+      ],
+      "right_contexts_in_shared_groups": [
+        "0a7bcc81-bfa3-42bb-9b90-ca5341f0652e",
+        "2266f020-d5ef-4343-86d3-64f3fe883976",
+        "31ca108c-7db6-4d94-81e4-d55a2a361064",
+        "38e317da-db7f-46d6-bde5-8fcb492007d8",
+        "3e7e4782-f708-4cda-82f9-c3505ff0831b",
+        "46171ba5-dbc5-47fe-a2ab-58c3eb8ac475",
+        "4642f53e-a374-4488-a1db-110250bc80ab",
+        "4b13be0a-74c0-4548-86a6-6cd836a7a7de",
+        "4ede3a6b-823d-4220-bf7c-a4a5bb449371",
+        "8b939868-416a-4ea7-b34f-a5662ceebf87",
+        "8d011065-670e-463d-84a4-c722a82b8abb",
+        "b9b9a95b-a3bc-4520-8bde-4466ceecb43c",
+        "ca75fded-f5a4-473a-a6d5-dad69d0b69bd",
+        "cd34f8c4-3e09-4c30-a48d-261fe92be6d6",
+        "d9712dd9-d020-4370-9ae4-e3f05babf44d",
+        "e96fa12d-b038-4033-a084-045e3db3ad23"
+      ],
+      "direct_shared_sources": [
+        {
+          "kind": "paragraph",
+          "source_sha256": "158a77a5aefc86126144181f1afb02e4495dfdf332df4ae3b71d0ac952f4beac",
+          "left_contexts": [
+            "a6777766-950e-42b0-8e41-183fb1c44452"
+          ],
+          "right_contexts": [
+            "0a7bcc81-bfa3-42bb-9b90-ca5341f0652e",
+            "38e317da-db7f-46d6-bde5-8fcb492007d8",
+            "4b13be0a-74c0-4548-86a6-6cd836a7a7de",
+            "ca75fded-f5a4-473a-a6d5-dad69d0b69bd",
+            "d9712dd9-d020-4370-9ae4-e3f05babf44d"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "170fda6f8c743ddf0dc17004152b469ff501d5dd3d70f97a9d8b961cffec1c1d",
+          "left_contexts": [
+            "761a5572-0188-4ea1-a310-47d5ff69e4f7"
+          ],
+          "right_contexts": [
+            "3e7e4782-f708-4cda-82f9-c3505ff0831b"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "3b8654742cb026ceb6cc3fd304e9d3ffbd9a126de82e23489659ca3426b701d0",
+          "left_contexts": [
+            "6c2e54e8-eea2-4bb0-90b0-77609be0ed88"
+          ],
+          "right_contexts": [
+            "2266f020-d5ef-4343-86d3-64f3fe883976",
+            "b9b9a95b-a3bc-4520-8bde-4466ceecb43c"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "544ed723ff6fe0fea564169281e2bace4e34ea1e0802deac1f1e405eb6cbe551",
+          "left_contexts": [
+            "41190929-50fa-4f57-8a8f-806078c0eabd"
+          ],
+          "right_contexts": [
+            "4ede3a6b-823d-4220-bf7c-a4a5bb449371"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "82ce85ec8b60f76ea78b6677c805fc276d570fec426636549cfdd64782e0fffe",
+          "left_contexts": [
+            "ea031e89-1bf8-4f64-8ed5-d1d0327003cf"
+          ],
+          "right_contexts": [
+            "31ca108c-7db6-4d94-81e4-d55a2a361064",
+            "4642f53e-a374-4488-a1db-110250bc80ab",
+            "8b939868-416a-4ea7-b34f-a5662ceebf87",
+            "cd34f8c4-3e09-4c30-a48d-261fe92be6d6"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "96f185f189f62cb2d2a31c36d19ccf057d3cf69d07c08ed238e4044e72e732b8",
+          "left_contexts": [
+            "66aba6fe-545f-4198-abda-9bfa98a53151"
+          ],
+          "right_contexts": [
+            "e96fa12d-b038-4033-a084-045e3db3ad23"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "bbc830a23e1974108e20a6d9acafe5d5e54ad664b74838b6acb5d126761b3673",
+          "left_contexts": [
+            "fdbe9fbf-ede7-495c-85b4-ebe5071b55b9"
+          ],
+          "right_contexts": [
+            "8d011065-670e-463d-84a4-c722a82b8abb"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "d9e3c84238fb74a11312f0cefc33f8c4516a93d5ff25b76400c0c0d055aa3165",
+          "left_contexts": [
+            "7add94b7-dbd7-4de6-998b-c05a7b617811"
+          ],
+          "right_contexts": [
+            "46171ba5-dbc5-47fe-a2ab-58c3eb8ac475"
+          ]
+        },
+        {
+          "kind": "table",
+          "source_sha256": "00c2bfd542e3cf4b89a8e1c6b0687e5b523548393e09d1a476c2793df26ed18a",
+          "left_contexts": [
+            "761a5572-0188-4ea1-a310-47d5ff69e4f7"
+          ],
+          "right_contexts": [
+            "3e7e4782-f708-4cda-82f9-c3505ff0831b"
+          ]
+        }
+      ]
+    },
+    {
+      "left": "prompt_development",
+      "right": "retired_public_development",
+      "shared_context_ids": [],
+      "shared_table_keys": 0,
+      "shared_paragraph_keys": 3,
+      "shared_source_groups": 3,
+      "left_contexts_in_shared_groups": [
+        "6c2e54e8-eea2-4bb0-90b0-77609be0ed88",
+        "a6777766-950e-42b0-8e41-183fb1c44452",
+        "ea031e89-1bf8-4f64-8ed5-d1d0327003cf"
+      ],
+      "right_contexts_in_shared_groups": [
+        "03ef04b2-1710-4176-81b9-350134a9b49f",
+        "285a1ced-709e-4f45-a227-b6cd04e725f9",
+        "4c2f88e1-b5d4-4565-a98a-04f56127e4af",
+        "cca95e4f-c7f7-4ded-92e0-3371290f1374",
+        "ece5c810-9758-4fd8-ac97-21c1f75dd306"
+      ],
+      "direct_shared_sources": [
+        {
+          "kind": "paragraph",
+          "source_sha256": "158a77a5aefc86126144181f1afb02e4495dfdf332df4ae3b71d0ac952f4beac",
+          "left_contexts": [
+            "a6777766-950e-42b0-8e41-183fb1c44452"
+          ],
+          "right_contexts": [
+            "4c2f88e1-b5d4-4565-a98a-04f56127e4af"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "3b8654742cb026ceb6cc3fd304e9d3ffbd9a126de82e23489659ca3426b701d0",
+          "left_contexts": [
+            "6c2e54e8-eea2-4bb0-90b0-77609be0ed88"
+          ],
+          "right_contexts": [
+            "285a1ced-709e-4f45-a227-b6cd04e725f9",
+            "cca95e4f-c7f7-4ded-92e0-3371290f1374"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "82ce85ec8b60f76ea78b6677c805fc276d570fec426636549cfdd64782e0fffe",
+          "left_contexts": [
+            "ea031e89-1bf8-4f64-8ed5-d1d0327003cf"
+          ],
+          "right_contexts": [
+            "03ef04b2-1710-4176-81b9-350134a9b49f",
+            "ece5c810-9758-4fd8-ac97-21c1f75dd306"
+          ]
+        }
+      ]
+    },
+    {
+      "left": "calibration_v3",
+      "right": "comparison_v4",
+      "shared_context_ids": [],
+      "shared_table_keys": 0,
+      "shared_paragraph_keys": 10,
+      "shared_source_groups": 7,
+      "left_contexts_in_shared_groups": [
+        "10033a3d-bb14-4a29-a06d-ac3697a2f52d",
+        "241ac2fa-ad05-4d30-98f2-0d699bbbea94",
+        "2df54ed2-35ab-40b6-ae86-77cddd0df790",
+        "3158b230-32e7-4c12-944b-5352b5867ace",
+        "4cb21934-cf2f-4a49-b007-5f839ea3cd09",
+        "4ceee23a-7017-407c-903c-f19a2008c8f5",
+        "56dda777-2cf1-4213-b6fe-3be22028ccf6",
+        "57d15d5c-ad89-434a-b455-cabd50e8731a",
+        "8634831d-011c-4b6f-8416-fcd5a05146f4",
+        "8fe749ea-564d-4c9e-866c-00a78cf2865a",
+        "d08e1dae-402d-4065-8fb7-f811180fe7fa",
+        "ff491a38-1020-41ea-b830-11c11cd57b5e"
+      ],
+      "right_contexts_in_shared_groups": [
+        "0b8a85b3-3cbb-4e2e-985e-fe13543f2bc5",
+        "686a3c9f-df2c-41ce-bfeb-41abbf7ae4e6",
+        "70b05eb3-abb5-4204-86d9-2ffce11f9171",
+        "a8cf914b-a9fa-49a4-9d8c-de62bc9ee3cf",
+        "ae9effab-a89c-435a-bcf3-a504d9fef286",
+        "b3812392-5cb3-4972-ae26-1d6054fbcc32",
+        "bb740de6-e7be-4b96-975b-936a652c628c",
+        "df87baa7-3b95-4be4-ba8e-a1fa169ca1c2",
+        "e60e8ee4-b06d-4e07-aecd-459d863dae45"
+      ],
+      "direct_shared_sources": [
+        {
+          "kind": "paragraph",
+          "source_sha256": "158a77a5aefc86126144181f1afb02e4495dfdf332df4ae3b71d0ac952f4beac",
+          "left_contexts": [
+            "10033a3d-bb14-4a29-a06d-ac3697a2f52d",
+            "2df54ed2-35ab-40b6-ae86-77cddd0df790",
+            "3158b230-32e7-4c12-944b-5352b5867ace",
+            "4ceee23a-7017-407c-903c-f19a2008c8f5"
+          ],
+          "right_contexts": [
+            "70b05eb3-abb5-4204-86d9-2ffce11f9171"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "3b8654742cb026ceb6cc3fd304e9d3ffbd9a126de82e23489659ca3426b701d0",
+          "left_contexts": [
+            "4cb21934-cf2f-4a49-b007-5f839ea3cd09",
+            "8fe749ea-564d-4c9e-866c-00a78cf2865a"
+          ],
+          "right_contexts": [
+            "686a3c9f-df2c-41ce-bfeb-41abbf7ae4e6",
+            "a8cf914b-a9fa-49a4-9d8c-de62bc9ee3cf"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "4f1c08fefa50b0b6cca82c559faf8f5bca848ea826758129f8dffccb6f53e38c",
+          "left_contexts": [
+            "241ac2fa-ad05-4d30-98f2-0d699bbbea94"
+          ],
+          "right_contexts": [
+            "b3812392-5cb3-4972-ae26-1d6054fbcc32"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "82ce85ec8b60f76ea78b6677c805fc276d570fec426636549cfdd64782e0fffe",
+          "left_contexts": [
+            "56dda777-2cf1-4213-b6fe-3be22028ccf6",
+            "d08e1dae-402d-4065-8fb7-f811180fe7fa"
+          ],
+          "right_contexts": [
+            "bb740de6-e7be-4b96-975b-936a652c628c"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "920d277ce5762434a83bc47dfa9b7c89464fc7d290fb0228b274a76f204a0b6e",
+          "left_contexts": [
+            "ff491a38-1020-41ea-b830-11c11cd57b5e"
+          ],
+          "right_contexts": [
+            "df87baa7-3b95-4be4-ba8e-a1fa169ca1c2"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "a5954d1769b653c4c1437f165216c898bf03731fb9c85e5357b7d98338789e88",
+          "left_contexts": [
+            "10033a3d-bb14-4a29-a06d-ac3697a2f52d"
+          ],
+          "right_contexts": [
+            "ae9effab-a89c-435a-bcf3-a504d9fef286"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "a73462d367f18b6ca5d4de23b019344051e018a572ae13fc13b6f1ec42a34e8a",
+          "left_contexts": [
+            "ff491a38-1020-41ea-b830-11c11cd57b5e"
+          ],
+          "right_contexts": [
+            "df87baa7-3b95-4be4-ba8e-a1fa169ca1c2"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "aaabfde481880047d085a710b0a11a841c8011cc9f7b512dc9c44f91938a2f2d",
+          "left_contexts": [
+            "8634831d-011c-4b6f-8416-fcd5a05146f4"
+          ],
+          "right_contexts": [
+            "0b8a85b3-3cbb-4e2e-985e-fe13543f2bc5"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "bb6c99cf0dd8ade3f089105be90ff91f3a9177597a9d1c8c0da7f6caec6ad2a9",
+          "left_contexts": [
+            "ff491a38-1020-41ea-b830-11c11cd57b5e"
+          ],
+          "right_contexts": [
+            "df87baa7-3b95-4be4-ba8e-a1fa169ca1c2"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "fb52604866a7547365d1dca1a00a7dfec82fd0f46660acaea2b153865bba9aab",
+          "left_contexts": [
+            "57d15d5c-ad89-434a-b455-cabd50e8731a"
+          ],
+          "right_contexts": [
+            "e60e8ee4-b06d-4e07-aecd-459d863dae45"
+          ]
+        }
+      ]
+    },
+    {
+      "left": "calibration_v3",
+      "right": "calibration_v4",
+      "shared_context_ids": [],
+      "shared_table_keys": 1,
+      "shared_paragraph_keys": 13,
+      "shared_source_groups": 10,
+      "left_contexts_in_shared_groups": [
+        "0375f1cf-e500-483b-b29a-509632a9ffab",
+        "10033a3d-bb14-4a29-a06d-ac3697a2f52d",
+        "131065f5-75ac-4f7d-a768-95f8737f881d",
+        "2b784db4-b23a-4455-9621-7b8adc51d1c6",
+        "2df54ed2-35ab-40b6-ae86-77cddd0df790",
+        "3158b230-32e7-4c12-944b-5352b5867ace",
+        "4cb21934-cf2f-4a49-b007-5f839ea3cd09",
+        "4ceee23a-7017-407c-903c-f19a2008c8f5",
+        "56dda777-2cf1-4213-b6fe-3be22028ccf6",
+        "57d15d5c-ad89-434a-b455-cabd50e8731a",
+        "6e966ad8-33f3-4007-92a3-b31a0c597ae7",
+        "8fe749ea-564d-4c9e-866c-00a78cf2865a",
+        "9fe12426-9e0e-4323-ae33-57da1e8d3e4d",
+        "a3b40fa6-2877-441f-94e0-af9d888b2d99",
+        "b68b2559-7217-4d8f-9eff-fc46e2146581",
+        "d08e1dae-402d-4065-8fb7-f811180fe7fa",
+        "e12d7235-fff3-47d1-aa86-514f7d88782b",
+        "f9e543f7-bfe6-4ef6-bd79-3f1126e56459"
+      ],
+      "right_contexts_in_shared_groups": [
+        "0a7bcc81-bfa3-42bb-9b90-ca5341f0652e",
+        "1a153890-b70e-4746-947b-de2ff48027ce",
+        "2266f020-d5ef-4343-86d3-64f3fe883976",
+        "31ca108c-7db6-4d94-81e4-d55a2a361064",
+        "38e317da-db7f-46d6-bde5-8fcb492007d8",
+        "3c422668-6075-4fe1-96bd-a2e177b142f1",
+        "41802aff-1ee5-4447-9f73-d31d938c947a",
+        "4642f53e-a374-4488-a1db-110250bc80ab",
+        "4b13be0a-74c0-4548-86a6-6cd836a7a7de",
+        "4ede3a6b-823d-4220-bf7c-a4a5bb449371",
+        "5719073f-7dc6-426f-9088-9ff231fdf03f",
+        "7a764a2d-b30c-465a-97a0-8124e617a3d8",
+        "8b939868-416a-4ea7-b34f-a5662ceebf87",
+        "b9b9a95b-a3bc-4520-8bde-4466ceecb43c",
+        "c69c9e61-c0ea-421a-bf27-36d24bc640e9",
+        "ca75fded-f5a4-473a-a6d5-dad69d0b69bd",
+        "cd34f8c4-3e09-4c30-a48d-261fe92be6d6",
+        "d9712dd9-d020-4370-9ae4-e3f05babf44d",
+        "dff7c464-1987-4457-ba86-768e56a4cb7c",
+        "e96fa12d-b038-4033-a084-045e3db3ad23",
+        "f0f7e36a-cf9c-4935-b8d4-56bc978fdf4e"
+      ],
+      "direct_shared_sources": [
+        {
+          "kind": "paragraph",
+          "source_sha256": "0b3f136446721fc3843e45c2a33f02532784b291c052dbfaa4619a985ba618b9",
+          "left_contexts": [
+            "9fe12426-9e0e-4323-ae33-57da1e8d3e4d"
+          ],
+          "right_contexts": [
+            "f0f7e36a-cf9c-4935-b8d4-56bc978fdf4e"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "158a77a5aefc86126144181f1afb02e4495dfdf332df4ae3b71d0ac952f4beac",
+          "left_contexts": [
+            "10033a3d-bb14-4a29-a06d-ac3697a2f52d",
+            "2df54ed2-35ab-40b6-ae86-77cddd0df790",
+            "3158b230-32e7-4c12-944b-5352b5867ace",
+            "4ceee23a-7017-407c-903c-f19a2008c8f5"
+          ],
+          "right_contexts": [
+            "0a7bcc81-bfa3-42bb-9b90-ca5341f0652e",
+            "38e317da-db7f-46d6-bde5-8fcb492007d8",
+            "4b13be0a-74c0-4548-86a6-6cd836a7a7de",
+            "ca75fded-f5a4-473a-a6d5-dad69d0b69bd",
+            "d9712dd9-d020-4370-9ae4-e3f05babf44d"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "1fa881cb8ef3c36aeb643be4564059457ae9c8519c1028660986ed77d79ac655",
+          "left_contexts": [
+            "6e966ad8-33f3-4007-92a3-b31a0c597ae7"
+          ],
+          "right_contexts": [
+            "dff7c464-1987-4457-ba86-768e56a4cb7c"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "27cabe2c44f79dfdedabcea660d26cc13a69c69adc419ea25be911f18f2515dc",
+          "left_contexts": [
+            "a3b40fa6-2877-441f-94e0-af9d888b2d99"
+          ],
+          "right_contexts": [
+            "7a764a2d-b30c-465a-97a0-8124e617a3d8"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "3b8654742cb026ceb6cc3fd304e9d3ffbd9a126de82e23489659ca3426b701d0",
+          "left_contexts": [
+            "4cb21934-cf2f-4a49-b007-5f839ea3cd09",
+            "8fe749ea-564d-4c9e-866c-00a78cf2865a"
+          ],
+          "right_contexts": [
+            "2266f020-d5ef-4343-86d3-64f3fe883976",
+            "b9b9a95b-a3bc-4520-8bde-4466ceecb43c"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "51a207419f2f78db68aeddfebb78feb57e2fff5e14ba0d791743f4fd68f7b3af",
+          "left_contexts": [
+            "131065f5-75ac-4f7d-a768-95f8737f881d"
+          ],
+          "right_contexts": [
+            "1a153890-b70e-4746-947b-de2ff48027ce"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "544ed723ff6fe0fea564169281e2bace4e34ea1e0802deac1f1e405eb6cbe551",
+          "left_contexts": [
+            "f9e543f7-bfe6-4ef6-bd79-3f1126e56459"
+          ],
+          "right_contexts": [
+            "4ede3a6b-823d-4220-bf7c-a4a5bb449371"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "65ba342e4730ed196fd934c01ade8d2e11c38cbfcbb575711ae335001b4848c6",
+          "left_contexts": [
+            "2b784db4-b23a-4455-9621-7b8adc51d1c6"
+          ],
+          "right_contexts": [
+            "7a764a2d-b30c-465a-97a0-8124e617a3d8"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "82ce85ec8b60f76ea78b6677c805fc276d570fec426636549cfdd64782e0fffe",
+          "left_contexts": [
+            "56dda777-2cf1-4213-b6fe-3be22028ccf6",
+            "d08e1dae-402d-4065-8fb7-f811180fe7fa"
+          ],
+          "right_contexts": [
+            "31ca108c-7db6-4d94-81e4-d55a2a361064",
+            "4642f53e-a374-4488-a1db-110250bc80ab",
+            "8b939868-416a-4ea7-b34f-a5662ceebf87",
+            "cd34f8c4-3e09-4c30-a48d-261fe92be6d6"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "910676e9dbfa03106577f10ab804f02c1f37de2137c9dfd1188034be9a0eb8d0",
+          "left_contexts": [
+            "2b784db4-b23a-4455-9621-7b8adc51d1c6"
+          ],
+          "right_contexts": [
+            "7a764a2d-b30c-465a-97a0-8124e617a3d8"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "96f185f189f62cb2d2a31c36d19ccf057d3cf69d07c08ed238e4044e72e732b8",
+          "left_contexts": [
+            "e12d7235-fff3-47d1-aa86-514f7d88782b"
+          ],
+          "right_contexts": [
+            "e96fa12d-b038-4033-a084-045e3db3ad23"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "a995e6c209e1f2b90b469b3c3f506f5af7201a7f98df2a75e9f88a19eb1ce0d3",
+          "left_contexts": [
+            "0375f1cf-e500-483b-b29a-509632a9ffab",
+            "2b784db4-b23a-4455-9621-7b8adc51d1c6",
+            "b68b2559-7217-4d8f-9eff-fc46e2146581"
+          ],
+          "right_contexts": [
+            "3c422668-6075-4fe1-96bd-a2e177b142f1",
+            "5719073f-7dc6-426f-9088-9ff231fdf03f",
+            "c69c9e61-c0ea-421a-bf27-36d24bc640e9"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "fb52604866a7547365d1dca1a00a7dfec82fd0f46660acaea2b153865bba9aab",
+          "left_contexts": [
+            "57d15d5c-ad89-434a-b455-cabd50e8731a"
+          ],
+          "right_contexts": [
+            "41802aff-1ee5-4447-9f73-d31d938c947a"
+          ]
+        },
+        {
+          "kind": "table",
+          "source_sha256": "56f943bfa0d9acc7cea3e17978345153fb30a9af0ca6b23c7c26003c0392517e",
+          "left_contexts": [
+            "2b784db4-b23a-4455-9621-7b8adc51d1c6"
+          ],
+          "right_contexts": [
+            "7a764a2d-b30c-465a-97a0-8124e617a3d8"
+          ]
+        }
+      ]
+    },
+    {
+      "left": "calibration_v3",
+      "right": "retired_public_development",
+      "shared_context_ids": [],
+      "shared_table_keys": 0,
+      "shared_paragraph_keys": 8,
+      "shared_source_groups": 8,
+      "left_contexts_in_shared_groups": [
+        "0375f1cf-e500-483b-b29a-509632a9ffab",
+        "08b9f4af-dd94-4858-841e-9a036992f149",
+        "10033a3d-bb14-4a29-a06d-ac3697a2f52d",
+        "2b784db4-b23a-4455-9621-7b8adc51d1c6",
+        "2df54ed2-35ab-40b6-ae86-77cddd0df790",
+        "3158b230-32e7-4c12-944b-5352b5867ace",
+        "47e5d5ca-4756-48e8-931e-dba00241a1c5",
+        "4cb21934-cf2f-4a49-b007-5f839ea3cd09",
+        "4ceee23a-7017-407c-903c-f19a2008c8f5",
+        "56dda777-2cf1-4213-b6fe-3be22028ccf6",
+        "5b6d5017-d613-4683-843f-16122a559fc6",
+        "8fe749ea-564d-4c9e-866c-00a78cf2865a",
+        "9fe12426-9e0e-4323-ae33-57da1e8d3e4d",
+        "a3b40fa6-2877-441f-94e0-af9d888b2d99",
+        "b68b2559-7217-4d8f-9eff-fc46e2146581",
+        "c3839707-4a28-4e9d-8962-deed14b6f0e3",
+        "d08e1dae-402d-4065-8fb7-f811180fe7fa",
+        "d246cebc-8f13-424b-a46c-7829f1c6f060",
+        "ee155edc-e536-4d3a-8bc5-ef6de21e853d",
+        "f7a7de72-0a9f-4f7c-8187-0b57936d0ee5"
+      ],
+      "right_contexts_in_shared_groups": [
+        "03ef04b2-1710-4176-81b9-350134a9b49f",
+        "13d33e02-138d-4ee6-93ef-35d0778b11cd",
+        "285a1ced-709e-4f45-a227-b6cd04e725f9",
+        "4145912c-86dc-434b-8990-1cfe78f298f5",
+        "4c2f88e1-b5d4-4565-a98a-04f56127e4af",
+        "708fa58a-083d-4a97-80a1-5fe9de71a36b",
+        "b24ee687-2712-4f16-9bc9-0f3f3636e407",
+        "b6fa85a0-a203-4ed3-8c4d-6c1b5a8b08c1",
+        "cca95e4f-c7f7-4ded-92e0-3371290f1374",
+        "d7a538e8-655c-4a25-96a1-cff8b7c1b039",
+        "d8d662b8-dbd2-4450-a1fd-7cf111b4236a",
+        "dd5eac5a-de74-4ed4-b959-e6ad134e646b",
+        "e8a14965-257d-4945-9f13-d0e2e84d9ff8",
+        "ece5c810-9758-4fd8-ac97-21c1f75dd306",
+        "fdcb153a-f69b-4cb5-946f-6b2be434d5e6"
+      ],
+      "direct_shared_sources": [
+        {
+          "kind": "paragraph",
+          "source_sha256": "0b3f136446721fc3843e45c2a33f02532784b291c052dbfaa4619a985ba618b9",
+          "left_contexts": [
+            "9fe12426-9e0e-4323-ae33-57da1e8d3e4d"
+          ],
+          "right_contexts": [
+            "dd5eac5a-de74-4ed4-b959-e6ad134e646b"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "158a77a5aefc86126144181f1afb02e4495dfdf332df4ae3b71d0ac952f4beac",
+          "left_contexts": [
+            "10033a3d-bb14-4a29-a06d-ac3697a2f52d",
+            "2df54ed2-35ab-40b6-ae86-77cddd0df790",
+            "3158b230-32e7-4c12-944b-5352b5867ace",
+            "4ceee23a-7017-407c-903c-f19a2008c8f5"
+          ],
+          "right_contexts": [
+            "4c2f88e1-b5d4-4565-a98a-04f56127e4af"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "3b8654742cb026ceb6cc3fd304e9d3ffbd9a126de82e23489659ca3426b701d0",
+          "left_contexts": [
+            "4cb21934-cf2f-4a49-b007-5f839ea3cd09",
+            "8fe749ea-564d-4c9e-866c-00a78cf2865a"
+          ],
+          "right_contexts": [
+            "285a1ced-709e-4f45-a227-b6cd04e725f9",
+            "cca95e4f-c7f7-4ded-92e0-3371290f1374"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "70860d669113be016a51d805608b576de4eb6ee729c5aa64a06cf6a6642505c1",
+          "left_contexts": [
+            "5b6d5017-d613-4683-843f-16122a559fc6"
+          ],
+          "right_contexts": [
+            "4145912c-86dc-434b-8990-1cfe78f298f5"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "7e861d097f580b15746923b36897d3328f024e88e62ad50d3857f58fa077545e",
+          "left_contexts": [
+            "08b9f4af-dd94-4858-841e-9a036992f149",
+            "47e5d5ca-4756-48e8-931e-dba00241a1c5",
+            "d246cebc-8f13-424b-a46c-7829f1c6f060",
+            "ee155edc-e536-4d3a-8bc5-ef6de21e853d",
+            "f7a7de72-0a9f-4f7c-8187-0b57936d0ee5"
+          ],
+          "right_contexts": [
+            "13d33e02-138d-4ee6-93ef-35d0778b11cd",
+            "b24ee687-2712-4f16-9bc9-0f3f3636e407",
+            "d7a538e8-655c-4a25-96a1-cff8b7c1b039",
+            "e8a14965-257d-4945-9f13-d0e2e84d9ff8"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "82ce85ec8b60f76ea78b6677c805fc276d570fec426636549cfdd64782e0fffe",
+          "left_contexts": [
+            "56dda777-2cf1-4213-b6fe-3be22028ccf6",
+            "d08e1dae-402d-4065-8fb7-f811180fe7fa"
+          ],
+          "right_contexts": [
+            "03ef04b2-1710-4176-81b9-350134a9b49f",
+            "ece5c810-9758-4fd8-ac97-21c1f75dd306"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "9919bf6c3b930d379cc140300c6d5056a282bd8f41ab1b18ec0a5dea6b482a20",
+          "left_contexts": [
+            "c3839707-4a28-4e9d-8962-deed14b6f0e3"
+          ],
+          "right_contexts": [
+            "fdcb153a-f69b-4cb5-946f-6b2be434d5e6"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "a995e6c209e1f2b90b469b3c3f506f5af7201a7f98df2a75e9f88a19eb1ce0d3",
+          "left_contexts": [
+            "0375f1cf-e500-483b-b29a-509632a9ffab",
+            "2b784db4-b23a-4455-9621-7b8adc51d1c6",
+            "b68b2559-7217-4d8f-9eff-fc46e2146581"
+          ],
+          "right_contexts": [
+            "708fa58a-083d-4a97-80a1-5fe9de71a36b",
+            "b6fa85a0-a203-4ed3-8c4d-6c1b5a8b08c1",
+            "d8d662b8-dbd2-4450-a1fd-7cf111b4236a"
+          ]
+        }
+      ]
+    },
+    {
+      "left": "comparison_v4",
+      "right": "calibration_v4",
+      "shared_context_ids": [],
+      "shared_table_keys": 1,
+      "shared_paragraph_keys": 10,
+      "shared_source_groups": 8,
+      "left_contexts_in_shared_groups": [
+        "03056f8d-6d6f-4853-8e1a-3ced6e72a853",
+        "18337216-4f8c-4e28-98a7-80c6350ee294",
+        "1ec06dfa-bc1e-4af2-8054-f63fa0262012",
+        "4aed44ac-2c96-40db-9bf7-e065677b3eee",
+        "686a3c9f-df2c-41ce-bfeb-41abbf7ae4e6",
+        "70b05eb3-abb5-4204-86d9-2ffce11f9171",
+        "a8cf914b-a9fa-49a4-9d8c-de62bc9ee3cf",
+        "ae9effab-a89c-435a-bcf3-a504d9fef286",
+        "bb740de6-e7be-4b96-975b-936a652c628c",
+        "e60e8ee4-b06d-4e07-aecd-459d863dae45"
+      ],
+      "right_contexts_in_shared_groups": [
+        "0a7bcc81-bfa3-42bb-9b90-ca5341f0652e",
+        "104d5c1d-a160-4e42-84e3-8c8f5349e7d2",
+        "2266f020-d5ef-4343-86d3-64f3fe883976",
+        "31ca108c-7db6-4d94-81e4-d55a2a361064",
+        "38e317da-db7f-46d6-bde5-8fcb492007d8",
+        "41802aff-1ee5-4447-9f73-d31d938c947a",
+        "4642f53e-a374-4488-a1db-110250bc80ab",
+        "4b13be0a-74c0-4548-86a6-6cd836a7a7de",
+        "65fa8f8f-ba12-4d71-be5c-b9940c0bb239",
+        "6ff8f202-92bf-4828-9de8-62c4d0aad2ff",
+        "8b939868-416a-4ea7-b34f-a5662ceebf87",
+        "a096539a-da82-4926-8a33-c6218a886d79",
+        "b9b9a95b-a3bc-4520-8bde-4466ceecb43c",
+        "ca75fded-f5a4-473a-a6d5-dad69d0b69bd",
+        "cd34f8c4-3e09-4c30-a48d-261fe92be6d6",
+        "d9712dd9-d020-4370-9ae4-e3f05babf44d"
+      ],
+      "direct_shared_sources": [
+        {
+          "kind": "paragraph",
+          "source_sha256": "158a77a5aefc86126144181f1afb02e4495dfdf332df4ae3b71d0ac952f4beac",
+          "left_contexts": [
+            "70b05eb3-abb5-4204-86d9-2ffce11f9171"
+          ],
+          "right_contexts": [
+            "0a7bcc81-bfa3-42bb-9b90-ca5341f0652e",
+            "38e317da-db7f-46d6-bde5-8fcb492007d8",
+            "4b13be0a-74c0-4548-86a6-6cd836a7a7de",
+            "ca75fded-f5a4-473a-a6d5-dad69d0b69bd",
+            "d9712dd9-d020-4370-9ae4-e3f05babf44d"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "3b8654742cb026ceb6cc3fd304e9d3ffbd9a126de82e23489659ca3426b701d0",
+          "left_contexts": [
+            "686a3c9f-df2c-41ce-bfeb-41abbf7ae4e6",
+            "a8cf914b-a9fa-49a4-9d8c-de62bc9ee3cf"
+          ],
+          "right_contexts": [
+            "2266f020-d5ef-4343-86d3-64f3fe883976",
+            "b9b9a95b-a3bc-4520-8bde-4466ceecb43c"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "4014331093e04af07df8be4a34cddcbf4821edc7ebca7cb4212bf55d51a50b4d",
+          "left_contexts": [
+            "18337216-4f8c-4e28-98a7-80c6350ee294"
+          ],
+          "right_contexts": [
+            "104d5c1d-a160-4e42-84e3-8c8f5349e7d2"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "5c934cdbe438a4877448148d00fbf20ea1fd66e60cba44edc0a07b54685d9f41",
+          "left_contexts": [
+            "4aed44ac-2c96-40db-9bf7-e065677b3eee"
+          ],
+          "right_contexts": [
+            "a096539a-da82-4926-8a33-c6218a886d79"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "6e6a37a16b0d4bfda8252928b21c3385db41c9ef45b28ab509b393bbc2fdad9c",
+          "left_contexts": [
+            "1ec06dfa-bc1e-4af2-8054-f63fa0262012"
+          ],
+          "right_contexts": [
+            "6ff8f202-92bf-4828-9de8-62c4d0aad2ff"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "82ce85ec8b60f76ea78b6677c805fc276d570fec426636549cfdd64782e0fffe",
+          "left_contexts": [
+            "bb740de6-e7be-4b96-975b-936a652c628c"
+          ],
+          "right_contexts": [
+            "31ca108c-7db6-4d94-81e4-d55a2a361064",
+            "4642f53e-a374-4488-a1db-110250bc80ab",
+            "8b939868-416a-4ea7-b34f-a5662ceebf87",
+            "cd34f8c4-3e09-4c30-a48d-261fe92be6d6"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "8671bb8fbe2eba5b9e3e298b799b27867898864258fbdcea2d47e62bf59d0fbf",
+          "left_contexts": [
+            "4aed44ac-2c96-40db-9bf7-e065677b3eee"
+          ],
+          "right_contexts": [
+            "a096539a-da82-4926-8a33-c6218a886d79"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "97c8d0c463cfc68de317735a72fefd951f688738a0a5224db7edb68bdd28ac4a",
+          "left_contexts": [
+            "1ec06dfa-bc1e-4af2-8054-f63fa0262012"
+          ],
+          "right_contexts": [
+            "6ff8f202-92bf-4828-9de8-62c4d0aad2ff"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "d43eb5b0c0ee77aa5a8eed175272d3e3daaf97282a94ab52c099e41f90f24565",
+          "left_contexts": [
+            "03056f8d-6d6f-4853-8e1a-3ced6e72a853"
+          ],
+          "right_contexts": [
+            "65fa8f8f-ba12-4d71-be5c-b9940c0bb239"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "fb52604866a7547365d1dca1a00a7dfec82fd0f46660acaea2b153865bba9aab",
+          "left_contexts": [
+            "e60e8ee4-b06d-4e07-aecd-459d863dae45"
+          ],
+          "right_contexts": [
+            "41802aff-1ee5-4447-9f73-d31d938c947a"
+          ]
+        },
+        {
+          "kind": "table",
+          "source_sha256": "4ef2147204db48dc92d386c4d90545f4a229c60c22a5dff35df81c2728375f83",
+          "left_contexts": [
+            "4aed44ac-2c96-40db-9bf7-e065677b3eee"
+          ],
+          "right_contexts": [
+            "a096539a-da82-4926-8a33-c6218a886d79"
+          ]
+        }
+      ]
+    },
+    {
+      "left": "comparison_v4",
+      "right": "retired_public_development",
+      "shared_context_ids": [],
+      "shared_table_keys": 0,
+      "shared_paragraph_keys": 4,
+      "shared_source_groups": 3,
+      "left_contexts_in_shared_groups": [
+        "686a3c9f-df2c-41ce-bfeb-41abbf7ae4e6",
+        "70b05eb3-abb5-4204-86d9-2ffce11f9171",
+        "a8cf914b-a9fa-49a4-9d8c-de62bc9ee3cf",
+        "ae9effab-a89c-435a-bcf3-a504d9fef286",
+        "bb740de6-e7be-4b96-975b-936a652c628c"
+      ],
+      "right_contexts_in_shared_groups": [
+        "03ef04b2-1710-4176-81b9-350134a9b49f",
+        "285a1ced-709e-4f45-a227-b6cd04e725f9",
+        "4c2f88e1-b5d4-4565-a98a-04f56127e4af",
+        "cca95e4f-c7f7-4ded-92e0-3371290f1374",
+        "ece5c810-9758-4fd8-ac97-21c1f75dd306"
+      ],
+      "direct_shared_sources": [
+        {
+          "kind": "paragraph",
+          "source_sha256": "158a77a5aefc86126144181f1afb02e4495dfdf332df4ae3b71d0ac952f4beac",
+          "left_contexts": [
+            "70b05eb3-abb5-4204-86d9-2ffce11f9171"
+          ],
+          "right_contexts": [
+            "4c2f88e1-b5d4-4565-a98a-04f56127e4af"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "3b8654742cb026ceb6cc3fd304e9d3ffbd9a126de82e23489659ca3426b701d0",
+          "left_contexts": [
+            "686a3c9f-df2c-41ce-bfeb-41abbf7ae4e6",
+            "a8cf914b-a9fa-49a4-9d8c-de62bc9ee3cf"
+          ],
+          "right_contexts": [
+            "285a1ced-709e-4f45-a227-b6cd04e725f9",
+            "cca95e4f-c7f7-4ded-92e0-3371290f1374"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "82ce85ec8b60f76ea78b6677c805fc276d570fec426636549cfdd64782e0fffe",
+          "left_contexts": [
+            "bb740de6-e7be-4b96-975b-936a652c628c"
+          ],
+          "right_contexts": [
+            "03ef04b2-1710-4176-81b9-350134a9b49f",
+            "ece5c810-9758-4fd8-ac97-21c1f75dd306"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "d0c42656814e33a563d209d08da8078cc49faf5c5ed21bd9a966c8280d10f07e",
+          "left_contexts": [
+            "686a3c9f-df2c-41ce-bfeb-41abbf7ae4e6"
+          ],
+          "right_contexts": [
+            "285a1ced-709e-4f45-a227-b6cd04e725f9"
+          ]
+        }
+      ]
+    },
+    {
+      "left": "calibration_v4",
+      "right": "retired_public_development",
+      "shared_context_ids": [],
+      "shared_table_keys": 0,
+      "shared_paragraph_keys": 10,
+      "shared_source_groups": 9,
+      "left_contexts_in_shared_groups": [
+        "0012a118-070e-43bf-a23c-19fe94cee4e9",
+        "0a7bcc81-bfa3-42bb-9b90-ca5341f0652e",
+        "0dd65728-2732-40e2-8e6b-b08c876e59e4",
+        "171ae33a-20c0-4a7a-a98c-af15a87b0853",
+        "2266f020-d5ef-4343-86d3-64f3fe883976",
+        "28a5c19f-c1a5-4a78-9bc8-2a94254bf60e",
+        "31ca108c-7db6-4d94-81e4-d55a2a361064",
+        "38e317da-db7f-46d6-bde5-8fcb492007d8",
+        "3c422668-6075-4fe1-96bd-a2e177b142f1",
+        "4642f53e-a374-4488-a1db-110250bc80ab",
+        "4b13be0a-74c0-4548-86a6-6cd836a7a7de",
+        "4ccf4e12-fdab-451c-b397-3f1bc29d9d6e",
+        "5719073f-7dc6-426f-9088-9ff231fdf03f",
+        "7a764a2d-b30c-465a-97a0-8124e617a3d8",
+        "8b939868-416a-4ea7-b34f-a5662ceebf87",
+        "b9b9a95b-a3bc-4520-8bde-4466ceecb43c",
+        "c69c9e61-c0ea-421a-bf27-36d24bc640e9",
+        "ca75fded-f5a4-473a-a6d5-dad69d0b69bd",
+        "cd34f8c4-3e09-4c30-a48d-261fe92be6d6",
+        "d9712dd9-d020-4370-9ae4-e3f05babf44d",
+        "f0f7e36a-cf9c-4935-b8d4-56bc978fdf4e"
+      ],
+      "right_contexts_in_shared_groups": [
+        "03ef04b2-1710-4176-81b9-350134a9b49f",
+        "285a1ced-709e-4f45-a227-b6cd04e725f9",
+        "4c2f88e1-b5d4-4565-a98a-04f56127e4af",
+        "53eec737-630e-4915-afbb-8c20cdd01263",
+        "6cff0af2-41c0-4b29-b41f-e5637648defa",
+        "708fa58a-083d-4a97-80a1-5fe9de71a36b",
+        "736f65a8-7b6b-47bc-8c6a-3a2d641695bc",
+        "981e181b-57fa-42ff-a2d9-b8603eafdd4c",
+        "b6fa85a0-a203-4ed3-8c4d-6c1b5a8b08c1",
+        "cca95e4f-c7f7-4ded-92e0-3371290f1374",
+        "d8d662b8-dbd2-4450-a1fd-7cf111b4236a",
+        "dd5eac5a-de74-4ed4-b959-e6ad134e646b",
+        "ecbdd061-4537-4633-9431-642c65fe627a",
+        "ece5c810-9758-4fd8-ac97-21c1f75dd306"
+      ],
+      "direct_shared_sources": [
+        {
+          "kind": "paragraph",
+          "source_sha256": "0b3f136446721fc3843e45c2a33f02532784b291c052dbfaa4619a985ba618b9",
+          "left_contexts": [
+            "f0f7e36a-cf9c-4935-b8d4-56bc978fdf4e"
+          ],
+          "right_contexts": [
+            "dd5eac5a-de74-4ed4-b959-e6ad134e646b"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "158a77a5aefc86126144181f1afb02e4495dfdf332df4ae3b71d0ac952f4beac",
+          "left_contexts": [
+            "0a7bcc81-bfa3-42bb-9b90-ca5341f0652e",
+            "38e317da-db7f-46d6-bde5-8fcb492007d8",
+            "4b13be0a-74c0-4548-86a6-6cd836a7a7de",
+            "ca75fded-f5a4-473a-a6d5-dad69d0b69bd",
+            "d9712dd9-d020-4370-9ae4-e3f05babf44d"
+          ],
+          "right_contexts": [
+            "4c2f88e1-b5d4-4565-a98a-04f56127e4af"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "3b8654742cb026ceb6cc3fd304e9d3ffbd9a126de82e23489659ca3426b701d0",
+          "left_contexts": [
+            "2266f020-d5ef-4343-86d3-64f3fe883976",
+            "b9b9a95b-a3bc-4520-8bde-4466ceecb43c"
+          ],
+          "right_contexts": [
+            "285a1ced-709e-4f45-a227-b6cd04e725f9",
+            "cca95e4f-c7f7-4ded-92e0-3371290f1374"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "82ce85ec8b60f76ea78b6677c805fc276d570fec426636549cfdd64782e0fffe",
+          "left_contexts": [
+            "31ca108c-7db6-4d94-81e4-d55a2a361064",
+            "4642f53e-a374-4488-a1db-110250bc80ab",
+            "8b939868-416a-4ea7-b34f-a5662ceebf87",
+            "cd34f8c4-3e09-4c30-a48d-261fe92be6d6"
+          ],
+          "right_contexts": [
+            "03ef04b2-1710-4176-81b9-350134a9b49f",
+            "ece5c810-9758-4fd8-ac97-21c1f75dd306"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "8dc0c1b78a1ef91ec5ddc0c7b83975ebdca7638ab4b1c4a73e38efedf80bf916",
+          "left_contexts": [
+            "0dd65728-2732-40e2-8e6b-b08c876e59e4",
+            "4ccf4e12-fdab-451c-b397-3f1bc29d9d6e"
+          ],
+          "right_contexts": [
+            "981e181b-57fa-42ff-a2d9-b8603eafdd4c",
+            "ecbdd061-4537-4633-9431-642c65fe627a"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "92b7b620de75e54f7154c3eb681a1536a220dc4e086d8a7654fe9184a86a69df",
+          "left_contexts": [
+            "28a5c19f-c1a5-4a78-9bc8-2a94254bf60e"
+          ],
+          "right_contexts": [
+            "6cff0af2-41c0-4b29-b41f-e5637648defa"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "a995e6c209e1f2b90b469b3c3f506f5af7201a7f98df2a75e9f88a19eb1ce0d3",
+          "left_contexts": [
+            "3c422668-6075-4fe1-96bd-a2e177b142f1",
+            "5719073f-7dc6-426f-9088-9ff231fdf03f",
+            "c69c9e61-c0ea-421a-bf27-36d24bc640e9"
+          ],
+          "right_contexts": [
+            "708fa58a-083d-4a97-80a1-5fe9de71a36b",
+            "b6fa85a0-a203-4ed3-8c4d-6c1b5a8b08c1",
+            "d8d662b8-dbd2-4450-a1fd-7cf111b4236a"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "b54a1e7d11de04440017d539666b8f9fb75c1a69a7d9cd2aa5e814dce902d386",
+          "left_contexts": [
+            "f0f7e36a-cf9c-4935-b8d4-56bc978fdf4e"
+          ],
+          "right_contexts": [
+            "dd5eac5a-de74-4ed4-b959-e6ad134e646b"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "c135abd0ed92ddfd07ffbf4fd04dc881b4b0d6672681bb4da48819c2d9ed979f",
+          "left_contexts": [
+            "0dd65728-2732-40e2-8e6b-b08c876e59e4",
+            "4ccf4e12-fdab-451c-b397-3f1bc29d9d6e"
+          ],
+          "right_contexts": [
+            "ecbdd061-4537-4633-9431-642c65fe627a"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "source_sha256": "c699138c947fd57f68829dfebdeaa9417b6a7a0f454545077c2b1b686c461f58",
+          "left_contexts": [
+            "171ae33a-20c0-4a7a-a98c-af15a87b0853"
+          ],
+          "right_contexts": [
+            "736f65a8-7b6b-47bc-8c6a-3a2d641695bc"
+          ]
+        }
+      ]
+    }
+  ],
+  "identity": {
+    "grouping_version": "exact-table-or-informative-paragraph-components-v1",
+    "source_sha256": {
+      "data/tatqa_train.json": "2df6e722cdbaaa37efcbfb280f5c9a15be29a6ec18f618ef936fe63cc6d07c69",
+      "data/tatqa_dev.json": "8da095a819af6db3c14877c6df2d4d29960e41d1a63dd1fa853507bd2a616af5"
+    },
+    "history_sha256": {
+      "benchmarks/train-v3-400.json": "fe87b6ed9c49517da70a2a0041145c368e0d10931ff1280a521ae40c73452956",
+      "benchmarks/train-holdout-v4.json": "c021bfcbb480db1442b20541ddd281769ed5eaf2d2e6d8a60b6f7e5e90431eb0",
+      "benchmarks/calibration-v4.json": "85f20654ae89f680276bb60b63558b94687540537f0e30bdffb0bebb243e1562"
+    },
+    "guard_sha256": "713b03587b8e9ebf9d335d49378c5879b853f92d8f3e5e7a991f9642b206e308",
+    "runner_sha256": "de961b28a03a0318bc969f1f2b1941ef2b14736f3bdbbd8d9caa9d8486f9e1ff"
+  },
+  "status": "source_overlap_detected",
+  "within_stage_repeated_source_groups": {
+    "historical_training_contexts": 3,
+    "prompt_development": 1,
+    "calibration_v3": 16,
+    "comparison_v4": 2,
+    "calibration_v4": 15,
+    "retired_public_development": 9
+  },
+  "future_sampling": {
+    "consumed_contexts": 1386,
+    "consumed_source_groups": 1292,
+    "unused_arithmetic_source_groups_before_numeric_eligibility": 935,
+    "policy": "Exclude complete consumed components; one question per unused group",
+    "new_evaluation_sample_created": false,
+    "reported_training_contexts_checked_against_consumption_ledger": 1071
+  },
+  "fit_diagnostics": {
+    "local_llm_weight_training": false,
+    "what_was_selected": "Prompt, symbolic grammar and acceptance policy on development only",
+    "development_contexts": 100,
+    "development_accuracy": 0.72,
+    "comparison_contexts": 200,
+    "comparison_accuracy": 0.655,
+    "comparison_minus_development_accuracy": -0.06499999999999995,
+    "interpretation": "Descriptive different-context gap, not a causal diagnosis of over/underfitting. Prompt selection can overfit; no local weight-training learning curve exists."
+  },
+  "limitations": [
+    "Historical ID-disjoint samples contain repeated tables/paragraphs; independent-filings and IID calibration assumptions are unverified",
+    "Connected source groups conservatively include boilerplate; they can miss paraphrases, edited tables and unknown common filings",
+    "Public train/dev contents may be in model pretraining; this audit cannot certify absence",
+    "All completed evaluation/calibration contexts are consumed; they cannot be reused as fresh tuning data",
+    "No historical row is removed or risk bound recomputed after observing outcomes"
+  ]
+}

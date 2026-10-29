@@ -1,0 +1,4 @@
+# Optional: only the upstream official scorer needs pandas and scipy.
+# Core inference and offline package tests do not import these dependencies.
+pandas==2.3.3
+scipy==1.16.2

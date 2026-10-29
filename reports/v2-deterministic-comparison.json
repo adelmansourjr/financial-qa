@@ -1,0 +1,30 @@
+{
+  "comparisons": [
+    {
+      "first": "header",
+      "second": "semantic",
+      "second_minus_first_accuracy": {
+        "mean": 0.25,
+        "ci95": [
+          0.15,
+          0.35
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      }
+    },
+    {
+      "first": "baseline",
+      "second": "semantic",
+      "second_minus_first_accuracy": {
+        "mean": 0.44,
+        "ci95": [
+          0.34,
+          0.54
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      }
+    }
+  ]
+}

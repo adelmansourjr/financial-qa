@@ -1,0 +1,7 @@
+{
+  "build_info": "b11669-620d2225c",
+  "n_ctx": 8192,
+  "chat_template_sha256": "57f1fd00f0013a2be96aa79b857391f27e23df5b5f847072b524c897e24d0361",
+  "default_generation_sha256": "9583c90036128b4269707099118a48dc628f9941c7d07069163bee10fcfaceac",
+  "reasoning_format": "none"
+}

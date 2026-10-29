@@ -1,0 +1,21 @@
+{
+  "risk_certificate_sha256": "1589cff65438b5df5d035e956b5852b56873f68e5bc2ab5f262c01d8ee8a34de",
+  "evaluation_py_sha256": "e0ea23422df2e7a44053719e1aba81384bd01e8d45a79290286ea6621ce81371",
+  "criterion": "Parse finite numeric answers, convert the predicted amount by its declared scale into the gold unit, and accept an absolute difference of at most 0.005 in that unit. This is the local numeric criterion, not human financial truth or full official TAT-QA scoring.",
+  "scorer_matches_previous_source_snapshot": true,
+  "calibration_prediction_sha256": {
+    "semantic": "c7e1c2c4b4656670179dc19f65a29164f8e930b193c8c3100eb008604b7507d2",
+    "model": "3b727074095899d9acac593cfe7aa4f40ade6f0a1fb4c52406623ad8aef7e173",
+    "hybrid": "3201bba59f0fe4e3783b459bf94fc1a2262034b02cf40332f8f1a4ee7fa2bb92",
+    "agreement": "9f44e8c4d778ad45e917f5b40fb39dce4c990f8b866782ef3c4a35fa218cf38e",
+    "strict_agreement": "7ad96fe21f57e758cae69efd23f7217286b7c8fd117bcfd3e7467d0a92cd8de2"
+  },
+  "final_prediction_sha256": {
+    "semantic": "a653a7b3329da44014b9b25d595829d581d06adba7c64a1d67507d22a134ed4e",
+    "model": "a6e6f80b2b567b5e2b673150f8d38654f3d67c165cfeee7b6289a650553986f2",
+    "hybrid": "2be24592432347a0897ecd2ae2240a71b88f7f76a401871e1547eeb88cc86cab",
+    "agreement": "1ca372f75025cd931e967946e3f92ac4ea209d8674f3b1ca563b70796e1c3851",
+    "strict_agreement": "53013ece760a20807b6e21668bded053e93e408304eb161abbad9a93bf9d8165"
+  },
+  "note": "Companion integrity audit. Risk is defined by local numeric correctness, not human financial truth."
+}

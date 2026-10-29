@@ -1,0 +1,103 @@
+{
+  "purpose": "Secondary metric diagnostic after policy freezing; no model selection",
+  "scope": "Frozen arithmetic-only development subset, not the full benchmark leaderboard",
+  "dataset_revision": "870accc41953dcde885aabeb963d94aabdc0fbc3",
+  "data_sha256": "8da095a819af6db3c14877c6df2d4d29960e41d1a63dd1fa853507bd2a616af5",
+  "manifest_sha256": "2fc8d417264e0d5531ad6911d765320239896d6dd33118aba6fad0a9c7b2c9e1",
+  "evaluator_sources": {
+    "tatqa_utils.py": {
+      "url": "https://raw.githubusercontent.com/NExTplusplus/TAT-QA/870accc41953dcde885aabeb963d94aabdc0fbc3/tatqa_utils.py",
+      "sha256": "a84bb2f960737cf0a53733637a674cc4b20ef030a2be6a4b21dc2c4356f415ec"
+    },
+    "tatqa_metric.py": {
+      "url": "https://raw.githubusercontent.com/NExTplusplus/TAT-QA/870accc41953dcde885aabeb963d94aabdc0fbc3/tatqa_metric.py",
+      "sha256": "2aeeac479f89f8c76300af1cc0e8d098eb86af84bc386b38b6ab4af484a6dea8"
+    }
+  },
+  "methods": [
+    {
+      "backend": "program-v3-semantic",
+      "prediction_report": "v3-final-semantic.json",
+      "prediction_report_sha256": "17cf52132a3ad9b13d4f9cb0096b0bd305d774b5b226832107827bc3a6669f71",
+      "questions": 86,
+      "answered": 46,
+      "coverage": 0.5348837209302325,
+      "official_em": 0.4069767441860465,
+      "official_f1": 0.4069767441860465,
+      "official_scale_accuracy": 0.5,
+      "official_em_among_answered": 0.7608695652173914,
+      "official_f1_among_answered": 0.7608695652173914,
+      "primary_local_accuracy": 0.4069767441860465
+    },
+    {
+      "backend": "program-v3-model",
+      "prediction_report": "v3-final-model.json",
+      "prediction_report_sha256": "c967a1f62f4afbcf27dc7138e729a5b78d923f33c128a51243669ef9f691bccc",
+      "questions": 86,
+      "answered": 76,
+      "coverage": 0.8837209302325582,
+      "official_em": 0.627906976744186,
+      "official_f1": 0.627906976744186,
+      "official_scale_accuracy": 0.8023255813953488,
+      "official_em_among_answered": 0.7105263157894737,
+      "official_f1_among_answered": 0.7105263157894737,
+      "primary_local_accuracy": 0.627906976744186
+    },
+    {
+      "backend": "program-v3-hybrid",
+      "prediction_report": "v3-final-hybrid.json",
+      "prediction_report_sha256": "b967c46bf7ff2409f3141656461b99b6eedde4491f1c1f693dfd2b378cfab454",
+      "questions": 86,
+      "answered": 81,
+      "coverage": 0.9418604651162791,
+      "official_em": 0.6627906976744186,
+      "official_f1": 0.6627906976744186,
+      "official_scale_accuracy": 0.8604651162790697,
+      "official_em_among_answered": 0.7037037037037037,
+      "official_f1_among_answered": 0.7037037037037037,
+      "primary_local_accuracy": 0.6627906976744186
+    },
+    {
+      "backend": "program-v3-agreement",
+      "prediction_report": "v3-final-agreement.json",
+      "prediction_report_sha256": "4fe9e38d7a815d8161f7177f50c1282f2576a84018c8aaeed2eab32aed27447c",
+      "questions": 86,
+      "answered": 39,
+      "coverage": 0.45348837209302323,
+      "official_em": 0.37209302325581395,
+      "official_f1": 0.37209302325581395,
+      "official_scale_accuracy": 0.43023255813953487,
+      "official_em_among_answered": 0.8205128205128205,
+      "official_f1_among_answered": 0.8205128205128205,
+      "primary_local_accuracy": 0.37209302325581395
+    },
+    {
+      "backend": "program-v3-strict_agreement",
+      "prediction_report": "v3-final-strict_agreement.json",
+      "prediction_report_sha256": "730e276807a7308b251f22332e5e6a2cabd384afa94b529f625060385c0c9efa",
+      "questions": 86,
+      "answered": 37,
+      "coverage": 0.43023255813953487,
+      "official_em": 0.3488372093023256,
+      "official_f1": 0.3488372093023256,
+      "official_scale_accuracy": 0.4069767441860465,
+      "official_em_among_answered": 0.8108108108108109,
+      "official_f1_among_answered": 0.8108108108108109,
+      "primary_local_accuracy": 0.3488372093023256
+    },
+    {
+      "backend": "risk-controlled-v3",
+      "prediction_report": "v3-final-risk-controlled.json",
+      "prediction_report_sha256": "23b2ae6fd1c3db919f05e9b180e5fb76341de33a4bad19df26c30174d8e02c38",
+      "questions": 86,
+      "answered": 0,
+      "coverage": 0.0,
+      "official_em": 0.0,
+      "official_f1": 0.0,
+      "official_scale_accuracy": 0.0,
+      "official_em_among_answered": null,
+      "official_f1_among_answered": null,
+      "primary_local_accuracy": 0.0
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grounded-financial-qa"
+version = "0.1.0"
+description = "Evidence-grounded financial question answering with a bounded arithmetic executor"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+dependencies = ["fastapi>=0.115,<1", "pydantic>=2.9,<3", "uvicorn>=0.30,<1", "numpy>=2.0,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "httpx>=0.28,<1", "ruff>=0.14,<1"]
+
+[project.scripts]
+financial-qa = "financial_qa.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+financial_qa = ["static/*.html", "static/*.js", "static/*.css"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--import-mode=importlib"
+
+[tool.ruff]
+line-length = 100
+extend-exclude = ["build", "dist", "artifacts", "data", "local-runtime"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

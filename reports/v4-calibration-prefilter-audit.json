@@ -1,0 +1,10 @@
+{
+  "scope": "Before first calibration outcome; exact necessary-condition short circuit",
+  "calibration_requests_or_outcomes_before_change": 0,
+  "membership_and_acceptance_conditions_unchanged": true,
+  "reason": "Question type and requested-year count are necessary conditions; skip model requests when those fixed conditions already fail",
+  "initial_freeze_sha256": "3fcee1ad4cc5279adb5b37ef165532a589a40c7df2f3566b49a99b488a930c97",
+  "final_freeze_sha256": "068bc346a80c40b312122694afe49d41a303f709b00b2af658978e0d5cf30560",
+  "previous_acceptance_sha256": "2f5a95a62ec96d8134c02fbe13279e4ac516fdb75809fc30edfd5f2bc6c75d7d",
+  "final_acceptance_sha256": "4b80a84c84d1208f7d63a576dcb6819b2ddcd69ee629b65f2cba7769dd4cf461"
+}

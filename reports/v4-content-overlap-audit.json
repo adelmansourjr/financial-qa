@@ -1,0 +1,20 @@
+{
+  "scope": "Source-content identity audit without inspecting new outcomes",
+  "normalization": "Lowercase and collapsed whitespace; exact numeric/source content retained",
+  "context_counts": {
+    "historical": 608,
+    "comparison": 200,
+    "fresh_calibration": 300
+  },
+  "within_stage_duplicate_contents": {
+    "historical": 0,
+    "comparison": 0,
+    "fresh_calibration": 0
+  },
+  "cross_stage_shared_contents": {
+    "historical__comparison": 0,
+    "historical__fresh_calibration": 0,
+    "comparison__fresh_calibration": 0
+  },
+  "limitation": "Distinct content does not establish independent source filings, eliminate related contexts or exclude pretraining exposure."
+}

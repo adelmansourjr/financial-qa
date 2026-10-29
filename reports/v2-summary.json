@@ -1,0 +1,368 @@
+{
+  "scope": "Final frozen100 arithmetic-only development documents; no model or policy retuning after scoring",
+  "manifest_sha256": "9a851fbe65d59b6ecf736a265ccb25fbab4da81bb96ffd81d0e908d4f08c96fe",
+  "selection_artifact_sha256": "98de9f56b5f2a48d88b0d5947cd2a5f8b19230935ffc6b611e257d3ca39cf423",
+  "frozen_prediction_code_verified": true,
+  "methods": {
+    "baseline": {
+      "backend": "baseline",
+      "scorer": "Local scale-aware numeric tolerance0.005 in gold units; not official TATQA EM/F1",
+      "evaluated": 100,
+      "accuracy": 0.07,
+      "accuracy_interval": {
+        "mean": 0.07,
+        "ci95": [
+          0.02,
+          0.12
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "coverage": 0.18,
+      "coverage_interval": {
+        "mean": 0.18,
+        "ci95": [
+          0.11,
+          0.26
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "answered_accuracy_interval": {
+        "mean": 0.3888888888888889,
+        "ci95": [
+          0.16666666666666666,
+          0.6111111111111112
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "answered_accuracy": 0.3888888888888889,
+      "failures": {
+        "correct": 7,
+        "abstained": 82,
+        "wrong_value_or_operation": 8,
+        "wrong_unit_only": 3
+      },
+      "abstention_reasons": {
+        "A requested year is absent from the table header": 56,
+        "Question requires reasoning outside the baseline scope": 6,
+        "Requested year values could not be resolved": 17,
+        "No matching row label": 3
+      },
+      "p95_latency_ms": 0.9196499999999995,
+      "manifest_sha256": "9a851fbe65d59b6ecf736a265ccb25fbab4da81bb96ffd81d0e908d4f08c96fe",
+      "protocol": "selective-v2, training-only choices; local scale-aware numeric scorer",
+      "planner_class": "TableBaseline",
+      "cache_entries_before": 1,
+      "cache_entries_after": 1,
+      "latency_status": "actual deterministic execution"
+    },
+    "header": {
+      "backend": "header",
+      "scorer": "Local scale-aware numeric tolerance0.005 in gold units; not official TATQA EM/F1",
+      "evaluated": 100,
+      "accuracy": 0.26,
+      "accuracy_interval": {
+        "mean": 0.26,
+        "ci95": [
+          0.18,
+          0.35
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "coverage": 0.45,
+      "coverage_interval": {
+        "mean": 0.45,
+        "ci95": [
+          0.35975,
+          0.55
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "answered_accuracy_interval": {
+        "mean": 0.5777777777777777,
+        "ci95": [
+          0.4444444444444444,
+          0.7116666666666662
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "answered_accuracy": 0.5777777777777777,
+      "failures": {
+        "correct": 26,
+        "abstained": 55,
+        "wrong_value_or_operation": 18,
+        "wrong_unit_only": 1
+      },
+      "abstention_reasons": {
+        "Requested year is missing": 18,
+        "Column headers are ambiguous": 6,
+        "No explicit year could be resolved": 10,
+        "Several metrics match equally": 16,
+        "Unsupported two-year operation": 3,
+        "No unambiguous matching metric": 2
+      },
+      "p95_latency_ms": 1.5722500000000001,
+      "manifest_sha256": "9a851fbe65d59b6ecf736a265ccb25fbab4da81bb96ffd81d0e908d4f08c96fe",
+      "protocol": "selective-v2, training-only choices; local scale-aware numeric scorer",
+      "planner_class": "HeaderAwareBaseline",
+      "cache_entries_before": 1,
+      "cache_entries_after": 1,
+      "latency_status": "actual deterministic execution"
+    },
+    "semantic": {
+      "backend": "semantic",
+      "scorer": "Local scale-aware numeric tolerance0.005 in gold units; not official TATQA EM/F1",
+      "evaluated": 100,
+      "accuracy": 0.51,
+      "accuracy_interval": {
+        "mean": 0.51,
+        "ci95": [
+          0.42,
+          0.61
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "coverage": 0.59,
+      "coverage_interval": {
+        "mean": 0.59,
+        "ci95": [
+          0.49,
+          0.68
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "answered_accuracy_interval": {
+        "mean": 0.864406779661017,
+        "ci95": [
+          0.7796610169491526,
+          0.9322033898305084
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "answered_accuracy": 0.864406779661017,
+      "failures": {
+        "correct": 51,
+        "abstained": 41,
+        "wrong_value_or_operation": 8
+      },
+      "abstention_reasons": {
+        "Metric or category selection is ambiguous": 6,
+        "Explicit distinct periods are required": 17,
+        "Rule cannot resolve numerator and denominator": 7,
+        "No explicit matching financial metric": 7,
+        "Exact requested metric has no numeric observations": 1,
+        "Selected observations do not match the explicitly requested years": 1,
+        "Change lacks two unambiguous periods": 2
+      },
+      "p95_latency_ms": 1.8476499999999998,
+      "manifest_sha256": "9a851fbe65d59b6ecf736a265ccb25fbab4da81bb96ffd81d0e908d4f08c96fe",
+      "protocol": "selective-v2, training-only choices; local scale-aware numeric scorer",
+      "planner_class": "SemanticBaseline",
+      "cache_entries_before": 1,
+      "cache_entries_after": 1,
+      "latency_status": "actual deterministic execution"
+    },
+    "selective": {
+      "backend": "selective",
+      "scorer": "Local scale-aware numeric tolerance0.005 in gold units; not official TATQA EM/F1",
+      "evaluated": 100,
+      "accuracy": 0.42,
+      "accuracy_interval": {
+        "mean": 0.42,
+        "ci95": [
+          0.33,
+          0.52
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "coverage": 0.63,
+      "coverage_interval": {
+        "mean": 0.63,
+        "ci95": [
+          0.54,
+          0.72
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "answered_accuracy_interval": {
+        "mean": 0.6666666666666666,
+        "ci95": [
+          0.5396825396825397,
+          0.7777777777777778
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "answered_accuracy": 0.6666666666666666,
+      "failures": {
+        "correct": 42,
+        "abstained": 37,
+        "wrong_value_or_operation": 20,
+        "wrong_unit_only": 1
+      },
+      "abstention_reasons": {
+        "Selective proposal rejected: Selected source units are inconsistent or unresolved": 4,
+        "Selective proposal rejected: Selected observations do not match the explicitly requested years": 32,
+        "Selective proposal rejected: A paragraph year cannot be used as a measured quantity": 1
+      },
+      "p95_latency_ms": 19542.94725,
+      "manifest_sha256": "9a851fbe65d59b6ecf736a265ccb25fbab4da81bb96ffd81d0e908d4f08c96fe",
+      "protocol": "selective-v2, training-only choices; local scale-aware numeric scorer",
+      "planner_class": "SelectiveLLM",
+      "cache_entries_before": 0,
+      "cache_entries_after": 100,
+      "latency_status": "live CPU inference"
+    },
+    "hybrid": {
+      "backend": "hybrid",
+      "scorer": "Local scale-aware numeric tolerance0.005 in gold units; not official TATQA EM/F1",
+      "evaluated": 100,
+      "accuracy": 0.59,
+      "accuracy_interval": {
+        "mean": 0.59,
+        "ci95": [
+          0.49,
+          0.68
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "coverage": 0.83,
+      "coverage_interval": {
+        "mean": 0.83,
+        "ci95": [
+          0.75,
+          0.9
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "answered_accuracy_interval": {
+        "mean": 0.7108433734939759,
+        "ci95": [
+          0.6144578313253012,
+          0.7951807228915663
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "answered_accuracy": 0.7108433734939759,
+      "failures": {
+        "correct": 59,
+        "abstained": 17,
+        "wrong_value_or_operation": 23,
+        "wrong_unit_only": 1
+      },
+      "abstention_reasons": {
+        "Selective proposal rejected: Selected observations do not match the explicitly requested years": 14,
+        "Selective proposal rejected: Selected source units are inconsistent or unresolved": 2,
+        "Selective proposal rejected: A paragraph year cannot be used as a measured quantity": 1
+      },
+      "p95_latency_ms": 1.82695,
+      "manifest_sha256": "9a851fbe65d59b6ecf736a265ccb25fbab4da81bb96ffd81d0e908d4f08c96fe",
+      "protocol": "selective-v2, training-only choices; local scale-aware numeric scorer",
+      "planner_class": "SelectiveLLM",
+      "cache_entries_before": 100,
+      "cache_entries_after": 100,
+      "latency_status": "cache replay or mixed cache/live requests; not a pure live inference latency"
+    },
+    "agreement": {
+      "backend": "agreement",
+      "scorer": "Local scale-aware numeric tolerance0.005 in gold units; not official TATQA EM/F1",
+      "evaluated": 100,
+      "accuracy": 0.33,
+      "accuracy_interval": {
+        "mean": 0.33,
+        "ci95": [
+          0.24,
+          0.42
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "coverage": 0.34,
+      "coverage_interval": {
+        "mean": 0.34,
+        "ci95": [
+          0.25,
+          0.43
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "answered_accuracy_interval": {
+        "mean": 0.9705882352941176,
+        "ci95": [
+          0.9117647058823529,
+          1.0
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      },
+      "answered_accuracy": 0.9705882352941176,
+      "failures": {
+        "correct": 33,
+        "abstained": 66,
+        "wrong_value_or_operation": 1
+      },
+      "abstention_reasons": {
+        "Selective proposal rejected: Selected source units are inconsistent or unresolved": 4,
+        "Independent rule and model do not agree": 29,
+        "Selective proposal rejected: Selected observations do not match the explicitly requested years": 32,
+        "Selective proposal rejected: A paragraph year cannot be used as a measured quantity": 1
+      },
+      "p95_latency_ms": 2.431999999999999,
+      "manifest_sha256": "9a851fbe65d59b6ecf736a265ccb25fbab4da81bb96ffd81d0e908d4f08c96fe",
+      "protocol": "selective-v2, training-only choices; local scale-aware numeric scorer",
+      "planner_class": "SelectiveLLM",
+      "cache_entries_before": 100,
+      "cache_entries_after": 100,
+      "latency_status": "cache replay or mixed cache/live requests; not a pure live inference latency"
+    }
+  },
+  "paired_additional_descriptive": [
+    {
+      "first": "semantic",
+      "second": "hybrid",
+      "second_minus_first_accuracy": {
+        "mean": 0.08,
+        "ci95": [
+          0.03,
+          0.13
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      }
+    },
+    {
+      "first": "semantic",
+      "second": "agreement",
+      "second_minus_first_accuracy": {
+        "mean": -0.18,
+        "ci95": [
+          -0.26,
+          -0.11
+        ],
+        "bootstrap_unit": "document",
+        "replicates": 1000
+      }
+    }
+  ],
+  "latency_note": "Selective report measured100 live CPU model calls. Hybrid/agreement only replay those same cached proposals; their p95 is not live model latency.",
+  "official_secondary": "v2-official-secondary.json",
+  "notes": [
+    "Additional contrasts are descriptive and not multiplicity-adjusted.",
+    "Accepted-answer accuracy intervals condition on the accepted document sample. Coverage is reported separately.",
+    "Public pretrained-data contamination cannot be excluded."
+  ]
+}
